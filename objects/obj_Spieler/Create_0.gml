@@ -1,12 +1,10 @@
-
-
 vorname = "";
 nachname = "";
 
 team = "";
 //mögliche Werte 
 //("TW", "LI", "IV", "MD", "LV", "RV", "DM", "LM", "ZM", "OM", "RM", "ST", "AUSW", "RES")
-favPosition = "RES";
+position = "RES";
 busy = false;
 
 //nur für die Zuordnung der Werte beim Erstellen
