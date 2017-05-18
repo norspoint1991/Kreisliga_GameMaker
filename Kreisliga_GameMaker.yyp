@@ -199,6 +199,14 @@
             }
         },
         {
+            "Key": "63d89dcf-a41c-4c22-ad62-70c1f5ddc84b",
+            "Value": {
+                "id": "da6a7822-7d52-488f-8605-518a6cb68848",
+                "resourcePath": "objects\\object1\\object1.yy",
+                "resourceType": "GMObject"
+            }
+        },
+        {
             "Key": "66a6830c-f46a-4c6b-808f-f046ad081c2b",
             "Value": {
                 "id": "700d728c-9253-46a5-959c-24a907d53b78",
@@ -420,6 +428,14 @@
                 "id": "62465f6b-dfa5-431c-b82d-6042ef50f581",
                 "resourcePath": "scripts\\gaussBetween\\gaussBetween.yy",
                 "resourceType": "GMScript"
+            }
+        },
+        {
+            "Key": "e6ce75b7-eccc-47fe-817e-cd4a5bd7b980",
+            "Value": {
+                "id": "7a0d8066-aed8-43ec-883c-c8ea01849246",
+                "resourcePath": "rooms\\MainMenu\\MainMenu.yy",
+                "resourceType": "GMRoom"
             }
         },
         {
