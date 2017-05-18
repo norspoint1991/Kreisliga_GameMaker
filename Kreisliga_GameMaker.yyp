@@ -143,6 +143,14 @@
             }
         },
         {
+            "Key": "bc69f4ce-1b27-469e-b761-ca4ddc1f0614",
+            "Value": {
+                "id": "c591cd6b-8113-47fd-8abe-53cef145424b",
+                "resourcePath": "objects\\obj_AufstellungBox\\obj_AufstellungBox.yy",
+                "resourceType": "GMObject"
+            }
+        },
+        {
             "Key": "cbb202ee-5cac-49f8-bc4d-2b54b7c39403",
             "Value": {
                 "id": "40963387-bfdf-455c-a994-148609a8f9f5",
