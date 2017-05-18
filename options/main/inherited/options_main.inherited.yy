@@ -1,0 +1,3 @@
+1.0.0←ed6a955d-5826-4f98-a450-10b414266c27←ed6a955d-5826-4f98-a450-10b414266c27|{
+    "option_gameguid": "8cbcaada-885a-4a81-acf5-d1ba49060b2a"
+}
