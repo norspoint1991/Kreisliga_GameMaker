@@ -17,7 +17,3 @@ geburtstag = randomGeburtstag();
 event_user(1); //Alter updaten
 
 setSpielerWerteTo(40, 20);
-
-event_user(0); //FavPosition updaten
-
-position = favPosition;

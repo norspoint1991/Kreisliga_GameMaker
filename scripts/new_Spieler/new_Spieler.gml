@@ -35,6 +35,6 @@ else if (argument_count == 3)
 	new_instance.vorname = vorname_argument;
 	new_instance.nachname = nachname_argument;
 	new_instance.bestPosition = bestPosition_argument;
-
+	with(new_instance) event_user(2);
 
 return new_instance
