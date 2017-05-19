@@ -119,6 +119,14 @@
             }
         },
         {
+            "Key": "332ef909-98e2-4b56-b208-0347e8d1a643",
+            "Value": {
+                "id": "03d52db0-9c17-4685-aafb-d6e6beb8fe49",
+                "resourcePath": "scripts\\AussenbahnPass\\AussenbahnPass.yy",
+                "resourceType": "GMScript"
+            }
+        },
+        {
             "Key": "34aebc51-3e0d-44cc-9cb9-7fc0e90f18cb",
             "Value": {
                 "id": "3e39d446-5dd0-4456-825e-2dab36c48104",
@@ -287,6 +295,14 @@
             }
         },
         {
+            "Key": "866d182a-10fe-422e-aa45-aec01e28eaf4",
+            "Value": {
+                "id": "4f249bbc-d3f9-45df-a980-829b43d78b2d",
+                "resourcePath": "scripts\\Dribbling\\Dribbling.yy",
+                "resourceType": "GMScript"
+            }
+        },
+        {
             "Key": "8abf57f0-cf52-422f-b07b-c54cf41423f4",
             "Value": {
                 "id": "4ee80098-c132-48a9-b052-46eadf729bbb",
@@ -308,6 +324,14 @@
                 "id": "6de030b0-2d07-42be-9234-41bcb3b433af",
                 "resourcePath": "views\\90659913-f5b7-4189-80f0-97d23df587a3.yy",
                 "resourceType": "GMFolder"
+            }
+        },
+        {
+            "Key": "91202556-732c-4760-99d7-fc80a096d109",
+            "Value": {
+                "id": "867318e9-4c0b-4808-a8aa-9605d49e065d",
+                "resourcePath": "scripts\\SpielerAufAussen\\SpielerAufAussen.yy",
+                "resourceType": "GMScript"
             }
         },
         {
@@ -335,6 +359,14 @@
             }
         },
         {
+            "Key": "a5d91bc7-4cd7-4d24-a3e5-ce566d95294f",
+            "Value": {
+                "id": "17589567-e7d3-47ac-8249-d52c6548eb74",
+                "resourcePath": "scripts\\ranRoll\\ranRoll.yy",
+                "resourceType": "GMScript"
+            }
+        },
+        {
             "Key": "a9188620-a624-4a5a-83ae-a1b53faf038b",
             "Value": {
                 "id": "a271444b-9825-43b2-9b2b-ce42cfa0a9c1",
@@ -347,6 +379,14 @@
             "Value": {
                 "id": "eb846bd2-9297-45d2-9bf7-a8e9cf2039c7",
                 "resourcePath": "scripts\\savePlayer\\savePlayer.yy",
+                "resourceType": "GMScript"
+            }
+        },
+        {
+            "Key": "ab93696f-b267-4d59-815c-70c9a255b576",
+            "Value": {
+                "id": "905fef5d-c9f3-474e-adcd-dae447efc2ba",
+                "resourcePath": "scripts\\addText\\addText.yy",
                 "resourceType": "GMScript"
             }
         },
@@ -505,6 +545,7 @@
     ],
     "script_order": [
         "3c93ab9b-3648-4fc1-bb8b-0e3a1dab1dca",
+        "ab93696f-b267-4d59-815c-70c9a255b576",
         "34aebc51-3e0d-44cc-9cb9-7fc0e90f18cb",
         "532f3440-0e48-4cd5-b698-deb9b42361f5",
         "1e877dce-2112-4fd7-b535-6c63a162414c",
@@ -517,6 +558,7 @@
         "e207fc8f-3b41-4fd3-98cd-a16075f7883d",
         "df1d39dc-ecb7-4b89-a7ab-fd9139048fd3",
         "cdf1c5d6-936f-4c62-9a96-e31b64377bcb",
+        "a5d91bc7-4cd7-4d24-a3e5-ce566d95294f",
         "707cdfa6-7a18-42e6-a847-a22233452e6c",
         "b19c48c6-12f3-4730-a073-43d91e095522",
         "60032121-5625-4b9a-8596-7d076575cd2d",
@@ -524,7 +566,10 @@
         "ef47c634-ad31-423a-b9c5-a7e7f43a7ebe",
         "ab82a77e-d51b-48c6-b439-58f4901056ae",
         "354bfebd-3412-438a-b1e9-43a7ae7e4092",
-        "3db7eed7-213d-4685-b9ca-d9abb0bb4236"
+        "3db7eed7-213d-4685-b9ca-d9abb0bb4236",
+        "332ef909-98e2-4b56-b208-0347e8d1a643",
+        "91202556-732c-4760-99d7-fc80a096d109",
+        "866d182a-10fe-422e-aa45-aec01e28eaf4"
     ],
     "tutorial": ""
 }

@@ -21,25 +21,25 @@ font_height = string_height("Test");
 
 var k;
 var border;
-if (ds_list_size(EventText) <= maxLines)
+if (ds_list_size(eventList) <= maxLines)
 {
 	k = 0; 
-	border = ds_list_size(EventText);
+	border = ds_list_size(eventList);
 }
 else 
 {
-	//k = ds_list_size(EventText) - maxLines;
+	//k = ds_list_size(eventList) - maxLines;
 	//border = maxLines;
 	k = 0; 
-	border = ds_list_size(EventText);
+	border = ds_list_size(eventList);
 }
 
 for(var i = 0; i < border; i++)
 {
 	draw_text(	x + padding,
 				y + padding + boxheight/20 + i * font_height,
-				ZeitList[|(i + k)]);
+				zeitList[|(i + k)]);
 	draw_text(	x + time_font_width + 2*padding,
 				y + padding + boxheight/20 + i * font_height,	
-				EventText[|(i + k)]);
+				eventList[|(i + k)]);
 }

@@ -1,11 +1,5 @@
-//
+//draw Parameter
 padding = 16;
-zeit = 0;
-step = 0;
-
-spielzeit = 90;
-
-
 boxwidth = view_wport[0];
 boxheight = window_get_height();
 
@@ -16,8 +10,18 @@ time_font_width = string_width(string_time(0));
 maxLines = floor((view_hport[0])/font_height); 
 
 headline = "Ereignisse";
-EventText = ds_list_create();
-ZeitList = ds_list_create();
+
+//Zahlen zum Spiel
+zeit = 0;
+zeitVorher = -1;
+spielzeit = 90;
+heimteamTore = 0;
+auswaertsteamTore = 0;
+
+
+
+eventList = ds_list_create();
+zeitList = ds_list_create();
 
 Heimteam = instance_create_depth(0, 0, 0, obj_Team);
 Heimteam.teamName = "SC Hille";
@@ -25,9 +29,18 @@ Heimteam.teamName = "SC Hille";
 Auswaertsteam = instance_create_depth(0, 0, 0, obj_Team);
 Auswaertsteam.teamName = "Die super Bayern";
 
+
+
 //ini file mit allen Texten für die Simulation
 ini_open("TextSimulation_ger.ini");
 
-ThisEvent = 0;
-Angreifer = undefined;
+//Simulations Platzhalter
+step = 0;
+thisEvent = 0;
+Angriff = undefined; //Team im Angriff
+Verteidigung = undefined; //Team in der Verteidigung
+//Angreifer = undefined; 
 Verteidiger = undefined;
+GegnerVorher = undefined;
+SpielerMitBallVorher = undefined;
+SpielerMitBall = undefined;

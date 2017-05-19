@@ -19,6 +19,20 @@ unparsed_string = string_replace_all ( unparsed_string, "&Auswaertsteam", Auswae
 
 }
 
+// Angriffsteam ersetzen
+
+if string_pos("&Angriff", unparsed_string) != 0 {
+unparsed_string = string_replace_all ( unparsed_string, "&Angriff", Angriff.teamName );
+
+}
+
+// Verteidigungsteam ersetzen
+
+if string_pos("&Verteidigung", unparsed_string) != 0 {
+unparsed_string = string_replace_all ( unparsed_string, "&Verteidgung", Verteidigung.teamName );
+
+}
+
 // Spieler mit Ball ersetzen
 
 if string_pos("&SpielerMitBall", unparsed_string) != 0 {
