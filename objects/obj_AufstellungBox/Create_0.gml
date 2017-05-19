@@ -3,8 +3,6 @@ zeit = 0;
 textPosition = 0;
 step = 0;
 
-textFile = file_text_open_read("TextSimulation.txt");
-
 boxwidth = 2*room_width/3;
 boxheight = room_height;
 

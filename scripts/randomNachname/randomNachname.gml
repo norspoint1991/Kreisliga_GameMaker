@@ -13,4 +13,4 @@ while(true)
 	else break;
 }
 
-return parseString(possibleStrings[|(irandom(ds_list_size(possibleStrings) - 1))]);
+return possibleStrings[|(irandom(ds_list_size(possibleStrings) - 1))];
