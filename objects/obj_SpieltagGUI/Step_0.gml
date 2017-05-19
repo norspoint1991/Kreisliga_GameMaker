@@ -2,7 +2,8 @@ if(simulationRunning)
 {
 	step++;
 	if (step%10 = 0)
-	{		
+	{	
+		zeilenCounter = 0;	
 		//if(zeit < 2)
 		//{
 		//	ds_list_add(eventList, TextSimulation_ini("Begruessung"));
@@ -26,8 +27,8 @@ if(simulationRunning)
 			switch  (thisEvent){
 		
 			case 0 : // PULLEVENT
-				zeit += 1;
 				thisEvent = pullEvent();
+				zeit += 1;
 				break;
 			case 1 : //Langer Pass auf Außen
 				thisEvent = AussenbahnPass();
@@ -99,11 +100,11 @@ if(simulationRunning)
 		}
 		
 		//Kamera Position anpassen, damit der Text scrollt
-		if (ds_list_size(eventList) > maxLines)
+		if (zeilenGesamt > maxLines)
 		{
 			camera_set_view_pos(view_camera[0], 
 								camera_get_view_x(view_camera[0]),
-								camera_get_view_y(view_camera[0]) + font_height);
+								camera_get_view_y(view_camera[0]) + (font_height*zeilenCounter));
 		}
 	}
 }

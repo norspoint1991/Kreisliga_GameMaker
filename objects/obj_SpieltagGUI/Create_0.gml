@@ -7,7 +7,9 @@ draw_set_font(fnt_default);
 font_height = string_height("Test");
 
 time_font_width = string_width(string_time(0));
-maxLines = floor((view_hport[0])/font_height); 
+event_font_width = boxwidth - time_font_width - 2*padding;
+maxLines = floor((view_hport[0])/font_height);
+zeilenGesamt = 0;
 
 headline = "Ereignisse";
 

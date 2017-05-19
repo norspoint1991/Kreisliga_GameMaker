@@ -1,5 +1,5 @@
-//draw_set_halign(fa_left);
-//draw_set_valign(fa_top);
+draw_set_halign(fa_left);
+draw_set_valign(fa_top);
 
 
 ////draw_set_color(c_gray);
@@ -19,27 +19,15 @@
 draw_set_font(fnt_default);
 font_height = string_height("Test");
 
-var k;
-var border;
-if (ds_list_size(eventList) <= maxLines)
-{
-	k = 0; 
-	border = ds_list_size(eventList);
-}
-else 
-{
-	//k = ds_list_size(eventList) - maxLines;
-	//border = maxLines;
-	k = 0; 
-	border = ds_list_size(eventList);
-}
+var k = 0;
 
-for(var i = 0; i < border; i++)
+for(var i = 0; i < ds_list_size(eventList); i++)
 {
 	draw_text(	x + padding,
-				y + padding + boxheight/20 + i * font_height,
-				zeitList[|(i + k)]);
-	draw_text(	x + time_font_width + 2*padding,
-				y + padding + boxheight/20 + i * font_height,	
-				eventList[|(i + k)]);
+				y + padding + boxheight/20 + (i+k) * font_height,
+				zeitList[|i]);
+	draw_text_ext(	x + time_font_width + 2*padding,
+				y + padding + boxheight/20 + (i+k) * font_height,	
+				eventList[|i], font_height, event_font_width);
+	k += floor(string_width(eventList[|i])/event_font_width);
 }
