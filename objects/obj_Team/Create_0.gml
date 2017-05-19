@@ -22,3 +22,4 @@ while(i < 18)
 	}
 }
 ini_close();
+event_user(0); //Auto Aufstellung
