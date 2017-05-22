@@ -7,15 +7,18 @@ var i = 0;
 var searchword = argument0;
 var possibleStrings = ds_list_create();
 
-while(true)
-{
-	if(ini_key_exists(searchword, "text" + string(i)))
+if (ini_section_exists(searchword)){
+	while(true)
 	{
-		//possibleStrings[i] = ini_read_string(searchword, "text" + string(i), "");
-		ds_list_add(possibleStrings, ini_read_string(searchword, "text" + string(i), ""));
-		i++;
+		if(ini_key_exists(searchword, "text" + string(i)))
+		{
+			//possibleStrings[i] = ini_read_string(searchword, "text" + string(i), "");
+			ds_list_add(possibleStrings, ini_read_string(searchword, "text" + string(i), ""));
+			i++;
+		}
+		else break;
 	}
-	else break;
 }
+else show_debug_message("Unbekannte Section in der INI-Datei: " + searchword);
 
 return parseString(possibleStrings[|(irandom(ds_list_size(possibleStrings) - 1))]);

@@ -1,17 +1,17 @@
 /// @description updateFavPosition
 
-TW = (torwart);
-LI = (stellungsspiel + antizipation + zweikampf)/3;
-MD = (stellungsspiel + geschwindigkeit + zweikampf)/3;
-IV = (stellungsspiel + antizipation + zweikampf + geschwindigkeit)/4;
-LV = (geschwindigkeit + zweikampf + pass)/3;
-RV = (geschwindigkeit + zweikampf + pass)/3;
-DM = (pass + zweikampf + ausdauer)/3;
-LM = (geschwindigkeit + flanken + pass)/3;
-RM = (geschwindigkeit + flanken + pass)/3;
-ZM = (pass + ausdauer + schuss)/3;
-OM = (pass + schuss + dribbling)/3;
-ST = (schuss + kopfball + dribbling)/3;
+var TW = (torwart);
+var LI = (stellungsspiel + antizipation + zweikampf)/3;
+var MD = (stellungsspiel + geschwindigkeit + zweikampf)/3;
+var IV = (stellungsspiel + antizipation + zweikampf + geschwindigkeit)/4;
+var LV = (geschwindigkeit + zweikampf + pass)/3;
+var RV = (geschwindigkeit + zweikampf + pass)/3;
+var DM = (pass + zweikampf + ausdauer)/3;
+var LM = (geschwindigkeit + flanken + pass)/3;
+var RM = (geschwindigkeit + flanken + pass)/3;
+var ZM = (pass + ausdauer + schuss)/3;
+var OM = (pass + schuss + dribbling)/3;
+var ST = (schuss + kopfball + dribbling)/3;
 		
 positionValues = ds_map_create();
 ds_map_add(positionValues, "TW", TW);

@@ -54,6 +54,13 @@ unparsed_string = string_replace_all ( unparsed_string, "&Verteidiger", get_play
 
 }
 
+// (Tor)Abstand ersetzen
+
+if string_pos("&Abstand", unparsed_string) != 0 {
+unparsed_string = string_replace_all ( unparsed_string, "&Abstand", string(abstand) );
+
+}
+
 
 return unparsed_string
 

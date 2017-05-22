@@ -46,3 +46,6 @@ Verteidiger = undefined;
 GegnerVorher = undefined;
 SpielerMitBallVorher = undefined;
 SpielerMitBall = undefined;
+//Qualitaeten
+flankenQualitaet = 0;
+passQualitaet = 0;

@@ -9,7 +9,7 @@ var nextEvent = 0;
 
 nextEvent = irandom_range(0, 10);
 if(nextEvent != 0){
-	var Schranke = 50; //TODO (int) (100 * (Heimteam.getTeamInitiative()/(Heimteam.getTeamInitiative() + Auswaertsteam.getTeamInitiative())));
+	var Schranke = 100 * ratioX(Heimteam.teamInitiative, Auswaertsteam.teamInitiative)
 	var roll = ranRoll();
 	if (roll < Schranke) {
 		Angriff = Heimteam;
