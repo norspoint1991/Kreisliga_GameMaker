@@ -1,3 +1,4 @@
+
 if(simulationRunning)
 {
 	step++;
@@ -24,7 +25,6 @@ if(simulationRunning)
 		}
 	}
 }
-
 
 ////Alle returns für die Events sind int
 ////Alle nicht-Event returns sind double, damit man Events verschieben kann

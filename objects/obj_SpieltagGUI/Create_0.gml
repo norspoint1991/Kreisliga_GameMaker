@@ -19,15 +19,14 @@ headline = "Ereignisse";
 EventText = ds_list_create();
 ZeitList = ds_list_create();
 
-Heimteam = instance_create_depth(0, 0, 0, obj_Team);
-Heimteam.teamName = "SC Hille";
+Heimteam = new_Team("Sc Hille", 0, 19);
 
-Auswaertsteam = instance_create_depth(0, 0, 0, obj_Team);
-Auswaertsteam.teamName = "Die super Bayern";
+Auswaertsteam = new_Team(0, 0, 19);
+
 
 //ini file mit allen Texten für die Simulation
-ini_open("TextSimulation_ger.ini");
 
+ini_open("Textsimulation_ger.ini");
 ThisEvent = 0;
 Angreifer = undefined;
 Verteidiger = undefined;

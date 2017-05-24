@@ -2,8 +2,20 @@
 // nimmt einen String als Input und guckt, ob dieser eine Variable, die durch 
 // &Variablenname im String gekennzeichenet wurde enthält und fügt die Variable an dieser Stelle ein
 // Variablen, die ersetzt werden.
-
+//NEU: Das zweite Argument sollte gesetzt werden, damit nicht alle Teile durchlaufen werden müssen
+// sondern nur die, die für den Parser relevant sind, (also je nach File, das gelesen wurde
+// das ist codiert : 1 = Textsimulation; default = 0, dann wird alles durchsucht mehr gibt es
+// noch nicht, weil nur in TextSimulation viel geparst wird. Vielleicht auch überflüssig..
 var unparsed_string = argument0;
+var whereToLook ;
+if (argument_count == 1) {
+	whereToLook = 0;
+	}
+else 
+	whereToLook = argument[1];
+
+// TextSimulation durchsuchen
+if (whereToLook == 1 || whereToLook == 0) {
 
 // Heimteam ersetzen
 
@@ -39,6 +51,8 @@ if string_pos("&Verteidiger", unparsed_string) != 0 {
 unparsed_string = string_replace_all ( unparsed_string, "&Verteidiger", get_player_info(Verteidiger) );
 
 }
+}
+
 
 
 return unparsed_string

@@ -39,6 +39,14 @@
             }
         },
         {
+            "Key": "0495b382-c066-4f4f-8bdd-6ce0ba9a7372",
+            "Value": {
+                "id": "77488e50-4c37-43e0-8669-7b3bd2329bb9",
+                "resourcePath": "rooms\\rm_NewGame\\rm_NewGame.yy",
+                "resourceType": "GMRoom"
+            }
+        },
+        {
             "Key": "0ac4ec02-3820-41a8-8635-acb4e31d8c9f",
             "Value": {
                 "id": "d594acb1-686e-40df-81ec-d372a9de4da4",
@@ -151,6 +159,14 @@
             }
         },
         {
+            "Key": "44b29f26-2fd2-4c5f-a6da-5f717ea2e6d7",
+            "Value": {
+                "id": "8a7cf881-335b-46c3-a528-195bde62aa72",
+                "resourcePath": "scripts\\new_Team\\new_Team.yy",
+                "resourceType": "GMScript"
+            }
+        },
+        {
             "Key": "48172b0d-172b-4897-be38-370749d015b2",
             "Value": {
                 "id": "e1322edf-3542-465d-8811-f629fe24e838",
@@ -172,6 +188,14 @@
                 "id": "9c7fa3c7-2c25-4fd3-9503-71250ce1c0b2",
                 "resourcePath": "datafiles_yy\\NameFile_ger.ini.yy",
                 "resourceType": "GMIncludedFile"
+            }
+        },
+        {
+            "Key": "52172b74-af62-4415-a439-814456c09305",
+            "Value": {
+                "id": "56d23db4-6e89-48aa-b97f-7fc4d2fb5b72",
+                "resourcePath": "objects\\obj_Liga\\obj_Liga.yy",
+                "resourceType": "GMObject"
             }
         },
         {
@@ -212,6 +236,14 @@
                 "id": "700d728c-9253-46a5-959c-24a907d53b78",
                 "resourcePath": "views\\66a6830c-f46a-4c6b-808f-f046ad081c2b.yy",
                 "resourceType": "GMFolder"
+            }
+        },
+        {
+            "Key": "689d9458-43d6-418c-8d04-a589386c3051",
+            "Value": {
+                "id": "b5624ab7-9641-463b-a905-e4f3dcd32cdf",
+                "resourcePath": "datafiles_yy\\TeamNameFile_ger.ini.yy",
+                "resourceType": "GMIncludedFile"
             }
         },
         {
@@ -263,6 +295,14 @@
             }
         },
         {
+            "Key": "8148c222-bd0c-441d-b52e-b1a33f8f3bd3",
+            "Value": {
+                "id": "00b857ae-e0d2-4c1d-9911-f3ad0280e797",
+                "resourcePath": "scripts\\saveLeague\\saveLeague.yy",
+                "resourceType": "GMScript"
+            }
+        },
+        {
             "Key": "82e728ed-848d-4f7b-8f9c-23ec8931980b",
             "Value": {
                 "id": "24d20f96-635e-4cec-9806-06d605bb7256",
@@ -303,6 +343,22 @@
             }
         },
         {
+            "Key": "9110b5b0-49b6-4fcd-abe0-14f89d3f0eeb",
+            "Value": {
+                "id": "53e1fd93-4299-405a-b195-4a1167fcc5db",
+                "resourcePath": "scripts\\mapToLiga\\mapToLiga.yy",
+                "resourceType": "GMScript"
+            }
+        },
+        {
+            "Key": "935b0e39-1a1f-44b4-bf27-41b551eb3c67",
+            "Value": {
+                "id": "8006168a-673d-4737-b26c-8860d8d7dbc5",
+                "resourcePath": "scripts\\mapToTeam\\mapToTeam.yy",
+                "resourceType": "GMScript"
+            }
+        },
+        {
             "Key": "96997ef7-4d47-40ef-999a-308d71306da6",
             "Value": {
                 "id": "537f4c02-5bf5-4c76-a9a3-de6b600d5e65",
@@ -324,6 +380,14 @@
                 "id": "a271444b-9825-43b2-9b2b-ce42cfa0a9c1",
                 "resourcePath": "options\\linux\\options_linux.yy",
                 "resourceType": "GMLinuxOptions"
+            }
+        },
+        {
+            "Key": "ab612136-4064-40ca-978d-605279e95aa8",
+            "Value": {
+                "id": "099fa713-4798-43d3-8e0f-0564f0d1519c",
+                "resourcePath": "scripts\\randomTeamName\\randomTeamName.yy",
+                "resourceType": "GMScript"
             }
         },
         {
@@ -415,6 +479,14 @@
             }
         },
         {
+            "Key": "dcd5704a-f0c0-4d15-af26-f2b079d371a5",
+            "Value": {
+                "id": "9c52bf6d-d496-49e1-aa67-e60fc44cce69",
+                "resourcePath": "scripts\\new_Liga\\new_Liga.yy",
+                "resourceType": "GMScript"
+            }
+        },
+        {
             "Key": "df1d39dc-ecb7-4b89-a7ab-fd9139048fd3",
             "Value": {
                 "id": "5d99c9f7-4f2f-49e3-a5a4-38a73185827a",
@@ -431,11 +503,27 @@
             }
         },
         {
+            "Key": "e5f6e903-b979-454c-966a-b070605654f3",
+            "Value": {
+                "id": "475042c3-2885-40f9-a6d0-c1662f670d7b",
+                "resourcePath": "views\\e5f6e903-b979-454c-966a-b070605654f3.yy",
+                "resourceType": "GMFolder"
+            }
+        },
+        {
             "Key": "e6ce75b7-eccc-47fe-817e-cd4a5bd7b980",
             "Value": {
                 "id": "7a0d8066-aed8-43ec-883c-c8ea01849246",
                 "resourcePath": "rooms\\MainMenu\\MainMenu.yy",
                 "resourceType": "GMRoom"
+            }
+        },
+        {
+            "Key": "ef1cfbc2-ea63-4d29-a789-640aa762d4e9",
+            "Value": {
+                "id": "1527ea0d-fc13-4137-9d8f-3f32157580cb",
+                "resourcePath": "views\\ef1cfbc2-ea63-4d29-a789-640aa762d4e9.yy",
+                "resourceType": "GMFolder"
             }
         },
         {
@@ -488,10 +576,7 @@
         }
     ],
     "script_order": [
-        "ef47c634-ad31-423a-b9c5-a7e7f43a7ebe",
         "3db7eed7-213d-4685-b9ca-d9abb0bb4236",
-        "ab82a77e-d51b-48c6-b439-58f4901056ae",
-        "354bfebd-3412-438a-b1e9-43a7ae7e4092",
         "3c93ab9b-3648-4fc1-bb8b-0e3a1dab1dca",
         "532f3440-0e48-4cd5-b698-deb9b42361f5",
         "1e877dce-2112-4fd7-b535-6c63a162414c",
@@ -508,7 +593,16 @@
         "707cdfa6-7a18-42e6-a847-a22233452e6c",
         "b19c48c6-12f3-4730-a073-43d91e095522",
         "60032121-5625-4b9a-8596-7d076575cd2d",
-        "bff61690-4520-42ae-aebe-c3fdb3d87acc"
+        "bff61690-4520-42ae-aebe-c3fdb3d87acc",
+        "ab612136-4064-40ca-978d-605279e95aa8",
+        "44b29f26-2fd2-4c5f-a6da-5f717ea2e6d7",
+        "354bfebd-3412-438a-b1e9-43a7ae7e4092",
+        "ab82a77e-d51b-48c6-b439-58f4901056ae",
+        "8148c222-bd0c-441d-b52e-b1a33f8f3bd3",
+        "ef47c634-ad31-423a-b9c5-a7e7f43a7ebe",
+        "935b0e39-1a1f-44b4-bf27-41b551eb3c67",
+        "9110b5b0-49b6-4fcd-abe0-14f89d3f0eeb",
+        "dcd5704a-f0c0-4d15-af26-f2b079d371a5"
     ],
     "tutorial": ""
 }
