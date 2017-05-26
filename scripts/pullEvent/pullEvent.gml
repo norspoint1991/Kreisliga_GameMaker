@@ -1,29 +1,35 @@
-////Zuweisungen und Busy wieder auf null
-//cancelBusy();
+//Zuweisungen und Busy wieder auf null
+
+cancelBusy();
 		
-//if (time == 0) {
-//	p.println(text.Minute(time) + text.Eroeffnung(Heimteam.getTeamName(), Auswaertsteam.getTeamName()));
-//}
-//var nextEvent = 0;
-//if(time <= endtime){
-//	nextEvent = r.randomIntegerbetween(0, 10);
-//	if(nextEvent != 0){
-//		var Schranke = (int) (100 * (Heimteam.getTeamInitiative()/(Heimteam.getTeamInitiative() + Auswaertsteam.getTeamInitiative())));
-//		var roll = r.randomInteger();
-//		if (roll < Schranke) {
-//			Angriff = Heimteam;
-//			Verteidigung= Auswaertsteam;
-//		}
-//		else {
-//			Angriff = Auswaertsteam;
-//			Verteidigung= Heimteam;
-//		}
-//		p.println(text.Minute(time) + text.imBallbesitzt(Angriff.getTeamName()));
-//		nextEvent = 1;
-//	}
-//	else{
-//		p.println(text.Minute(time) + text.KeinEvent());
-//		nextEvent = 0;
-//	}
-//}
-//return nextEvent;
+if (zeit == 0) {
+	addText("Begruessung");
+}
+if (zeit == 45){
+	addText("zweiteHalbzeit");
+}
+var nextEvent = 0;
+
+nextEvent = irandom_range(0, 10);
+if(nextEvent != 0){
+	with(Auswaertsteam) event_user(1); //Initiative Werte neu bestimmen
+	with(Heimteam) event_user(1);
+	var Schranke = ratioX(Heimteam.teamInitiative, Auswaertsteam.teamInitiative)
+	var roll = ranRoll();
+	if (roll < Schranke) {
+		Angriff = Heimteam;
+		Verteidigung = Auswaertsteam;
+	}
+	else {
+		Angriff = Auswaertsteam;
+		Verteidigung= Heimteam;
+	}
+	addText("imBallbesitz");
+	nextEvent = 1; //TODO löschen sobald alle StartEvents beschrieben sind
+}
+else{
+	addText("keinEvent");
+	nextEvent = 0;
+
+}
+return nextEvent;

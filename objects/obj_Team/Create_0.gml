@@ -23,3 +23,5 @@ while(i < 18)
 }
 ini_close();
 event_user(0); //Auto Aufstellung
+event_user(1); //Team Initiative
+event_user(2); //Abpraller
