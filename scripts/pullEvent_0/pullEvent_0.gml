@@ -1,5 +1,4 @@
 //Zuweisungen und Busy wieder auf null
-
 cancelBusy();
 		
 if (zeit == 0) {

@@ -1,8 +1,8 @@
 {
-    "id": "f4b44d4f-c3e2-40d7-8677-b5f02d267695",
+    "id": "77f14d29-3b23-44dc-9844-43f6de065c42",
     "modelName": "GMScript",
     "mvc": "1.0",
-    "name": "Kopfballduell",
+    "name": "zentralAmSechzehner_21",
     "IsCompatibility": false,
     "IsDnD": false
 }

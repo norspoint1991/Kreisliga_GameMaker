@@ -98,7 +98,7 @@
             "Key": "14e94688-4987-47eb-8a5a-19c577797b49",
             "Value": {
                 "id": "f7196d72-4cc8-40d5-87cc-41e127b575db",
-                "resourcePath": "scripts\\NachInnenZiehen\\NachInnenZiehen.yy",
+                "resourcePath": "scripts\\NachInnenZiehen_13\\NachInnenZiehen_13.yy",
                 "resourceType": "GMScript"
             }
         },
@@ -186,7 +186,7 @@
             "Key": "3db7eed7-213d-4685-b9ca-d9abb0bb4236",
             "Value": {
                 "id": "c70fcf3f-b391-48ec-a638-6997c23e1b25",
-                "resourcePath": "scripts\\pullEvent\\pullEvent.yy",
+                "resourcePath": "scripts\\pullEvent_0\\pullEvent_0.yy",
                 "resourceType": "GMScript"
             }
         },
@@ -282,7 +282,7 @@
             "Key": "77f14d29-3b23-44dc-9844-43f6de065c42",
             "Value": {
                 "id": "ac628965-4d8c-42ba-a87f-717fc19c099b",
-                "resourcePath": "scripts\\zentralAmSechzehner\\zentralAmSechzehner.yy",
+                "resourcePath": "scripts\\zentralAmSechzehner_21\\zentralAmSechzehner_21.yy",
                 "resourceType": "GMScript"
             }
         },
@@ -394,7 +394,7 @@
             "Key": "91202556-732c-4760-99d7-fc80a096d109",
             "Value": {
                 "id": "867318e9-4c0b-4808-a8aa-9605d49e065d",
-                "resourcePath": "scripts\\SpielerAufAussen\\SpielerAufAussen.yy",
+                "resourcePath": "scripts\\SpielerAufAussen_11\\SpielerAufAussen_11.yy",
                 "resourceType": "GMScript"
             }
         },
@@ -426,7 +426,7 @@
             "Key": "a2cdd0f2-aaad-482d-8684-bed16cbdf0ba",
             "Value": {
                 "id": "1e66f0a1-6365-4e8c-b650-a9bbec3f0db7",
-                "resourcePath": "scripts\\Ecke\\Ecke.yy",
+                "resourcePath": "scripts\\Ecke_30\\Ecke_30.yy",
                 "resourceType": "GMScript"
             }
         },
@@ -474,7 +474,7 @@
             "Key": "ad2eb888-d973-4cc6-af38-7d8483d34ce4",
             "Value": {
                 "id": "b3e8ea20-bd39-47b7-b7a6-288aff5fb139",
-                "resourcePath": "scripts\\Abpraller\\Abpraller.yy",
+                "resourcePath": "scripts\\Abpraller_12\\Abpraller_12.yy",
                 "resourceType": "GMScript"
             }
         },
@@ -522,7 +522,7 @@
             "Key": "b8079124-07e9-4062-aaf1-e927e611e669",
             "Value": {
                 "id": "827b9694-f971-4e50-9342-e41edb9fbcaa",
-                "resourcePath": "scripts\\Flanken\\Flanken.yy",
+                "resourcePath": "scripts\\Flanken_14\\Flanken_14.yy",
                 "resourceType": "GMScript"
             }
         },
@@ -546,7 +546,7 @@
             "Key": "c059bacf-483e-4cc3-b070-4e529b8b2a9f",
             "Value": {
                 "id": "3bb1f54e-2554-4cc0-b223-560ca7525095",
-                "resourcePath": "scripts\\Querlegen\\Querlegen.yy",
+                "resourcePath": "scripts\\Querlegen_17\\Querlegen_17.yy",
                 "resourceType": "GMScript"
             }
         },
@@ -570,7 +570,7 @@
             "Key": "c9a34927-eaf2-43e0-b9a5-a6d8f4f5a161",
             "Value": {
                 "id": "b6233dd4-05f6-43c2-8137-ebbe709839f5",
-                "resourcePath": "scripts\\LaufduellaufAussen\\LaufduellaufAussen.yy",
+                "resourcePath": "scripts\\LaufduellaufAussen_15\\LaufduellaufAussen_15.yy",
                 "resourceType": "GMScript"
             }
         },
@@ -642,7 +642,7 @@
             "Key": "f0e31d77-5b6c-47f4-84fc-845890445c22",
             "Value": {
                 "id": "0f5da76b-3962-4a46-8d1f-cd5c29d7294d",
-                "resourcePath": "scripts\\Tor\\Tor.yy",
+                "resourcePath": "scripts\\Tor_100\\Tor_100.yy",
                 "resourceType": "GMScript"
             }
         },
@@ -666,7 +666,7 @@
             "Key": "f4b44d4f-c3e2-40d7-8677-b5f02d267695",
             "Value": {
                 "id": "34cc5afd-27b4-4bf9-bb24-d22556a8d8cf",
-                "resourcePath": "scripts\\Kopfballduell\\Kopfballduell.yy",
+                "resourcePath": "scripts\\Kopfballduell_19\\Kopfballduell_19.yy",
                 "resourceType": "GMScript"
             }
         },
@@ -698,7 +698,7 @@
             "Key": "f89f6296-b7ec-4aaa-9ff9-8d60b08544af",
             "Value": {
                 "id": "cd1f4392-a53b-4ad9-b732-3288e0570ad1",
-                "resourcePath": "scripts\\torwartHaelt\\torwartHaelt.yy",
+                "resourcePath": "scripts\\torwartHaelt_99\\torwartHaelt_99.yy",
                 "resourceType": "GMScript"
             }
         },
@@ -706,7 +706,7 @@
             "Key": "fe2d6463-dc0e-439b-90f1-105cf747febd",
             "Value": {
                 "id": "5a8c42cc-9e04-4417-a990-f7eec7f06f73",
-                "resourcePath": "scripts\\Kopfball\\Kopfball.yy",
+                "resourcePath": "scripts\\Kopfball_18\\Kopfball_18.yy",
                 "resourceType": "GMScript"
             }
         },
@@ -749,8 +749,8 @@
         "772a4ff8-120e-4f81-a627-e318d71ec9eb",
         "866d182a-10fe-422e-aa45-aec01e28eaf4",
         "c2c6ed9a-1683-4c0e-96bc-b0b0d506c4c5",
-        "3db7eed7-213d-4685-b9ca-d9abb0bb4236",
         "d3785223-9c73-4bd4-9138-9c02edd482d8",
+        "3db7eed7-213d-4685-b9ca-d9abb0bb4236",
         "332ef909-98e2-4b56-b208-0347e8d1a643",
         "91202556-732c-4760-99d7-fc80a096d109",
         "ad2eb888-d973-4cc6-af38-7d8483d34ce4",
@@ -759,8 +759,8 @@
         "c9a34927-eaf2-43e0-b9a5-a6d8f4f5a161",
         "f4f66d81-2e81-40f9-b296-90bd01f6d2b4",
         "c059bacf-483e-4cc3-b070-4e529b8b2a9f",
-        "f4b44d4f-c3e2-40d7-8677-b5f02d267695",
         "fe2d6463-dc0e-439b-90f1-105cf747febd",
+        "f4b44d4f-c3e2-40d7-8677-b5f02d267695",
         "a2cdd0f2-aaad-482d-8684-bed16cbdf0ba",
         "77f14d29-3b23-44dc-9844-43f6de065c42",
         "277b9fe1-e88f-4e40-a005-cc923294b626",

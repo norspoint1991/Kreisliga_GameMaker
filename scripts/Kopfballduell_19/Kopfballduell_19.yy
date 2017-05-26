@@ -1,8 +1,8 @@
 {
-    "id": "fe2d6463-dc0e-439b-90f1-105cf747febd",
+    "id": "f4b44d4f-c3e2-40d7-8677-b5f02d267695",
     "modelName": "GMScript",
     "mvc": "1.0",
-    "name": "Kopfball",
+    "name": "Kopfballduell_19",
     "IsCompatibility": false,
     "IsDnD": false
 }

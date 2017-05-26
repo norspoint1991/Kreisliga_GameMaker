@@ -12,5 +12,5 @@ if ( roll <= argument0) {
 	}
 }
 else {
-	return torwartHaelt();
+	return 99;
 }

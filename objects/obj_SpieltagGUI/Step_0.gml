@@ -1,7 +1,7 @@
 if(simulationRunning)
 {
 	step++;
-	if (step%30 = 0)
+	if (step%simulationSpeed = 0)
 	{	
 		zeilenCounter = 0;
 
@@ -13,7 +13,7 @@ if(simulationRunning)
 			switch  (thisEvent){
 		
 			case 0 : // PULLEVENT
-				thisEvent = pullEvent();
+				thisEvent = pullEvent_0();
 				zeit += 1;
 				break;
 			case 1 : //Langer Pass auf Außen
@@ -32,37 +32,35 @@ if(simulationRunning)
 			//case 7: //Ball halten
 			
 			case 11 : // Spieler mit Ball auf außen
-				thisEvent = SpielerAufAussen();
+				thisEvent = SpielerAufAussen_11();
 				break;
 			case 12: //Abpraller
-				thisEvent = Abpraller();
+				thisEvent = Abpraller_12();
 				break;
 			case 13: //Spieler zieht nach innen
-				thisEvent = NachInnenZiehen();
+				thisEvent = NachInnenZiehen_13();
 				break;
 			case 14: //Spieler flankt
-				thisEvent = Flanken();
+				thisEvent = Flanken_14();
 				break;
 			case 15: //Laufduell auf Außen
-				thisEvent = LaufduellaufAussen();
+				thisEvent = LaufduellaufAussen_15();
 				break;
 			case 16: //Fernschuss Sechzehner außen
 				thisEvent = Schuss(20);
 				break;
 			case 17: //Quer legen
-				thisEvent = Querlegen();
+				thisEvent = Querlegen_17();
 				break;
 			case 18: //Kopfball aufs Tor
-				thisEvent = Kopfball();
+				thisEvent = Kopfball_18();
 				break;
 			case 19: //Kopfballduell
-				thisEvent = Kopfballduell();
+				thisEvent = Kopfballduell_19();
 				break;
-			case 20: //Ecke
-				thisEvent = Ecke();
-				break;
+			//case 20:
 			case 21: //Spieler mit Ball zentral am Sechzehner
-				thisEvent = zentralAmSechzehner();
+				thisEvent = zentralAmSechzehner_21();
 				break;
 			case 22: //Fernschuss Sechzehner zentral
 				thisEvent = Schuss(16);
@@ -70,12 +68,21 @@ if(simulationRunning)
 				
 			//case 25: //Ball von außen in den Strafraum; Kopfball, Ball rutscht durch zusammenfassen
 			//			//für Ecke und Flanke
-				
+			
+			case 30: //Ecke
+				thisEvent = Ecke_30();
+				break;
+			//case 31: //Freistoss, direkt
+			//case 32: //Freistoss, Flanke
+			//case 33: //Elfmeter
 			//case 70: //Abseits, ab hier aufsteigend die "Schiri Events"
 			//case 80: //Konter - Event, dass den Angriff umkehrt
 			//case 90: //Verzweifelungsschuss - Event bei kleiner Moral
+			case 99: //Torwart haelt
+				thisEvent = torwartHaelt_99();
+				break;
 			case 100: // TOOOOR
-				thisEvent = Tor();
+				thisEvent = Tor_100();
 				break;
 				
 			default: 

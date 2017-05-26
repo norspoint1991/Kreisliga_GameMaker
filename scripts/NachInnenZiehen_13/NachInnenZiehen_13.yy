@@ -1,8 +1,8 @@
 {
-    "id": "b8079124-07e9-4062-aaf1-e927e611e669",
+    "id": "14e94688-4987-47eb-8a5a-19c577797b49",
     "modelName": "GMScript",
     "mvc": "1.0",
-    "name": "Flanken",
+    "name": "NachInnenZiehen_13",
     "IsCompatibility": false,
     "IsDnD": false
 }
