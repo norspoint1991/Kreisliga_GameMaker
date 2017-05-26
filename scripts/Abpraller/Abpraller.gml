@@ -1,4 +1,6 @@
-var Schranke = 100 * ratioX(Angriff.abprallerOFF, Verteidigung.abprallerDEF);
+with(Auswaertsteam) event_user(2); //Abpraller Werte neu bestimmen
+with(Heimteam) event_user(2);
+var Schranke = ratioX(Angriff.abprallerOFF, Verteidigung.abprallerDEF);
 var roll = ranRoll();
 if (roll <= Schranke){
 	if (SpielerMitBallVorher != undefined){

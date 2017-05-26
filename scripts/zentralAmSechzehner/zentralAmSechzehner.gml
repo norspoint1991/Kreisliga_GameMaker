@@ -1,28 +1,28 @@
-Spieler verteidiger = getPlayerFrom(Verteidigung, "VER");
-		var Schranke = v.RatioX(SpielerMitBall.getStellungsspiel(), verteidiger.getStellungsspiel());
-		var roll = ranRoll();
+Verteidiger = getPlayerFrom(Verteidigung, "VER");
+var Schranke = ratioX(SpielerMitBall.stellungsspiel, Verteidiger.stellungsspiel);
+var roll = ranRoll();
+if (roll <= Schranke){
+	addText("StehtAlleine");
+	Schranke = ratioX(SpielerMitBall.antizipation, SpielerMitBall.selbstbewusstsein);
+	roll = ranRoll();
+	if (roll <= Schranke){
+		return 23; //Ball durchstecken
+	}
+	else{
+		return 22; //Schuss vom Sechzehner zentral
+	}
+}
+else{
+	addText("WirdGestellt");
+	if(Dribbling(SpielerMitBall, Verteidiger)){
+		Schranke = ratioX(SpielerMitBall.antizipation, SpielerMitBall.selbstbewusstsein);
+		roll = ranRoll();
 		if (roll <= Schranke){
-			p.println("Er steht komplett alleine. ");
-			Schranke = v.RatioX(SpielerMitBall.getAntizipation(), SpielerMitBall.getSelbstbewusstsein());
-			roll = r.randomInteger();
-			if (roll <= Schranke){
-				return 23; //Ball durchstecken
-			}
-			else{
-				return 22; //Schuss vom Sechzehner zentral
-			}
+			return 23; //Ball durchstecken
 		}
 		else{
-			p.println(verteidiger.getNamePosition() + " stellt ihn. ");
-			if(Dribbling(SpielerMitBall, verteidiger)){
-				Schranke = v.RatioX(SpielerMitBall.getAntizipation(), SpielerMitBall.getSelbstbewusstsein());
-				roll = r.randomInteger();
-				if (roll <= Schranke){
-					return 23; //Ball durchstecken
-				}
-				else{
-					return 22; //Schuss vom Sechzehner zentral
-				}
-			}
-			else return 0;
+			return 22; //Schuss vom Sechzehner zentral
+		}
+	}
+	else return 0;
 }

@@ -1,8 +1,8 @@
-p.println("Was für eine Bude für " + Angriff.getTeamName());
-		if (Angriff == Heimteam){
-			HeimteamTore += 1;
-		}
-		else{
-			AuswaertsteamTore += 1;
-		}
+addText("TorNachbearbeitung");
+if (Angriff == Heimteam){
+heimteamTore += 1;
+}
+else{
+auswaertsteamTore += 1;
+}
 return 0;

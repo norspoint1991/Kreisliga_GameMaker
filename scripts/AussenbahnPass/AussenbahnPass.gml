@@ -1,7 +1,7 @@
 SpielerMitBall =  getPlayerExcept(Angriff, "ST", "TW");
 SpielerMitBall.busy = true;
 addText("Aussenbahnpass");
-Passqualitaet = ranRoll(); //TODO script schreiben: PassQualitaet(SpielerMitBall); 
+passQualitaet = Passqualitaet(SpielerMitBall); 
 
 if (Passqualitaet > 10.0) {
 	if (SpielerMitBallVorher != undefined){

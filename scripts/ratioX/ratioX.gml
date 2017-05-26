@@ -1,3 +1,3 @@
 ///ratioX(x, y)
 
-return (argument0/(argument0+argument1));
+return 100 * (argument0/(argument0+argument1));

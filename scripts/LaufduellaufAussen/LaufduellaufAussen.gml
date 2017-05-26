@@ -11,10 +11,9 @@ var roll = ranRoll();
 if (roll <= Schranke) {
 	addText("LaufduellPositiv");
 	if (GegnerVorher != null){
-		GegnerVorher.setBusy(false);
+		GegnerVorher.busy = false;
 	}
-	GegnerVorher = PassGegner;
-	SpielerMitBall = PassEmpfaenger;
+	GegnerVorher = Verteidiger;
 	return 11; //AufAussen
 }
 else {

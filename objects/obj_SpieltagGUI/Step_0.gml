@@ -1,29 +1,15 @@
 if(simulationRunning)
 {
 	step++;
-	if (step%10 = 0)
+	if (step%2 = 0)
 	{	
-		zeilenCounter = 0;	
-		//if(zeit < 2)
-		//{
-		//	ds_list_add(eventList, TextSimulation_ini("Begruessung"));
-		//}
-		//else if(zeit < 10) 
-		//{
-		//	Angreifer = getPlayerExcept(Heimteam, "TW", "LM");
-		//	ds_list_add(eventList, TextSimulation_ini("Aussenbahnpass"));
-		//}
-		//else ds_list_add(eventList,TextSimulation_ini("guterPass"));
+		zeilenCounter = 0;
 
 		//Alle returns für die Events sind int
 		//Alle nicht-Event returns sind double, damit man Events verschieben kann
 		//(einfach alle returns entsprechend ändern)
 		if (zeit <= spielzeit) 
 		{
-
-			if (zeit == 45 && thisEvent == 0){
-				addText("zweiteHalbzeit");
-			}
 			switch  (thisEvent){
 		
 			case 0 : // PULLEVENT
@@ -44,8 +30,7 @@ if(simulationRunning)
 			//case 6: //Balleroberung durch Pressing
 				
 			//case 7: //Ball halten
-
-				
+			
 			case 11 : // Spieler mit Ball auf außen
 				thisEvent = SpielerAufAussen();
 				break;
@@ -98,6 +83,7 @@ if(simulationRunning)
 				break;
 			}	
 		}
+		else simulationRunning = false;
 		
 		//Kamera Position anpassen, damit der Text scrollt
 		if (zeilenGesamt > maxLines)

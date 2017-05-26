@@ -7,14 +7,14 @@ if (roll <= Schranke){
 	addText("SchussRichtungTor");
 	if (!Block()){
 		Verteidiger = getPlayerFrom(Verteidigung, "TW");
-		Schranke = v.RatioX(SpielerMitBall.schuss - (abstand - 10), Verteidiger.torwart);
-		return BallAufsTor(Schranke);
+		var Schranke = ratioX(SpielerMitBall.schuss - (abstand - 10), Verteidiger.torwart);
+		return BallaufsTor(Schranke);
 	}
 	else{
 		return 0;
 	}
 }
 else{
-	p.println(text.BallDaneben());
+	addText("BallDaneben");
 	return 0;
 } 

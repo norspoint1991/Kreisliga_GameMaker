@@ -1,11 +1,11 @@
-Spieler block = getPlayerFrom(Verteidigung, "IV", "LI", "MD", "DM");
-		var Schranke = 50 + SpielerMitBall.getSchuss() - block.getStellungsspiel();
-		var roll = ranRoll();
-		if (roll <= Schranke){
-			p.println("Durch alle hindurch. ");
-			return false;
-		}
-		else{
-			p.println("Und wird geblockt. ");
-			return true;
+Verteidiger = getPlayerFrom(Verteidigung, "IV", "LI", "MD", "DM");
+var Schranke = ratioX(SpielerMitBall.schuss, Verteidiger.stellungsspiel);
+var roll = ranRoll();
+if (roll <= Schranke){
+	addText("WirdNichtGeblockt");
+	return false;
+}
+else{
+	addText("WirdGeblockt");
+	return true;
 }

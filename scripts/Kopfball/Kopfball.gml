@@ -1,13 +1,13 @@
-var Schranke = SpielerMitBall.getKopfball();
-		var roll = ranRoll();
+var Schranke = SpielerMitBall.kopfball;
+var roll = ranRoll();
 
-		if ( roll <= Schranke) {			
-			p.println("Der kommt gut ");
-			Spieler torwart = getPlayerFrom(Verteidigung, "TW");
-			Schranke = v.RatioX(SpielerMitBall.getKopfball(), torwart.getTorwart());
-			return BallAufsTor(Schranke);
-		}
-		else {
-			p.println("Meilenweit daneben. ");
-			return 0;
+if ( roll <= Schranke) {			
+	addText("BallKommtGut");
+	Verteidiger = getPlayerFrom(Verteidigung, "TW");
+	Schranke = ratioX(SpielerMitBall.kopfball, verteidiger.torwart);
+	return BallaufsTor(Schranke);
+}
+else {
+	addText("BallDaneben");
+	return 0;
 }
