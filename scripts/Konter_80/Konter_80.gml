@@ -6,11 +6,11 @@ else{
 	Angriff = Heimteam;
 	Verteidigung = Auswaertsteam;
 }
-if (SpielerMitBallVorher != undefined){
-	SpielerMitBallVorher.busy = false;
+if (GegnerVorher != undefined){
+	GegnerVorher.busy = false;
 }
-SpielerMitBallVorher = SpielerMitBall;
-SpielerMitBallVorher.busy = true;
+GegnerVorher = SpielerMitBall;
+GegnerVorher.busy = true;
 SpielerMitBall = Verteidiger;
 
 var schranke = 70 //TODO Konterstärke + Taktik einfügen

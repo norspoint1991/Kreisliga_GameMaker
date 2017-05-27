@@ -399,6 +399,14 @@
             }
         },
         {
+            "Key": "8696a0f3-f30d-4eea-a686-0da658774688",
+            "Value": {
+                "id": "e8f503bf-1ee7-45dc-b0d7-85447709a6d9",
+                "resourcePath": "scripts\\KonterAussen_81\\KonterAussen_81.yy",
+                "resourceType": "GMScript"
+            }
+        },
+        {
             "Key": "8abf57f0-cf52-422f-b07b-c54cf41423f4",
             "Value": {
                 "id": "4ee80098-c132-48a9-b052-46eadf729bbb",
@@ -818,6 +826,7 @@
         "b1b783a1-a8e4-452d-9fab-a4a836157516",
         "19a8e1b2-6576-4b0e-9b53-5b6090bb0a04",
         "71fd22ae-993e-4b37-a6e1-e8da59b8657e",
+        "8696a0f3-f30d-4eea-a686-0da658774688",
         "f89f6296-b7ec-4aaa-9ff9-8d60b08544af",
         "f0e31d77-5b6c-47f4-84fc-845890445c22"
     ],
