@@ -1,6 +1,6 @@
-var Schranke = 20 + SpielerMitBall.pass;
+var schranke = 20 + SpielerMitBall.pass;
 var roll = ranRoll();
-if (roll <= Schranke){
+if (roll <= schranke){
 	if (SpielerMitBallVorher != undefined){
 		SpielerMitBallVorher.busy = false;
 	}

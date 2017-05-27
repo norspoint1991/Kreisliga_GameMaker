@@ -33,6 +33,13 @@ unparsed_string = string_replace_all ( unparsed_string, "&Verteidgung", Verteidi
 
 }
 
+// Spieler mit Ball (vorher) ersetzen
+
+if string_pos("&SpielerMitBallVorher", unparsed_string) != 0 {
+unparsed_string = string_replace_all ( unparsed_string, "&SpielerMitBallVorher", get_player_info(SpielerMitBallVorher) );
+
+}
+
 // Spieler mit Ball ersetzen
 
 if string_pos("&SpielerMitBall", unparsed_string) != 0 {
@@ -61,6 +68,12 @@ unparsed_string = string_replace_all ( unparsed_string, "&Abstand", string(absta
 
 }
 
+// Seite ersetzen ("links" oder "rechts")
+
+if string_pos("&Seite", unparsed_string) != 0 {
+unparsed_string = string_replace_all ( unparsed_string, "&Seite", seite );
+
+}
 
 return unparsed_string
 

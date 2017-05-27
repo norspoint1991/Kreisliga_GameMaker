@@ -13,9 +13,9 @@ nextEvent = irandom_range(0, 10);
 if(nextEvent != 0){
 	with(Auswaertsteam) event_user(1); //Initiative Werte neu bestimmen
 	with(Heimteam) event_user(1);
-	var Schranke = ratioX(Heimteam.teamInitiative, Auswaertsteam.teamInitiative)
+	var schranke = ratioX(Heimteam.teamInitiative, Auswaertsteam.teamInitiative)
 	var roll = ranRoll();
-	if (roll < Schranke) {
+	if (roll < schranke) {
 		Angriff = Heimteam;
 		Verteidigung = Auswaertsteam;
 	}
@@ -24,7 +24,7 @@ if(nextEvent != 0){
 		Verteidigung= Heimteam;
 	}
 	addText("imBallbesitz");
-	nextEvent = 1; //TODO löschen sobald alle StartEvents beschrieben sind
+	nextEvent = irandom_range(1, 2); //TODO löschen sobald alle StartEvents beschrieben sind
 }
 else{
 	addText("keinEvent");

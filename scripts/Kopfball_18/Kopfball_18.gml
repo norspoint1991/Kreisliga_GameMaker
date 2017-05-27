@@ -1,11 +1,11 @@
-var Schranke = SpielerMitBall.kopfball;
+var schranke = SpielerMitBall.kopfball;
 var roll = ranRoll();
 
-if ( roll <= Schranke) {			
+if ( roll <= schranke) {			
 	addText("BallKommtGut");
 	Verteidiger = getPlayerFrom(Verteidigung, "TW");
-	Schranke = ratioX(SpielerMitBall.kopfball, Verteidiger.torwart);
-	return BallaufsTor(Schranke);
+	schranke = ratioX(SpielerMitBall.kopfball, Verteidiger.torwart);
+	return BallaufsTor(schranke);
 }
 else {
 	addText("BallDaneben");

@@ -1,8 +1,8 @@
 Verteidiger = getPlayerFrom(Verteidigung, "LI", "IV", "MD");
-var Schranke = Flankenqualitaet + ratioX(SpielerMitBall.kopfball, Verteidiger.kopfball);
+var schranke = Flankenqualitaet + ratioX(SpielerMitBall.kopfball, Verteidiger.kopfball);
 var roll = ranRoll();
 
-if ( roll <= Schranke) {
+if ( roll <= schranke) {
 	addText("KopfballDuell");
 	addText("DuellPositiv");
 	return 18; //Kopfball

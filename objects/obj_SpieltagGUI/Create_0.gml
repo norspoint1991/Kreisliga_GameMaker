@@ -10,6 +10,7 @@ time_font_width = string_width(string_time(0));
 event_font_width = boxwidth - time_font_width - 2*padding;
 maxLines = floor((view_hport[0])/font_height);
 zeilenGesamt = 0;
+zeilenCounter = 1; //Startwert, damit die if-Abfrage in Step auslöst
 
 headline = "Ereignisse";
 
@@ -19,7 +20,7 @@ zeitVorher = -1;
 spielzeit = 90;
 heimteamTore = 0;
 auswaertsteamTore = 0;
-simulationSpeed = 1; //Alle __ Frames wird ein weiterer Spielzug simuliert
+simulationSpeed = 30; //Frames zwischen zwei Zeilen
 
 eventList = ds_list_create();
 zeitList = ds_list_create();

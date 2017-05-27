@@ -1,14 +1,14 @@
-var Schranke = argument0.pass;
+var schranke = argument0.pass;
 var roll = ranRoll();
-if (roll <= Schranke/3) {
+if (roll <= schranke/3) {
 	addText("sehrguterPass");
 	return 100.0;	
 }
-else if(roll <= 2*Schranke/3 && roll > Schranke/3){
+else if(roll <= 2*schranke/3 && roll > schranke/3){
 	addText("guterPass");
 	return 10.0;
 }
-else if(roll <= Schranke && roll > 2*Schranke/3){
+else if(roll <= schranke && roll > 2*schranke/3){
 	addText("schlechterPass");
 	return -10.0;
 }

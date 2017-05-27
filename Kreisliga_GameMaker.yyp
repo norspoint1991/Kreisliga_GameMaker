@@ -55,6 +55,14 @@
             }
         },
         {
+            "Key": "0a0fc45b-780b-4a23-84f5-ef8ad330520f",
+            "Value": {
+                "id": "474c3d48-4703-4be1-8b5e-ab1cea192a78",
+                "resourcePath": "scripts\\BallDurchstecken_20\\BallDurchstecken_20.yy",
+                "resourceType": "GMScript"
+            }
+        },
+        {
             "Key": "0ac4ec02-3820-41a8-8635-acb4e31d8c9f",
             "Value": {
                 "id": "d594acb1-686e-40df-81ec-d372a9de4da4",
@@ -103,6 +111,22 @@
             }
         },
         {
+            "Key": "19298795-c1d7-421d-a4b5-b9edc6ae3162",
+            "Value": {
+                "id": "268951e2-71ed-4961-9c58-45cce8c564b8",
+                "resourcePath": "scripts\\DoppelpassMittellinie_2\\DoppelpassMittellinie_2.yy",
+                "resourceType": "GMScript"
+            }
+        },
+        {
+            "Key": "19a8e1b2-6576-4b0e-9b53-5b6090bb0a04",
+            "Value": {
+                "id": "e1bfce9b-4d9e-4189-95bb-78a249f515c0",
+                "resourcePath": "scripts\\Schuss20_42\\Schuss20_42.yy",
+                "resourceType": "GMScript"
+            }
+        },
+        {
             "Key": "1b883c05-d436-4bf1-ab87-48a5dcef265d",
             "Value": {
                 "id": "da6b293d-3fdd-4b25-a13f-927f15eaf70f",
@@ -135,6 +159,14 @@
             }
         },
         {
+            "Key": "29458d7b-1526-43ba-811d-e1a5d9d6c6cb",
+            "Value": {
+                "id": "81ddad28-769e-474d-a9b9-067c71f7a7f8",
+                "resourcePath": "scripts\\Schuss5_40\\Schuss5_40.yy",
+                "resourceType": "GMScript"
+            }
+        },
+        {
             "Key": "2d1bd4b5-2893-4647-ba7d-1a06c6cc1bdd",
             "Value": {
                 "id": "43d58b41-e5df-498a-a684-0f58ce593c0b",
@@ -154,7 +186,7 @@
             "Key": "332ef909-98e2-4b56-b208-0347e8d1a643",
             "Value": {
                 "id": "03d52db0-9c17-4685-aafb-d6e6beb8fe49",
-                "resourcePath": "scripts\\AussenbahnPass\\AussenbahnPass.yy",
+                "resourcePath": "scripts\\AussenbahnPass_1\\AussenbahnPass_1.yy",
                 "resourceType": "GMScript"
             }
         },
@@ -267,6 +299,14 @@
             "Value": {
                 "id": "ef53eba6-31d2-4d33-91e7-a3c1c6295258",
                 "resourcePath": "scripts\\getPlayerExcept\\getPlayerExcept.yy",
+                "resourceType": "GMScript"
+            }
+        },
+        {
+            "Key": "71fd22ae-993e-4b37-a6e1-e8da59b8657e",
+            "Value": {
+                "id": "e46cd2a3-dd80-48ba-bb41-b1f3deb4b3ef",
+                "resourcePath": "scripts\\Konter_80\\Konter_80.yy",
                 "resourceType": "GMScript"
             }
         },
@@ -495,10 +535,26 @@
             }
         },
         {
+            "Key": "b08e379e-a7e8-428b-8589-beb8797f7402",
+            "Value": {
+                "id": "08ff0efd-2c3d-4204-a076-c074e2ff94d3",
+                "resourcePath": "scripts\\BallVerteilenGegnHaelfte_16\\BallVerteilenGegnHaelfte_16.yy",
+                "resourceType": "GMScript"
+            }
+        },
+        {
             "Key": "b19c48c6-12f3-4730-a073-43d91e095522",
             "Value": {
                 "id": "88f4a71d-925e-4b12-ad81-58611e2492d1",
                 "resourcePath": "scripts\\getPlayerFrom\\getPlayerFrom.yy",
+                "resourceType": "GMScript"
+            }
+        },
+        {
+            "Key": "b1b783a1-a8e4-452d-9fab-a4a836157516",
+            "Value": {
+                "id": "e2fa8bcd-4038-47fb-9db9-cac46f14230c",
+                "resourcePath": "scripts\\Schuss16_41\\Schuss16_41.yy",
                 "resourceType": "GMScript"
             }
         },
@@ -671,14 +727,6 @@
             }
         },
         {
-            "Key": "f4f66d81-2e81-40f9-b296-90bd01f6d2b4",
-            "Value": {
-                "id": "2b58332c-5e28-4735-b635-18c9a5ed3ef7",
-                "resourcePath": "scripts\\Schuss\\Schuss.yy",
-                "resourceType": "GMScript"
-            }
-        },
-        {
             "Key": "f4f74235-e5c8-49ee-8746-ad95940d666f",
             "Value": {
                 "id": "744737b7-a195-4ff0-b696-a4fc0655af89",
@@ -750,20 +798,26 @@
         "866d182a-10fe-422e-aa45-aec01e28eaf4",
         "c2c6ed9a-1683-4c0e-96bc-b0b0d506c4c5",
         "d3785223-9c73-4bd4-9138-9c02edd482d8",
+        "277b9fe1-e88f-4e40-a005-cc923294b626",
         "3db7eed7-213d-4685-b9ca-d9abb0bb4236",
         "332ef909-98e2-4b56-b208-0347e8d1a643",
+        "19298795-c1d7-421d-a4b5-b9edc6ae3162",
         "91202556-732c-4760-99d7-fc80a096d109",
         "ad2eb888-d973-4cc6-af38-7d8483d34ce4",
         "14e94688-4987-47eb-8a5a-19c577797b49",
         "b8079124-07e9-4062-aaf1-e927e611e669",
         "c9a34927-eaf2-43e0-b9a5-a6d8f4f5a161",
-        "f4f66d81-2e81-40f9-b296-90bd01f6d2b4",
+        "b08e379e-a7e8-428b-8589-beb8797f7402",
         "c059bacf-483e-4cc3-b070-4e529b8b2a9f",
         "fe2d6463-dc0e-439b-90f1-105cf747febd",
         "f4b44d4f-c3e2-40d7-8677-b5f02d267695",
-        "a2cdd0f2-aaad-482d-8684-bed16cbdf0ba",
+        "0a0fc45b-780b-4a23-84f5-ef8ad330520f",
         "77f14d29-3b23-44dc-9844-43f6de065c42",
-        "277b9fe1-e88f-4e40-a005-cc923294b626",
+        "a2cdd0f2-aaad-482d-8684-bed16cbdf0ba",
+        "29458d7b-1526-43ba-811d-e1a5d9d6c6cb",
+        "b1b783a1-a8e4-452d-9fab-a4a836157516",
+        "19a8e1b2-6576-4b0e-9b53-5b6090bb0a04",
+        "71fd22ae-993e-4b37-a6e1-e8da59b8657e",
         "f89f6296-b7ec-4aaa-9ff9-8d60b08544af",
         "f0e31d77-5b6c-47f4-84fc-845890445c22"
     ],

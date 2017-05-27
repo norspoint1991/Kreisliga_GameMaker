@@ -1,8 +1,8 @@
 {
-    "id": "f4f66d81-2e81-40f9-b296-90bd01f6d2b4",
+    "id": "0a0fc45b-780b-4a23-84f5-ef8ad330520f",
     "modelName": "GMScript",
     "mvc": "1.0",
-    "name": "Schuss",
+    "name": "BallDurchstecken_20",
     "IsCompatibility": false,
     "IsDnD": false
 }

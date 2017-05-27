@@ -1,7 +1,7 @@
 Verteidiger = getPlayerFrom(Verteidigung, "IV", "LI", "MD", "DM");
-var Schranke = ratioX(SpielerMitBall.schuss, Verteidiger.stellungsspiel);
+var schranke = ratioX(SpielerMitBall.schuss, Verteidiger.stellungsspiel);
 var roll = ranRoll();
-if (roll <= Schranke){
+if (roll <= schranke){
 	addText("WirdNichtGeblockt");
 	return false;
 }

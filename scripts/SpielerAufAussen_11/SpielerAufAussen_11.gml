@@ -5,9 +5,9 @@ else{
 	Verteidiger = getPlayerFrom(Verteidigung, "LV", "DM", "IV");
 }
 addText("SpielerAufAussen");
-var Schranke = Verteidiger.stellungsspiel;
+var schranke = Verteidiger.stellungsspiel;
 var roll = ranRoll();
-if (roll <= Schranke) {
+if (roll <= schranke) {
 	addText("wirdgestellt");
 	if (Dribbling(SpielerMitBall, Verteidiger)){
 		if (GegnerVorher != undefined){
@@ -16,9 +16,9 @@ if (roll <= Schranke) {
 		GegnerVorher = Verteidiger;
 		GegnerVorher.busy = true;
 		//zieht nach innen oder flanke 
-		Schranke = SpielerMitBall.selbstbewusstsein;
+		schranke = SpielerMitBall.selbstbewusstsein;
 		roll = ranRoll();
-		if (roll <= Schranke) {
+		if (roll <= schranke) {
 			return 13; //zieht nach innen
 		}
 		else return 14; //Flanke
@@ -28,9 +28,9 @@ if (roll <= Schranke) {
 else {
 	addText("wirdNichtGestellt");
 	//zieht nach innen oder flanke 
-	Schranke = SpielerMitBall.selbstbewusstsein;
+	schranke = SpielerMitBall.selbstbewusstsein;
 	roll = ranRoll();
-	if (roll <= Schranke) {
+	if (roll <= schranke) {
 		return 13; //zieht nach innen
 	}
 	else return 14; //Flanke

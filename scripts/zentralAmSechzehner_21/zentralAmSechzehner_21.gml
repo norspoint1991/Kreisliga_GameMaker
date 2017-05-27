@@ -1,27 +1,27 @@
 Verteidiger = getPlayerFrom(Verteidigung, "VER");
-var Schranke = ratioX(SpielerMitBall.stellungsspiel, Verteidiger.stellungsspiel);
+var schranke = ratioX(SpielerMitBall.stellungsspiel, Verteidiger.stellungsspiel);
 var roll = ranRoll();
-if (roll <= Schranke){
+if (roll <= schranke){
 	addText("StehtAlleine");
-	Schranke = ratioX(SpielerMitBall.antizipation, SpielerMitBall.selbstbewusstsein);
+	schranke = ratioX(SpielerMitBall.antizipation, SpielerMitBall.selbstbewusstsein);
 	roll = ranRoll();
-	if (roll <= Schranke){
-		return 23; //Ball durchstecken
+	if (roll <= schranke){
+		return 20; //Ball durchstecken
 	}
 	else{
-		return 22; //Schuss vom Sechzehner zentral
+		return 41; //Schuss vom Sechzehner zentral
 	}
 }
 else{
 	addText("WirdGestellt");
 	if(Dribbling(SpielerMitBall, Verteidiger)){
-		Schranke = ratioX(SpielerMitBall.antizipation, SpielerMitBall.selbstbewusstsein);
+		schranke = ratioX(SpielerMitBall.antizipation, SpielerMitBall.selbstbewusstsein);
 		roll = ranRoll();
-		if (roll <= Schranke){
-			return 23; //Ball durchstecken
+		if (roll <= schranke){
+			return 20; //Ball durchstecken
 		}
 		else{
-			return 22; //Schuss vom Sechzehner zentral
+			return 41; //Schuss vom Sechzehner zentral
 		}
 	}
 	else return 0;
