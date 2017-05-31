@@ -29,7 +29,7 @@ if (argument_count >= 3) {
 }	
 else {
 	i = 0;
-	while ( i <=  1){
+	while ( i <=  15){
 		teamToAdd = new_Team();
 		if(!ds_map_exists(liga.teamMap, teamToAdd.teamName)){
 			ds_map_add(liga.teamMap, teamToAdd.teamName, teamToAdd);
