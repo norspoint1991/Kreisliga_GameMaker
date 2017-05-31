@@ -3,7 +3,7 @@ var playerMap = argument0;
 
 var nachname = playerMap[? "nachname"];
 var vorname = playerMap[? "vorname"];
-newPlayer = new_Spieler(vorname, nachname);
+var newPlayer = new_Spieler(vorname, nachname);
 
 newPlayer.team = playerMap[? "team"];
 newPlayer.favPosition = playerMap[? "favPosition"];

@@ -25,21 +25,19 @@ simulationSpeed = 1; //Frames zwischen zwei Zeilen
 eventList = ds_list_create();
 zeitList = ds_list_create();
 
-Heimteam = instance_create_depth(0, 0, 0, obj_Team);
-Heimteam.teamName = "SC Hille";
+Heimteam = new_Team("Sc Hille", 0, 19);
 
-Auswaertsteam = instance_create_depth(0, 0, 0, obj_Team);
-Auswaertsteam.teamName = "Die super Bayern";
+Auswaertsteam = new_Team(0, 0, 19);
 
 //ini file mit allen Texten für die Simulation
-ini_open("TextSimulation_ger.ini");
+ini_open("Textsimulation_ger.ini");
 
 //Simulations Platzhalter
 step = 0;
 thisEvent = 0;
 Angriff = undefined; //Team im Angriff
 Verteidigung = undefined; //Team in der Verteidigung
-//Angreifer = undefined; 
+Angreifer = undefined; 
 Verteidiger = undefined;
 GegnerVorher = undefined;
 SpielerMitBallVorher = undefined;
@@ -47,6 +45,6 @@ SpielerMitBall = undefined;
 //Qualitaeten
 flankenQualitaet = 0;
 passQualitaet = 0;
-
 //TODO zum Testen
 games = 0;
+

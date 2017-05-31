@@ -10,5 +10,4 @@ font_size = font_get_size(fnt_default);
 
 headline = "Aufstellung";
 
-meinTeam = instance_create_depth(0, 0, 0, obj_Team);
-meinTeam.teamName = "FC Arsch";
+meinTeam = new_Team("FC Arsch", 0, 19);

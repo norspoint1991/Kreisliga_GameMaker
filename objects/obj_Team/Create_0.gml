@@ -1,27 +1,44 @@
-teamName = "";
+teamName = randomTeamName();
 
 var i = 0;
 formation = randomFormation();
 spielerMap = ds_map_create();
-spielerTypen = returnSpielertypen(formation);
-ini_open("NameFile_ger.ini");
-var i = 0;
-while(i < 18)
-{
-	//Random Name 
-	var vorname_argument = randomVorname();
-	var nachname_argument = randomNachname();
 
-	var key = vorname_argument + nachname_argument;
-	if(!ds_map_exists(spielerMap, key))
-	{
-		ds_map_add(spielerMap, key, new_Spieler(vorname_argument, 
-												nachname_argument, 
-												spielerTypen[i]));
-		i++;
-	}
-}
-ini_close();
+punkte = 0;
+gegentore = 0;
+tore = 0;
+spiele = 0;
+siege = 0;
+niederlagen = 0;
+unentschieden = 0;
+
+
+
+// Der Teil ist hier rauskommentiert und ich habe es in den Konstruktor
+//gepackt, das heißr nur über den Konstruktor kann das Team
+// mit Spielern initialisiert werden mit new_Team(Name, Spieler_Map, Teamsize)
+// wobei als Name und spielerMap auch 0 eingegeben werden kann
+
+
+//	ini_open("NameFile_ger.ini");
+//while(i < 19)
+//{
+
+//	//Random Name 
+//	var vorname_argument = randomVorname();
+//	var nachname_argument = randomNachname();
+//	var key = vorname_argument + nachname_argument;
+//	if(!ds_map_exists(spielerMap, key))
+//	{
+//		ds_map_add(spielerMap, key, new_Spieler(vorname_argument, nachname_argument));
+//		i++;
+//	}
+//}
+//	ini_close();
+//TODO: in New_Team bauen
+//spielerTypen = returnSpielertypen(formation);
+
 event_user(0); //Auto Aufstellung
 event_user(1); //Team Initiative
 event_user(2); //Abpraller
+

@@ -1,3 +1,4 @@
+
 if(simulationRunning)
 {
 	step++;
@@ -8,7 +9,9 @@ if(simulationRunning)
 
 		if (zeit <= spielzeit) 
 		{
+
 			switch  (thisEvent){
+
 		
 			case 0 : // PULLEVENT
 				thisEvent = pullEvent_0();
