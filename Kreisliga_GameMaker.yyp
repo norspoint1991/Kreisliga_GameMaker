@@ -239,6 +239,14 @@
             }
         },
         {
+            "Key": "4f95266d-4a53-4d67-a11d-c83e71737e05",
+            "Value": {
+                "id": "0cbf7e1b-19df-421c-917c-aeecd03a13b7",
+                "resourcePath": "scripts\\KonterMitte_82\\KonterMitte_82.yy",
+                "resourceType": "GMScript"
+            }
+        },
+        {
             "Key": "501402cb-a428-488d-8059-818cc05b5477",
             "Value": {
                 "id": "9c7fa3c7-2c25-4fd3-9503-71250ce1c0b2",
@@ -827,6 +835,7 @@
         "19a8e1b2-6576-4b0e-9b53-5b6090bb0a04",
         "71fd22ae-993e-4b37-a6e1-e8da59b8657e",
         "8696a0f3-f30d-4eea-a686-0da658774688",
+        "4f95266d-4a53-4d67-a11d-c83e71737e05",
         "f89f6296-b7ec-4aaa-9ff9-8d60b08544af",
         "f0e31d77-5b6c-47f4-84fc-845890445c22"
     ],

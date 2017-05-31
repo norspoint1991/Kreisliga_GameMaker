@@ -79,8 +79,7 @@ if(simulationRunning)
 				break;
 			case 41:  //Fernschuss Sechzehner zentral
 				thisEvent = Schuss16_41();
-				break;
-				
+				break;		
 			case 42: //Fernschuss Sechzehner außen
 				thisEvent = Schuss20_42();
 				break;

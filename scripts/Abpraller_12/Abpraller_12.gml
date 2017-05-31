@@ -10,7 +10,7 @@ if (roll <= schranke){
 	SpielerMitBallVorher.busy = true;
 	SpielerMitBall = getPlayerFrom(Angriff, "LM", "RM", "DM", "OM", "ZM", "ST");
 	addText("AbprallerOFF");
-	return 41; //Schuss vom Sechzehner zentral
+	return 21; //zentral am Sechzehner
 }
 else {
 	Verteidiger = getPlayerFrom(Verteidigung, "LI", "LM", "DM", "RM", "IV", "RV", "LV", "MD");

@@ -31,3 +31,8 @@ draw_text(	x + boxwidth + padding,
 draw_text(	x + boxwidth + 2*padding + string_width(Heimteam.teamName), 
 			y + boxheight/40 + string_height(headline)/2 + padding, 
 			string(auswaertsteamTore));
+			
+////TODO nur zum Testen
+//draw_text(	x + boxwidth + 2*padding + string_width(Heimteam.teamName), 
+//			y + boxheight/10 + string_height(headline)/2 + padding, 
+//			string(games));

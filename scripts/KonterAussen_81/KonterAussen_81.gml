@@ -2,7 +2,7 @@ var schranke = SpielerMitBall.pass;
 var roll = ranRoll();
 
 if (roll <= schranke){
-	addText("KonterAufAussen"); //TODO Text schreiben
+	//addText("KonterAufAussen");
 	if (SpielerMitBallVorher != undefined){
 		SpielerMitBallVorher.busy = false;
 	}
@@ -12,7 +12,15 @@ if (roll <= schranke){
 	schranke = (SpielerMitBall.geschwindigkeit + SpielerMitBall.pass)/2;
 	roll = ranRoll();
 	if (roll <= schranke){
-		addText("KonterBallInDieMitte"); //TODO Text schreiben
+		if (SpielerMitBall.position == "LM" || SpielerMitBall.position == "LV"){
+			seite = "links";
+		}
+		else if (SpielerMitBall.position == "RM" || SpielerMitBall.position == "RV"){
+			seite = "rechts";
+		}
+		else seite = rechts;
+		
+		addText("SpieltBallAufAußen", "KonterBallInDieMitte");
 		if (SpielerMitBallVorher != undefined){
 			SpielerMitBallVorher.busy = false;
 		}
@@ -22,7 +30,7 @@ if (roll <= schranke){
 		return 40; //Schuss aus kurzer Distanz
 	}
 	else {
-		addText("KonterAussenPassVerfehlt"); //TODO Text schreiben
+		addText("SpieltBallAufAußen", "KonterBallInDieMitteVerfehlt");
 		return 0;
 	}
 }

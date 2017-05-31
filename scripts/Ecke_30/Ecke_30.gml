@@ -18,10 +18,7 @@ SpielerMitBallVorher = Eckengeber;
 SpielerMitBallVorher.busy = true;
 SpielerMitBall = getPlayerFrom(Angriff, "OM", "ZM", "ST");
 	
-if (flankenQualitaet == 100.0) {
-	return 18; //Kopfball
-}
-else if (flankenQualitaet == 10.0 || flankenQualitaet == -10.0) {
+if (flankenQualitaet != 0) {
 	return 19; //Kopfballduell
 }
 else{

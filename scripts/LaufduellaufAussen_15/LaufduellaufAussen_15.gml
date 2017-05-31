@@ -1,3 +1,10 @@
+if (SpielerMitBallVorher != undefined){
+	SpielerMitBallVorher.busy = false;
+}
+SpielerMitBallVorher = SpielerMitBall;
+SpielerMitBallVorher.busy = true;
+SpielerMitBall = getPlayerFrom(Angriff, "LM", "LV", "RM", "RV");
+
 if (SpielerMitBall.position == "LM" || SpielerMitBall.position == "LV"){
 	Verteidiger = getPlayerFrom(Verteidigung, "RV", "RM");
 }
@@ -9,14 +16,14 @@ var schranke = passQualitaet + ratioX(SpielerMitBall.geschwindigkeit + SpielerMi
 var roll = ranRoll();
 
 if (roll <= schranke) {
-	addText("LaufduellPositiv");
-	if (GegnerVorher != null){
+	addText("Laufduell", "DuellPositiv");
+	if (GegnerVorher != undefined){
 		GegnerVorher.busy = false;
 	}
 	GegnerVorher = Verteidiger;
 	return 11; //AufAussen
 }
 else {
-	addText("LaufduellPositiv");
+	addText("Laufduell", "DuellNegativ");
 	return 0; //pullEvent
 }
