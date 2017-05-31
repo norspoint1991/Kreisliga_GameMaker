@@ -1,26 +1,25 @@
 if(simulationRunning)
 {
 	step++;
-	if (step%2 = 0)
+	if ((zeilenCounter * simulationSpeed) - step <= 0)
 	{	
+		step = 0;
 		zeilenCounter = 0;
 
-		//Alle returns für die Events sind int
-		//Alle nicht-Event returns sind double, damit man Events verschieben kann
-		//(einfach alle returns entsprechend ändern)
 		if (zeit <= spielzeit) 
 		{
 			switch  (thisEvent){
 		
 			case 0 : // PULLEVENT
-				thisEvent = pullEvent();
+				thisEvent = pullEvent_0();
 				zeit += 1;
 				break;
 			case 1 : //Langer Pass auf Außen
-				thisEvent = AussenbahnPass();
+				thisEvent = AussenbahnPass_1();
 				break;
-			//case 2: //Doppelpass über die Mittellinie
-			
+			case 2: //Doppelpass über die Mittellinie
+				thisEvent = DoppelpassMittellinie_2();
+				break;
 			//case 3: //Dribbling über die Mittellinie
 				
 			//case 4: //Pass an den Sechzehner
@@ -32,51 +31,71 @@ if(simulationRunning)
 			//case 7: //Ball halten
 			
 			case 11 : // Spieler mit Ball auf außen
-				thisEvent = SpielerAufAussen();
+				thisEvent = SpielerAufAussen_11();
 				break;
-			//case 12: //Abpraller
-			//	thisEvent = Abpraller();
-			//	break;
-			//case 13: //Spieler zieht nach innen
-			//	thisEvent = NachInnenZiehen();
-			//	break;
-			//case 14: //Spieler flankt
-			//	thisEvent = Flanken();
-			//	break;
-			//case 15: //Laufduell auf Außen
-			//	thisEvent = LaufduellaufAussen();
-			//	break;
-			//case 16: //Fernschuss Sechzehner außen
-			//	thisEvent = Schuss(20);
-			//	break;
-			//case 17: //Quer legen
-			//	thisEvent = querLegen();
-			//	break;
-			//case 18: //Kopfball aufs Tor
-			//	thisEvent = kopfball();
-			//	break;
-			//case 19: //Kopfballduell
-			//	thisEvent = kopfballduell();
-			//	break;
-			//case 20: //Ecke
-			//	thisEvent = Ecke();
-			//	break;
-			//case 21: //Spieler mit Ball zentral am Sechzehner
-			//	thisEvent = zentralAmSechzehner();
-			//	break;
-			//case 22: //Fernschuss Sechzehner zentral
-			//	thisEvent = Schuss(16);
-			//	break;
+			case 12: //Abpraller
+				thisEvent = Abpraller_12();
+				break;
+			case 13: //Spieler zieht nach innen
+				thisEvent = NachInnenZiehen_13();
+				break;
+			case 14: //Spieler flankt
+				thisEvent = Flanken_14();
+				break;
+			case 15: //Laufduell auf Außen
+				thisEvent = LaufduellaufAussen_15();
+				break;
+			case 16: //Ball verteilen gegnerische Hälfte
+				thisEvent = BallVerteilenGegnHaelfte_16();
+				break;
+			case 17: //Quer legen
+				thisEvent = Querlegen_17();
+				break;
+			case 18: //Kopfball aufs Tor
+				thisEvent = Kopfball_18();
+				break;
+			case 19: //Kopfballduell
+				thisEvent = Kopfballduell_19();
+				break;
+			case 20: //Ball durchstecken
+				thisEvent = BallDurchstecken_20();
+				break;
+			case 21: //Spieler mit Ball zentral am Sechzehner
+				thisEvent = zentralAmSechzehner_21();
+				break;
+			//case 22:
 				
 			//case 25: //Ball von außen in den Strafraum; Kopfball, Ball rutscht durch zusammenfassen
 			//			//für Ecke und Flanke
-				
+			
+			case 30: //Ecke
+				thisEvent = Ecke_30();
+				break;
+			//case 31: //Freistoss, direkt
+			//case 32: //Freistoss, Flanke
+			//case 33: //Elfmeter
+			case 40: //Schuss kurze Distanz
+				thisEvent = Schuss5_40();
+				break;
+			case 41:  //Fernschuss Sechzehner zentral
+				thisEvent = Schuss16_41();
+				break;		
+			case 42: //Fernschuss Sechzehner außen
+				thisEvent = Schuss20_42();
+				break;
 			//case 70: //Abseits, ab hier aufsteigend die "Schiri Events"
-			//case 80: //Konter - Event, dass den Angriff umkehrt
+			case 80: //Konter - Event, dass den Angriff umkehrt
+				thisEvent = Konter_80();
+				break;
+			//case 81: //Konter über Außen
+			//case 82: //Konter durch die Mitte
 			//case 90: //Verzweifelungsschuss - Event bei kleiner Moral
-			//case 100: // TOOOOR
-			//	thisEvent = Tor();
-			//	break;
+			case 99: //Torwart haelt
+				thisEvent = torwartHaelt_99();
+				break;
+			case 100: // TOOOOR
+				thisEvent = Tor_100();
+				break;
 				
 			default: 
 				thisEvent = 0;

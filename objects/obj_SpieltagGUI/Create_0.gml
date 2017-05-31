@@ -10,6 +10,7 @@ time_font_width = string_width(string_time(0));
 event_font_width = boxwidth - time_font_width - 2*padding;
 maxLines = floor((view_hport[0])/font_height);
 zeilenGesamt = 0;
+zeilenCounter = 1; //Startwert, damit die if-Abfrage in Step auslöst
 
 headline = "Ereignisse";
 
@@ -19,8 +20,7 @@ zeitVorher = -1;
 spielzeit = 90;
 heimteamTore = 0;
 auswaertsteamTore = 0;
-
-
+simulationSpeed = 1; //Frames zwischen zwei Zeilen
 
 eventList = ds_list_create();
 zeitList = ds_list_create();
@@ -30,8 +30,6 @@ Heimteam.teamName = "SC Hille";
 
 Auswaertsteam = instance_create_depth(0, 0, 0, obj_Team);
 Auswaertsteam.teamName = "Die super Bayern";
-
-
 
 //ini file mit allen Texten für die Simulation
 ini_open("TextSimulation_ger.ini");
@@ -49,3 +47,6 @@ SpielerMitBall = undefined;
 //Qualitaeten
 flankenQualitaet = 0;
 passQualitaet = 0;
+
+//TODO zum Testen
+games = 0;
