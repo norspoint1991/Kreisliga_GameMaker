@@ -2,114 +2,118 @@
 if(simulationRunning)
 {
 	step++;
-	if (step%10 = 0)
-	{
-		zeit++;
-		ds_list_add(ZeitList, string_time(zeit));
-		if(zeit < 2)
-		{
-			ds_list_add(EventText, TextSimulation_ini("Begruessung"));
-		}
-		else if(zeit < 10) 
-		{
-			Angreifer = getPlayerExcept(Heimteam, "TW", "LM");
-			ds_list_add(EventText, TextSimulation_ini("Aussenbahnpass"));
-		}
-		else ds_list_add(EventText,TextSimulation_ini("guterPass"));
+	if ((zeilenCounter * simulationSpeed) - step <= 0)
+	{	
+		step = 0;
+		zeilenCounter = 0;
 
-		if (ds_list_size(EventText) > maxLines)
+		if (zeit <= spielzeit) 
+		{
+
+			switch  (thisEvent){
+
+		
+			case 0 : // PULLEVENT
+				thisEvent = pullEvent_0();
+				zeit += 1;
+				break;
+			case 1 : //Langer Pass auf Außen
+				thisEvent = AussenbahnPass_1();
+				break;
+			case 2: //Doppelpass über die Mittellinie
+				thisEvent = DoppelpassMittellinie_2();
+				break;
+			//case 3: //Dribbling über die Mittellinie
+				
+			//case 4: //Pass an den Sechzehner
+				
+			//case 5: //Hoher Ball in den Sechzehner
+			
+			//case 6: //Balleroberung durch Pressing
+				
+			//case 7: //Ball halten
+			
+			case 11 : // Spieler mit Ball auf außen
+				thisEvent = SpielerAufAussen_11();
+				break;
+			case 12: //Abpraller
+				thisEvent = Abpraller_12();
+				break;
+			case 13: //Spieler zieht nach innen
+				thisEvent = NachInnenZiehen_13();
+				break;
+			case 14: //Spieler flankt
+				thisEvent = Flanken_14();
+				break;
+			case 15: //Laufduell auf Außen
+				thisEvent = LaufduellaufAussen_15();
+				break;
+			case 16: //Ball verteilen gegnerische Hälfte
+				thisEvent = BallVerteilenGegnHaelfte_16();
+				break;
+			case 17: //Quer legen
+				thisEvent = Querlegen_17();
+				break;
+			case 18: //Kopfball aufs Tor
+				thisEvent = Kopfball_18();
+				break;
+			case 19: //Kopfballduell
+				thisEvent = Kopfballduell_19();
+				break;
+			case 20: //Ball durchstecken
+				thisEvent = BallDurchstecken_20();
+				break;
+			case 21: //Spieler mit Ball zentral am Sechzehner
+				thisEvent = zentralAmSechzehner_21();
+				break;
+			//case 22:
+				
+			//case 25: //Ball von außen in den Strafraum; Kopfball, Ball rutscht durch zusammenfassen
+			//			//für Ecke und Flanke
+			
+			case 30: //Ecke
+				thisEvent = Ecke_30();
+				break;
+			//case 31: //Freistoss, direkt
+			//case 32: //Freistoss, Flanke
+			//case 33: //Elfmeter
+			case 40: //Schuss kurze Distanz
+				thisEvent = Schuss5_40();
+				break;
+			case 41:  //Fernschuss Sechzehner zentral
+				thisEvent = Schuss16_41();
+				break;		
+			case 42: //Fernschuss Sechzehner außen
+				thisEvent = Schuss20_42();
+				break;
+			//case 70: //Abseits, ab hier aufsteigend die "Schiri Events"
+			case 80: //Konter - Event, dass den Angriff umkehrt
+				thisEvent = Konter_80();
+				break;
+			//case 81: //Konter über Außen
+			//case 82: //Konter durch die Mitte
+			//case 90: //Verzweifelungsschuss - Event bei kleiner Moral
+			case 99: //Torwart haelt
+				thisEvent = torwartHaelt_99();
+				break;
+			case 100: // TOOOOR
+				thisEvent = Tor_100();
+				break;
+				
+			default: 
+				thisEvent = 0;
+				break;
+			}	
+		}
+		else simulationRunning = false;
+		
+		//Kamera Position anpassen, damit der Text scrollt
+		if (zeilenGesamt > maxLines)
 		{
 			camera_set_view_pos(view_camera[0], 
 								camera_get_view_x(view_camera[0]),
-								camera_get_view_y(view_camera[0]) + font_height);
+								camera_get_view_y(view_camera[0]) + (font_height*zeilenCounter));
 		}
 	}
 }
-
-////Alle returns für die Events sind int
-////Alle nicht-Event returns sind double, damit man Events verschieben kann
-////(einfach alle returns entsprechend ändern)
-		
-
-//if (zeit <= spielzeit) 
-//{
-
-//	if (zeit == 45 && ThisEvent == 0){
-//		ds_list_add(EventText,TextSimulation_ini("zweiteHalbzeit"));
-//	}
-//	switch  (ThisEvent){
-		
-//	case 0 : // PULLEVENT
-//		time += 1;
-//		ThisEvent = pullEvent();
-//		break;
-
-//	case 1 : //LANGER PASS AUF AUSSEN 
-//		ThisEvent = AussenbahnPass();
-//		break;
-//	case 2: //Doppelpass über die Mittellinie
-			
-//	case 3: //Dribbling über die Mittellinie
-				
-//	case 4: //Pass an den Sechzehner
-				
-//	case 5: //Hoher Ball in den Sechzehner
-			
-//	case 6: //Balleroberung durch Pressing
-				
-//	case 7: //Ball halten
-
-				
-//	case 11 : // Spieler mit Ball auf außen
-//		ThisEvent = SpielerAufAussen();
-//		break;
-//	case 12: //Abpraller
-//		ThisEvent = Abpraller();
-//		break;
-//	case 13: //Spieler zieht nach innen
-//		ThisEvent = NachInnenZiehen();
-//		break;
-//	case 14: //Spieler flankt
-//		ThisEvent = Flanken();
-//		break;
-//	case 15: //Laufduell auf Außen
-//		ThisEvent = LaufduellaufAussen();
-//		break;
-//	case 16: //Fernschuss Sechzehner außen
-//		ThisEvent = Schuss(20);
-//		break;
-//	case 17: //Quer legen
-//		ThisEvent = querLegen();
-//		break;
-//	case 18: //Kopfball aufs Tor
-//		ThisEvent = kopfball();
-//		break;
-//	case 19: //Kopfballduell
-//		ThisEvent = kopfballduell();
-//		break;
-//	case 20: //Ecke
-//		ThisEvent = Ecke();
-//		break;
-//	case 21: //Spieler mit Ball zentral am Sechzehner
-//		ThisEvent = zentralAmSechzehner();
-//		break;
-//	case 22: //Fernschuss Sechzehner zentral
-//		ThisEvent = Schuss(16);
-//		break;
-				
-//	case 25: //Ball von außen in den Strafraum; Kopfball, Ball rutscht durch zusammenfassen
-//				//für Ecke und Flanke
-				
-//	case 70: //Abseits, ab hier aufsteigend die "Schiri Events"
-//	case 80: //Konter - Event, dass den Angriff umkehrt
-//	case 90: //Verzweifelungsschuss - Event bei kleiner Moral
-//	case 100: // TOOOOR
-//		ThisEvent = Tor();
-//		break;
-				
-//	default: 
-//		ThisEvent = 0;
-//		break;
-//	}	
-//}
 

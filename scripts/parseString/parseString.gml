@@ -31,6 +31,27 @@ unparsed_string = string_replace_all ( unparsed_string, "&Auswaertsteam", Auswae
 
 }
 
+// Angriffsteam ersetzen
+
+if string_pos("&Angriff", unparsed_string) != 0 {
+unparsed_string = string_replace_all ( unparsed_string, "&Angriff", Angriff.teamName );
+
+}
+
+// Verteidigungsteam ersetzen
+
+if string_pos("&Verteidigung", unparsed_string) != 0 {
+unparsed_string = string_replace_all ( unparsed_string, "&Verteidgung", Verteidigung.teamName );
+
+}
+
+// Spieler mit Ball (vorher) ersetzen
+
+if string_pos("&SpielerMitBallVorher", unparsed_string) != 0 {
+unparsed_string = string_replace_all ( unparsed_string, "&SpielerMitBallVorher", get_player_info(SpielerMitBallVorher) );
+
+}
+
 // Spieler mit Ball ersetzen
 
 if string_pos("&SpielerMitBall", unparsed_string) != 0 {
@@ -54,6 +75,19 @@ unparsed_string = string_replace_all ( unparsed_string, "&Verteidiger", get_play
 }
 
 
+// (Tor)Abstand ersetzen
+
+if string_pos("&Abstand", unparsed_string) != 0 {
+unparsed_string = string_replace_all ( unparsed_string, "&Abstand", string(abstand) );
+
+}
+
+// Seite ersetzen ("links" oder "rechts")
+
+if string_pos("&Seite", unparsed_string) != 0 {
+unparsed_string = string_replace_all ( unparsed_string, "&Seite", seite );
+
+}
 
 return unparsed_string
 

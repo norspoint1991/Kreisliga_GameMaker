@@ -7,6 +7,7 @@ var i = 0;
 var searchword = argument0;
 var possibleStrings = ds_list_create();
 
+if (!ini_section_exists(searchword)) show_debug_message("Unbekannte Section in der INI-Datei: " + searchword);
 while(true)
 {
 	if(ini_key_exists(searchword, "text" + string(i)))
@@ -17,5 +18,7 @@ while(true)
 	}
 	else break;
 }
-
+//var test1 = possibleStrings[|0];
+//var number = (irandom(ds_list_size(possibleStrings) - 1))
+//var unparsedString = possibleStrings[|number];
 return parseString(possibleStrings[|(irandom(ds_list_size(possibleStrings) - 1))]);

@@ -3,6 +3,7 @@ teamName = randomTeamName();
 var i = 0;
 formation = randomFormation();
 spielerMap = ds_map_create();
+
 punkte = 0;
 gegentore = 0;
 tore = 0;
@@ -34,3 +35,10 @@ unentschieden = 0;
 //	}
 //}
 //	ini_close();
+//TODO: in New_Team bauen
+//spielerTypen = returnSpielertypen(formation);
+
+event_user(0); //Auto Aufstellung
+event_user(1); //Team Initiative
+event_user(2); //Abpraller
+
