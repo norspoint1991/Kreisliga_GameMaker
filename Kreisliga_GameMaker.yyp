@@ -39,15 +39,14 @@
             }
         },
         {
-
             "Key": "0495b382-c066-4f4f-8bdd-6ce0ba9a7372",
             "Value": {
                 "id": "77488e50-4c37-43e0-8669-7b3bd2329bb9",
                 "resourcePath": "rooms\\rm_NewGame\\rm_NewGame.yy",
                 "resourceType": "GMRoom"
-             }
+            }
         },
-       {
+        {
             "Key": "059cfcd7-23a0-416b-8bff-446b4b252bd5",
             "Value": {
                 "id": "ac2f7efa-87d4-45ce-b3c5-6af987e2f4ee",
@@ -320,19 +319,19 @@
             }
         },
         {
-            "Key": "689d9458-43d6-418c-8d04-a589386c3051",
-            "Value": {
-                "id": "b5624ab7-9641-463b-a905-e4f3dcd32cdf",
-                "resourcePath": "datafiles_yy\\TeamNameFile_ger.ini.yy",
-                "resourceType": "GMIncludedFile"
-            }
-        },
-        {
             "Key": "670c1e60-0755-4091-b2fc-45dcaec9cf94",
             "Value": {
                 "id": "15c82d0a-76e6-4d68-ba06-013dfc0eb5a8",
                 "resourcePath": "scripts\\Passqualitaet\\Passqualitaet.yy",
                 "resourceType": "GMScript"
+            }
+        },
+        {
+            "Key": "689d9458-43d6-418c-8d04-a589386c3051",
+            "Value": {
+                "id": "b5624ab7-9641-463b-a905-e4f3dcd32cdf",
+                "resourcePath": "datafiles_yy\\TeamNameFile_ger.ini.yy",
+                "resourceType": "GMIncludedFile"
             }
         },
         {
@@ -480,21 +479,6 @@
             }
         },
         {
-            "Key": "9110b5b0-49b6-4fcd-abe0-14f89d3f0eeb",
-            "Value": {
-                "id": "53e1fd93-4299-405a-b195-4a1167fcc5db",
-                "resourcePath": "scripts\\mapToLiga\\mapToLiga.yy",
-                "resourceType": "GMScript"
-            }
-        },
-        {
-            "Key": "935b0e39-1a1f-44b4-bf27-41b551eb3c67",
-            "Value": {
-                "id": "8006168a-673d-4737-b26c-8860d8d7dbc5",
-                "resourcePath": "scripts\\mapToTeam\\mapToTeam.yy",
-            }
-        },
-        {
             "Key": "90b8fe60-1838-4f7e-99d8-141002b9151c",
             "Value": {
                 "id": "a5dcb972-bd28-4667-b778-15479a67636c",
@@ -503,10 +487,26 @@
             }
         },
         {
+            "Key": "9110b5b0-49b6-4fcd-abe0-14f89d3f0eeb",
+            "Value": {
+                "id": "53e1fd93-4299-405a-b195-4a1167fcc5db",
+                "resourcePath": "scripts\\mapToLiga\\mapToLiga.yy",
+                "resourceType": "GMScript"
+            }
+        },
+        {
             "Key": "91202556-732c-4760-99d7-fc80a096d109",
             "Value": {
                 "id": "867318e9-4c0b-4808-a8aa-9605d49e065d",
                 "resourcePath": "scripts\\SpielerAufAussen_11\\SpielerAufAussen_11.yy",
+                "resourceType": "GMScript"
+            }
+        },
+        {
+            "Key": "935b0e39-1a1f-44b4-bf27-41b551eb3c67",
+            "Value": {
+                "id": "8006168a-673d-4737-b26c-8860d8d7dbc5",
+                "resourcePath": "scripts\\mapToTeam\\mapToTeam.yy",
                 "resourceType": "GMScript"
             }
         },
@@ -523,14 +523,6 @@
             "Value": {
                 "id": "6be85fbe-41be-47df-8115-b733c2291bf1",
                 "resourcePath": "views\\9ba839d6-c27d-403e-a471-835460edc859.yy",
-                "resourceType": "GMFolder"
-            }
-        },
-        {
-            "Key": "9fd24d34-4b12-47f0-b3e4-156ef8ba2e78",
-            "Value": {
-                "id": "b1b6eda1-4720-49ef-bb0a-d6bc743f5476",
-                "resourcePath": "views\\9fd24d34-4b12-47f0-b3e4-156ef8ba2e78.yy",
                 "resourceType": "GMFolder"
             }
         },
@@ -559,17 +551,18 @@
             }
         },
         {
-            "Key": "ab612136-4064-40ca-978d-605279e95aa8",
-            "Value": {
-                "id": "099fa713-4798-43d3-8e0f-0564f0d1519c",
-                "resourcePath": "scripts\\randomTeamName\\randomTeamName.yy",
-            }
-        },
-        {
             "Key": "a9d7bed5-a671-46ff-89fa-3652ac712ad6",
             "Value": {
                 "id": "b0dbb6a1-6309-4aa6-8d04-a111bd26a616",
                 "resourcePath": "scripts\\stringEquals\\stringEquals.yy",
+                "resourceType": "GMScript"
+            }
+        },
+        {
+            "Key": "ab612136-4064-40ca-978d-605279e95aa8",
+            "Value": {
+                "id": "099fa713-4798-43d3-8e0f-0564f0d1519c",
+                "resourcePath": "scripts\\randomTeamName\\randomTeamName.yy",
                 "resourceType": "GMScript"
             }
         },
@@ -734,17 +727,18 @@
             }
         },
         {
-            "Key": "dcd5704a-f0c0-4d15-af26-f2b079d371a5",
-            "Value": {
-                "id": "9c52bf6d-d496-49e1-aa67-e60fc44cce69",
-                "resourcePath": "scripts\\new_Liga\\new_Liga.yy",
-            }
-        },
-        {
             "Key": "d3785223-9c73-4bd4-9138-9c02edd482d8",
             "Value": {
                 "id": "8c8d568c-e7bd-4ab2-b976-183d23e74036",
                 "resourcePath": "scripts\\cancelBusy\\cancelBusy.yy",
+                "resourceType": "GMScript"
+            }
+        },
+        {
+            "Key": "dcd5704a-f0c0-4d15-af26-f2b079d371a5",
+            "Value": {
+                "id": "9c52bf6d-d496-49e1-aa67-e60fc44cce69",
+                "resourcePath": "scripts\\new_Liga\\new_Liga.yy",
                 "resourceType": "GMScript"
             }
         },
