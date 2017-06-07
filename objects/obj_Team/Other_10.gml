@@ -1,5 +1,5 @@
 /// @description AutoAufstellung
-
+var spielerTypen = returnSpielertypen(formation);
 for (var i = 0; i < array_length_1d(spielerTypen); i++){
 	var best = 0;
 	var bestSpieler = undefined;

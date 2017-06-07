@@ -10,4 +10,4 @@ font_size = font_get_size(fnt_default);
 
 headline = "Aufstellung";
 
-meinTeam = new_Team("FC Arsch", 0, 19);
+//meinTeam = new_Team("FC Arsch", 0, 19);

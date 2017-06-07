@@ -231,6 +231,14 @@
             }
         },
         {
+            "Key": "3f6fbb5b-a9cd-432b-a78d-672fa4c8b1e2",
+            "Value": {
+                "id": "7f79aee2-718b-43c3-a95e-ec11f72d5007",
+                "resourcePath": "objects\\obj_scrollbar\\obj_scrollbar.yy",
+                "resourceType": "GMObject"
+            }
+        },
+        {
             "Key": "44b29f26-2fd2-4c5f-a6da-5f717ea2e6d7",
             "Value": {
                 "id": "8a7cf881-335b-46c3-a528-195bde62aa72",
