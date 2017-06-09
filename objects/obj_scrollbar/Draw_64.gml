@@ -1,8 +1,8 @@
 //Scrollbar Umrandung
-draw_rectangle(x, y, x + width, y + heigth, 1);
+draw_rectangle(x, y, x + width, y + height, 1);
 //Scrollbar
 draw_rectangle(	x + spacing + 1,
-				y + spacing + 1, 
+				bar_y_start, 
 				x + width - (spacing + 1), 
-				y + heigth - (spacing + 1), 0);
+				bar_y_end, 0);
 

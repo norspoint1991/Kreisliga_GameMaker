@@ -6,16 +6,18 @@ draw_set_font(fnt_default);
 font_height = string_height("Test");
 time_font_width = string_width(string_time(0));
 event_font_width = boxwidth - time_font_width - 3*padding;
-maxLines = floor((view_hport[0])/font_height);
+maxLines = floor((view_hport[0] - padding)/font_height);
 
 zeilenGesamt = 0;
 zeilenCounter = 1; //Startwert, damit die if-Abfrage in Step auslöst
 
 //Scrollbar
-scrollbar = instance_create_depth(boxwidth - padding, boxheight/20 + 1, 0, obj_scrollbar)
-scrollbar.width = padding;
-scrollbar.heigth = 19*boxheight/20;
-scrollbar.spacing = 2;
+Spieltag_scrollbar = instance_create_depth(boxwidth - padding, boxheight/20 + 1, 0, obj_scrollbar)
+Spieltag_scrollbar.width = padding;
+Spieltag_scrollbar.height = 19*boxheight/20;
+Spieltag_scrollbar.spacing = 2;
+Spieltag_scrollbar.anteil = maxLines;
+Spieltag_scrollbar.gesamtheit = maxLines;
 
 
 headline = "Ereignisse";

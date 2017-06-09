@@ -1,6 +1,6 @@
 //default Werte; nach dem Erstellen anpassen
 width = 16;
-heigth = 100;
+height = 100;
 
 //Abstand vom Rand zur Bar
 spacing = 1;
@@ -9,5 +9,8 @@ spacing = 1;
 gesamtheit = 100;
 anteil = 100;
 
-bar_height = anteil/gesamtheit;
-bar_position = 0; // Position, 
+bar_height = 1;
+bar_position = 0; // Position, 0 bedeutet ganz unten, 1 ganz oben
+
+bar_y_start = y + spacing + 1 + (1 - bar_position) * (height - bar_height * height);
+bar_y_end = y + (1 - bar_position) * (height - bar_height * height) + (bar_height * height) - (spacing + 1);

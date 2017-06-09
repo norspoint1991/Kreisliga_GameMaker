@@ -27,7 +27,7 @@ ds_map_add(positionValues, "ZM", ZM);
 ds_map_add(positionValues, "OM", OM);
 ds_map_add(positionValues, "ST", ST);
 
-var best = 0;
+var best = -1;
 firstKey = ds_map_find_first(positionValues);
 for(var i = 0; i < ds_map_size(positionValues); i++) 
 {

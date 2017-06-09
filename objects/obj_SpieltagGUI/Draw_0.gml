@@ -16,9 +16,6 @@ draw_set_valign(fa_top);
 //draw_set_color(c_black);
 //draw_text(x + boxwidth/2 - (string_width(headline)/2), y + boxheight/40 - string_height(headline)/2, headline);
 
-draw_set_font(fnt_default);
-font_height = string_height("Test");
-
 var k = 0;
 
 for(var i = 0; i < ds_list_size(eventList); i++)
@@ -27,7 +24,7 @@ for(var i = 0; i < ds_list_size(eventList); i++)
 				y + padding + boxheight/20 + (i+k) * font_height,
 				zeitList[|i]);
 	draw_text_ext(	x + time_font_width + 2*padding,
-				y + padding + boxheight/20 + (i+k) * font_height,	
-				eventList[|i], font_height, event_font_width);
+					y + padding + boxheight/20 + (i+k) * font_height,	
+					eventList[|i], font_height, event_font_width);
 	k += floor(string_width(eventList[|i])/event_font_width);
 }
