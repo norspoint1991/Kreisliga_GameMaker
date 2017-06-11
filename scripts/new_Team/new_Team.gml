@@ -52,6 +52,11 @@ else {
 				}
 			}
 	}
+with(team){	
+	event_user(0); //Auto Aufstellung
+	event_user(1); //Team Initiative
+	event_user(2); //Abpraller
+}
 ini_close();
 
 return team;
