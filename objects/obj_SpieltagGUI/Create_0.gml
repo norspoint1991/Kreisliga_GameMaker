@@ -16,6 +16,10 @@ Spieltag_scrollbar = instance_create_depth(boxwidth - padding, boxheight/20 + 1,
 Spieltag_scrollbar.width = padding;
 Spieltag_scrollbar.height = 19*boxheight/20;
 Spieltag_scrollbar.spacing = 2;
+Spieltag_scrollbar.scrollwindow_x1 = x;
+Spieltag_scrollbar.scrollwindow_y1 = y;
+Spieltag_scrollbar.scrollwindow_x2 = boxwidth;
+Spieltag_scrollbar.scrollwindow_y2 = boxheight;
 Spieltag_scrollbar.anteil = maxLines;
 Spieltag_scrollbar.gesamtheit = maxLines;
 

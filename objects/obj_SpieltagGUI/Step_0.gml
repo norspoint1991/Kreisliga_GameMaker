@@ -119,7 +119,7 @@ if (zeilenGesamt >= maxLines)
 							camera_get_view_x(view_camera[0]),
 							boxheight/20 + (zeilenGesamt - maxLines) * font_height);
 	}
-	else{
+	if(Spieltag_scrollbar.bar_moved){
 		camera_set_view_pos(view_camera[0], 
 							camera_get_view_x(view_camera[0]),
 							boxheight/20 + (1 - Spieltag_scrollbar.bar_position) * (zeilenGesamt - maxLines) * font_height);
