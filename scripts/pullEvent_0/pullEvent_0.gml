@@ -1,12 +1,5 @@
 //Zuweisungen und Busy wieder auf null
 cancelBusy();
-		
-if (zeit == 0) {
-	addText("Begruessung");
-}
-if (zeit == 45){
-	addText("zweiteHalbzeit");
-}
 var nextEvent = 0;
 
 nextEvent = irandom_range(0, 10);
@@ -24,7 +17,7 @@ if(nextEvent != 0){
 		Verteidigung= Heimteam;
 	}
 	addText("imBallbesitz");
-	nextEvent = irandom_range(1, 2); //TODO löschen sobald alle StartEvents beschrieben sind
+	nextEvent = irandom_range(1, 4); //TODO löschen sobald alle StartEvents beschrieben sind
 }
 else{
 	addText("keinEvent");

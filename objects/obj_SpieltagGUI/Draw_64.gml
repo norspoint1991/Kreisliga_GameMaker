@@ -42,8 +42,8 @@ draw_text(	x + boxwidth + 2*padding + string_width(Heimteam.teamName),
 			
 draw_text(	x + boxwidth + 2*padding + string_width(Heimteam.teamName), 
 			y + boxheight/10 + string_height(headline)/2 + padding + 100, 
-			string(obj_scrollbar.bar_y1));
+			string(Spieltag_scrollbar.bar_height));
 			
-draw_text(	x + boxwidth + 2*padding + string_width(Heimteam.teamName), 
-			y + boxheight/10 + string_height(headline)/2 + padding + 200, 
-			string(window_mouse_get_y()));
+//draw_text(	x + boxwidth + 2*padding + string_width(Heimteam.teamName), 
+//			y + boxheight/10 + string_height(headline)/2 + padding + 200, 
+//			string(window_mouse_get_y()));

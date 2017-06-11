@@ -8,13 +8,20 @@ if(simulationRunning)
 
 		if (zeit <= spielzeit) 
 		{
+			if (zeit == 0) {
+				addText("Begruessung");
+				thisEvent = 0;
+			}
+			if (zeit == 45){
+				addText("zweiteHalbzeit");
+				thisEvent = 0; //TODO Halbzeit Bildschirm einfügen
+			}
 
-			switch  (thisEvent){
-
-		
+			switch (thisEvent){
+	
 			case 0 : // PULLEVENT
-				thisEvent = pullEvent_0();
 				zeit += 1;
+				thisEvent = pullEvent_0();
 				break;
 			case 1 : //Langer Pass auf Außen
 				thisEvent = AussenbahnPass_1();
@@ -22,10 +29,12 @@ if(simulationRunning)
 			case 2: //Doppelpass über die Mittellinie
 				thisEvent = DoppelpassMittellinie_2();
 				break;
-			//case 3: //Dribbling über die Mittellinie
-				
-			//case 4: //Pass an den Sechzehner
-				
+			case 3: //Dribbling über die Mittellinie
+				thisEvent = DribblingMittellinie_3();
+				break;
+			case 4: //Pass an den Sechzehner
+				thisEvent = PassAnSechzehner_4();
+				break;	
 			//case 5: //Hoher Ball in den Sechzehner
 			
 			//case 6: //Balleroberung durch Pressing

@@ -7,8 +7,8 @@ if(bar_height < 1){
 							scrollwindow_x1, scrollwindow_y1, 
 							scrollwindow_x2, scrollwindow_y2))
 	{
-		if(mouse_wheel_down()) bar_position = clamp(bar_position - 0.05, 0, 1);
-		if(mouse_wheel_up()) bar_position = clamp(bar_position + 0.05, 0, 1);
+		if(mouse_wheel_down()) bar_position = clamp(bar_position - (1 - cos(bar_height)), 0, 1);
+		if(mouse_wheel_up()) bar_position = clamp(bar_position + (1 - cos(bar_height)), 0, 1);
 		if(keyboard_check_released(vk_down)) bar_position = clamp(bar_position - 0.1, 0, 1);
 		if(keyboard_check_released(vk_up)) bar_position = clamp(bar_position + 0.1, 0, 1);  
 	}
