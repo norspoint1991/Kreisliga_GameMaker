@@ -3,7 +3,7 @@ SpielerMitBall.busy = true;
 addText("Aussenbahnpass");
 passQualitaet = Passqualitaet(SpielerMitBall); 
 
-if (Passqualitaet != 0) {
+if (passQualitaet != 0) {
 	return 15; //Laufduell auf Aussen
 }
 else{

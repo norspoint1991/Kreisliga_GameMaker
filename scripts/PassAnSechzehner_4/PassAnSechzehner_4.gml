@@ -1,7 +1,7 @@
 SpielerMitBall = getPlayerExcept(Angriff, "LI", "TW");
 SpielerMitBall.busy = true;
-passQualitaet = Passqualitaet(SpielerMitBall);
 addText("PassAnSechzehner");
+passQualitaet = Passqualitaet(SpielerMitBall);
 if(passQualitaet != 0){
 	Verteidiger = getPlayerExcept(Verteidigung, "TW", "OM", "ST");
 	var schranke = passQualitaet + ratioX(SpielerMitBall.antizipation, Verteidiger.antizipation);
@@ -22,4 +22,3 @@ if(passQualitaet != 0){
 	}
 }
 else return 0;
-		

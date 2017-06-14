@@ -2,7 +2,7 @@
     "id": "0cd4b03f-5f1f-4aab-9b78-804e0151be1e",
     "modelName": "GMObject",
     "mvc": "1.0",
-    "name": "obj_button",
+    "name": "obj_Spieltagbutton",
     "eventList": [
         {
             "id": "ca3fe680-f528-4b5f-b9f0-1d2d6e61792b",
@@ -52,6 +52,16 @@
             "collisionObjectId": "00000000-0000-0000-0000-000000000000",
             "enumb": 11,
             "eventtype": 6,
+            "m_owner": "0cd4b03f-5f1f-4aab-9b78-804e0151be1e"
+        },
+        {
+            "id": "df07e28a-f6a6-4afb-a86d-478692ef9675",
+            "modelName": "GMEvent",
+            "mvc": "1.0",
+            "IsDnD": false,
+            "collisionObjectId": "00000000-0000-0000-0000-000000000000",
+            "enumb": 0,
+            "eventtype": 3,
             "m_owner": "0cd4b03f-5f1f-4aab-9b78-804e0151be1e"
         }
     ],

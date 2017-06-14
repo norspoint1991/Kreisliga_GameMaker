@@ -1,4 +1,4 @@
-Verteidiger = getPlayerFrom(Verteidigung, "VER");
+Verteidiger = getPlayerFrom(Verteidigung, "DEF");
 var schranke = ratioX(SpielerMitBall.stellungsspiel, Verteidiger.stellungsspiel);
 var roll = ranRoll();
 if (roll <= schranke){

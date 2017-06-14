@@ -18,7 +18,7 @@ if (roll <= schranke){
 		else if (SpielerMitBall.position == "RM" || SpielerMitBall.position == "RV"){
 			seite = "rechts";
 		}
-		else seite = rechts;
+		else seite = "rechts";
 		
 		addText("SpieltBallAufAußen", "KonterBallInDieMitte");
 		if (SpielerMitBallVorher != undefined){

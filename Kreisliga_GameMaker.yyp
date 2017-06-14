@@ -82,7 +82,7 @@
             "Key": "0cd4b03f-5f1f-4aab-9b78-804e0151be1e",
             "Value": {
                 "id": "8c58afe7-6357-440e-ab3e-6a1bee243ed8",
-                "resourcePath": "objects\\obj_button\\obj_button.yy",
+                "resourcePath": "objects\\obj_Spieltagbutton\\obj_Spieltagbutton.yy",
                 "resourceType": "GMObject"
             }
         },
@@ -252,6 +252,14 @@
                 "id": "e1322edf-3542-465d-8811-f629fe24e838",
                 "resourcePath": "views\\48172b0d-172b-4897-be38-370749d015b2.yy",
                 "resourceType": "GMFolder"
+            }
+        },
+        {
+            "Key": "4a84a3d9-c10c-438d-86eb-ec415dbf226e",
+            "Value": {
+                "id": "d209b3db-0c36-4f46-9341-7cf3404f61c9",
+                "resourcePath": "scripts\\hoherBallSechzehner_5\\hoherBallSechzehner_5.yy",
+                "resourceType": "GMScript"
             }
         },
         {
@@ -695,6 +703,14 @@
             }
         },
         {
+            "Key": "c0ee0171-7ddd-47d3-8683-36d248c52405",
+            "Value": {
+                "id": "6b7cbb97-3d02-44f0-9b91-f3b1114c7316",
+                "resourcePath": "objects\\obj_ManagerViewButton\\obj_ManagerViewButton.yy",
+                "resourceType": "GMObject"
+            }
+        },
+        {
             "Key": "c2c6ed9a-1683-4c0e-96bc-b0b0d506c4c5",
             "Value": {
                 "id": "819fd6e2-50a9-437b-be26-f2147370965b",
@@ -938,6 +954,7 @@
         "19298795-c1d7-421d-a4b5-b9edc6ae3162",
         "6eda8688-9879-4283-80aa-13d43341b2cf",
         "d951a0e4-01aa-4eca-aae0-44d31afbe9b1",
+        "4a84a3d9-c10c-438d-86eb-ec415dbf226e",
         "91202556-732c-4760-99d7-fc80a096d109",
         "ad2eb888-d973-4cc6-af38-7d8483d34ce4",
         "14e94688-4987-47eb-8a5a-19c577797b49",

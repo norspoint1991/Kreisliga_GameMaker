@@ -26,6 +26,6 @@ view_hport[1] = window_get_height();
 
 instance_create_depth(0, 0, 0, obj_SpieltagGUI);
 
-SpielstartenButton = instance_create_depth(750, 700, 0, obj_button);
+SpielstartenButton = instance_create_depth(750, 700, 0, obj_Spieltagbutton);
 SpielstartenButton.text = "Spiel starten"
 SpielstartenButton.action = 1;

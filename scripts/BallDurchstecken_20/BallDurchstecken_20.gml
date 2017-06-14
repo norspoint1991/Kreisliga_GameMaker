@@ -3,7 +3,7 @@ if (GegnerVorher != undefined){
 }
 GegnerVorher = Verteidiger;
 GegnerVorher.busy = true;
-Verteidiger = getPlayerFrom(Verteidigung, "VER");
+Verteidiger = getPlayerFrom(Verteidigung, "DEF");
 var schranke = ratioX(SpielerMitBall.pass, (Verteidiger.antizipation + Verteidiger.stellungsspiel)/2);
 var roll = ranRoll();
 

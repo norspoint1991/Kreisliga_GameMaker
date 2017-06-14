@@ -7,7 +7,7 @@ var positions = ds_list_create();
 var Team = argument[0];
 if (argument_count == 2)
 {
-	if (argument[1] == "VER"){
+	if (argument[1] == "DEF"){
 		ds_list_add(positions, "LI");
 		ds_list_add(positions, "IV");
 		ds_list_add(positions, "MD");

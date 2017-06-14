@@ -8,19 +8,9 @@ if(simulationRunning)
 
 		if (zeit <= spielzeit) 
 		{
-			if (zeit == 0) {
-				addText("Begruessung");
-				thisEvent = 0;
-			}
-			if (zeit == 45){
-				addText("zweiteHalbzeit");
-				thisEvent = 0; //TODO Halbzeit Bildschirm einfügen
-			}
-
 			switch (thisEvent){
 	
 			case 0 : // PULLEVENT
-				zeit += 1;
 				thisEvent = pullEvent_0();
 				break;
 			case 1 : //Langer Pass auf Außen
@@ -35,8 +25,9 @@ if(simulationRunning)
 			case 4: //Pass an den Sechzehner
 				thisEvent = PassAnSechzehner_4();
 				break;	
-			//case 5: //Hoher Ball in den Sechzehner
-			
+			case 5: //Hoher Ball in den Sechzehner
+				thisEvent = hoherBallSechzehner_5();
+				break;
 			//case 6: //Balleroberung durch Pressing
 				
 			//case 7: //Ball halten
@@ -98,8 +89,12 @@ if(simulationRunning)
 			case 80: //Konter - Event, dass den Angriff umkehrt
 				thisEvent = Konter_80();
 				break;
-			//case 81: //Konter über Außen
-			//case 82: //Konter durch die Mitte
+			case 81: //Konter über Außen
+				thisEvent = KonterAussen_81();
+				break;
+			case 82: //Konter durch die Mitte
+				thisEvent = KonterMitte_82();
+				break;
 			//case 90: //Verzweifelungsschuss - Event bei kleiner Moral
 			case 99: //Torwart haelt
 				thisEvent = torwartHaelt_99();
@@ -108,7 +103,7 @@ if(simulationRunning)
 				thisEvent = Tor_100();
 				break;
 				
-			default: 
+			default:
 				thisEvent = 0;
 				break;
 			}	

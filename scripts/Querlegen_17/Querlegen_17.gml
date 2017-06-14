@@ -11,7 +11,7 @@ if (roll <= schranke){
 	return 21; //Spieler mit Ball zentral am Sechzehner
 }
 else {
-	Verteidiger = getPlayerFrom(Verteidigung, "VER");
+	Verteidiger = getPlayerFrom(Verteidigung, "DEF");
 	addText("QuerlegenGescheitert");
 	return 0;
 }

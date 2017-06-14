@@ -71,6 +71,11 @@ if (whereToLook == 1 || whereToLook == 0) {
 	if string_pos("&PassEmpfaenger", unparsed_string) != 0 {
 	unparsed_string = string_replace_all ( unparsed_string, "&PassEmpfaenger", get_player_info(PassEmpfaenger) );
 	}
+		
+	//Ergebnis ersetzen
+	if string_pos("&Ergebnis", unparsed_string) != 0 {
+	unparsed_string = string_replace_all ( unparsed_string, "&Ergebnis", string(heimteamTore) + " : " + string(auswaertsteamTore));
+	}
 }
 
 return unparsed_string
