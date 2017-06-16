@@ -30,7 +30,7 @@ if (push != 0)
 			room_goto(rm_ManagerView);
 			break;
 		case 1:
-			//room_goto(rm_loadView);
+			instance_create_depth(window_get_width()/2, 50, 0, obj_new_game_window);
 			break;
 		case 2:
 			//room_goto(rm_optionView);

@@ -9,7 +9,8 @@
         "8148c222-bd0c-441d-b52e-b1a33f8f3bd3",
         "ef47c634-ad31-423a-b9c5-a7e7f43a7ebe",
         "935b0e39-1a1f-44b4-bf27-41b551eb3c67",
-        "9110b5b0-49b6-4fcd-abe0-14f89d3f0eeb"
+        "9110b5b0-49b6-4fcd-abe0-14f89d3f0eeb",
+        "ec92f2b8-fbf6-413f-8b1d-c82d0847300b"
     ],
     "filterType": "GMScript",
     "folderName": "Speichern\/Laden",

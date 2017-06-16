@@ -38,7 +38,7 @@ if (argument_count >= 3) {
 	}
 }
 else {
-	while(i < 3 - ds_map_size(team.spielerMap))
+	while(i < 15 - ds_map_size(team.spielerMap))
 			{
 				//Random Name 
 				var vorname_argument = randomVorname();
