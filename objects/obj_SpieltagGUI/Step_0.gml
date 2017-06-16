@@ -28,9 +28,10 @@ if(simulationRunning)
 			case 5: //Hoher Ball in den Sechzehner
 				thisEvent = hoherBallSechzehner_5();
 				break;
-			//case 6: //Balleroberung durch Pressing
-				
-			//case 7: //Ball halten
+			case 6: //Balleroberung durch Pressing
+				thisEvent = BalleroberungPressing_6();
+				break;
+			//case 7:
 			
 			case 11 : // Spieler mit Ball auf außen
 				thisEvent = SpielerAufAussen_11();
@@ -47,8 +48,8 @@ if(simulationRunning)
 			case 15: //Laufduell auf Außen
 				thisEvent = LaufduellaufAussen_15();
 				break;
-			case 16: //Ball verteilen gegnerische Hälfte
-				thisEvent = BallVerteilenGegnHaelfte_16();
+			case 16: //Spieler gegn. Hälfte
+				thisEvent = SpielerGegnHaelfte_16();
 				break;
 			case 17: //Quer legen
 				thisEvent = Querlegen_17();
@@ -65,16 +66,24 @@ if(simulationRunning)
 			case 21: //Spieler mit Ball zentral am Sechzehner
 				thisEvent = zentralAmSechzehner_21();
 				break;
-			//case 22:
-				
+			case 22: //Dribbling gegn. Hälfte
+				thisEvent = DribblingGegnHaelfte_22();
+				break;
+			case 23: //Ball verteilen gegn. Hälfte
+				thisEvent = BallVerteilenGegnHaelfte_23();
+				break;
 			//case 25: //Ball von außen in den Strafraum; Kopfball, Ball rutscht durch zusammenfassen
 			//			//für Ecke und Flanke
 			
 			case 30: //Ecke
 				thisEvent = Ecke_30();
 				break;
-			//case 31: //Freistoss, direkt
-			//case 32: //Freistoss, Flanke
+			case 31: //Freistoss, direkt
+				thisEvent = FreistossDirekt_31();
+				break;
+			case 32: //Freistoss, Flanke
+				thisEvent = FreistossFlanke_32();
+				break;
 			//case 33: //Elfmeter
 			case 40: //Schuss kurze Distanz
 				thisEvent = Schuss5_40();

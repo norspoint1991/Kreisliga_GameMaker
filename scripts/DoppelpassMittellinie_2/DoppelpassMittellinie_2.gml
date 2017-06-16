@@ -18,7 +18,7 @@ if (roll <= schranke){
 	}
 	GegnerVorher = Verteidiger;
 	GegnerVorher.busy = true;
-	return 16; //Ball verteilen gegnerische Hälfte	
+	return 16; //Spieler gegn. Hälfte
 }
 else{
 	addText("DoppelpassMittellinieAbgefangen");

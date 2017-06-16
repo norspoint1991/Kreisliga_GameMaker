@@ -15,7 +15,7 @@ if (roll <= schranke){
 	SpielerMitBallVorher.busy = true;
 	SpielerMitBall = getPlayerFrom(Angriff, "OFF");
 	addText("StecktBallDurch");
-	return 43; //Schuss kurze Distanz
+	return 40; //Schuss kurze Distanz
 }
 else {
 	addText("BallAbfangen");

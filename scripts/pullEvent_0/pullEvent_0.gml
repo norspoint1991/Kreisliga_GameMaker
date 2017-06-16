@@ -20,7 +20,7 @@ if (zeit == spielzeit){
 }
 zeit++;
 
-nextEvent = irandom_range(0, 5);
+nextEvent = irandom_range(0, 6);
 if(nextEvent != 0){
 	with(Auswaertsteam) event_user(1); //Initiative Werte neu bestimmen
 	with(Heimteam) event_user(1);

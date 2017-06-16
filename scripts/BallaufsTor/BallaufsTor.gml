@@ -12,5 +12,5 @@ if ( roll <= argument0) {
 	}
 }
 else {
-	return 99;
+	return 99; //Torwart hält
 }

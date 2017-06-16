@@ -30,3 +30,7 @@ if (roll <= schranke){
 		return 21; //zentral am Sechzehner
 	}
 }
+else{
+	addText("SpieltBallVerfehlt");
+	return 0;
+}

@@ -1,8 +1,8 @@
 {
-    "id": "b08e379e-a7e8-428b-8589-beb8797f7402",
+    "id": "fd5a876c-cc61-4e27-9cf2-fe65dc1a3347",
     "modelName": "GMScript",
     "mvc": "1.0",
-    "name": "BallVerteilenGegnHaelfte_16",
+    "name": "SpielerGegnHaelfte_16",
     "IsCompatibility": false,
     "IsDnD": false
 }

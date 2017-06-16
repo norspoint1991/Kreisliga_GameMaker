@@ -1,21 +1,18 @@
 SpielerMitBall = getPlayerFrom(Angriff, "MIT");
 SpielerMitBall.busy = true;
 Verteidiger = getPlayerFrom(Verteidigung, "OM", "ZM", "DM");
+if (Foul()){
+	addText("FreistossHintenRum");
+	return 0;
+}
 addText("DribblingMittellinie");
-if(Dribbling(SpielerMitBall, Verteidiger)){
+if(Dribbling()){
 	if (GegnerVorher != undefined){
 		GegnerVorher.busy = false;
 	}
 	GegnerVorher = Verteidiger;
 	GegnerVorher.busy = true;
-	var schranke = SpielerMitBall.selbstbewusstsein;
-	var roll = ranRoll();
-	if(roll <= schranke){
-		return 22; //Dribbling gegn. Hälfte
-	}
-	else{
-		return 16; //Ball verteilen gegn. Hälfte
-	}
+	return 16; //Spieler gegn. Hälfte
 }
 else{
 	return 80; //Konter

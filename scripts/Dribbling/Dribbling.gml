@@ -1,5 +1,4 @@
-///Dribbling(Angreifer, Verteidiger)
-var schranke = ratioX(argument0.dribbling, argument1.zweikampf);
+var schranke = ratioX(SpielerMitBall.dribbling, Verteidiger.zweikampf);
 var roll = ranRoll();
 if (roll <= schranke){
 	addText("Dribbling", "laesstVerteidigerStehen");

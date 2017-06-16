@@ -1,5 +1,10 @@
 Verteidiger = getPlayerFrom(Verteidigung, "MIT");
-if(Dribbling(SpielerMitBall, Verteidiger)){
+if (Foul()){
+	addText("FreistossMittelfeld");
+	return 32;
+}
+addText("DribblingGegnHaelfte");
+if(Dribbling()){
 	if (GegnerVorher != undefined){
 		GegnerVorher.busy = false;
 	}
