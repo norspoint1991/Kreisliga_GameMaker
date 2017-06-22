@@ -9,13 +9,13 @@ if (zeit == 0) {
 }
 if (zeit == 45){
 	addText("zweiteHalbzeit"); //TODO Halbzeit Bildschirm einfügen
-	simulationRunning = false;
+	global.simulationRunning = false;
 	zeit++;
 	return 0;
 }
-if (zeit == spielzeit){
+if (zeit >= spielzeit){
 	addText("SpielVorbei");
-	simulationRunning = false;
+	global.simulationRunning = false;
 	return 0;
 }
 zeit++;

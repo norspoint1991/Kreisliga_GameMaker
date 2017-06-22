@@ -37,8 +37,7 @@ simulationSpeed = 1; //Frames zwischen zwei Zeilen
 eventList = ds_list_create();
 zeitList = ds_list_create();
 
-Heimteam = new_Team("Sc Hille", 0, 19);
-
+Heimteam = new_Team("SC Hille", 0, 19);
 Auswaertsteam = new_Team(0, 0, 19);
 
 //ini file mit allen Texten für die Simulation

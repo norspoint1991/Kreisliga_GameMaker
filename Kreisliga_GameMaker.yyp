@@ -255,6 +255,14 @@
             }
         },
         {
+            "Key": "42cb014c-f31a-4bcb-b362-eec240380928",
+            "Value": {
+                "id": "b952f419-3884-4d0a-8080-cd16f7323caf",
+                "resourcePath": "scripts\\PosSortNumber\\PosSortNumber.yy",
+                "resourceType": "GMScript"
+            }
+        },
+        {
             "Key": "44b29f26-2fd2-4c5f-a6da-5f717ea2e6d7",
             "Value": {
                 "id": "8a7cf881-335b-46c3-a528-195bde62aa72",
@@ -977,6 +985,7 @@
         "a5d91bc7-4cd7-4d24-a3e5-ce566d95294f",
         "09409348-27b8-4374-9427-3ea776e5b4b5",
         "a9d7bed5-a671-46ff-89fa-3652ac712ad6",
+        "42cb014c-f31a-4bcb-b362-eec240380928",
         "707cdfa6-7a18-42e6-a847-a22233452e6c",
         "b19c48c6-12f3-4730-a073-43d91e095522",
         "60032121-5625-4b9a-8596-7d076575cd2d",
