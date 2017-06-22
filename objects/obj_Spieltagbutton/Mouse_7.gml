@@ -17,5 +17,8 @@ switch(action){
 		text = "Pause";
 		action = 2;
 		break;
+	case 4:
+		room_goto(rm_ManagerView);
+		break;
 	default: break;
 }
