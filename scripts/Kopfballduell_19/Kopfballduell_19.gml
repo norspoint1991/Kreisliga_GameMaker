@@ -1,5 +1,11 @@
+if (SpielerMitBallVorher != undefined){
+	SpielerMitBallVorher.busy = false;
+}
+SpielerMitBallVorher = SpielerMitBall;
+SpielerMitBallVorher.busy = true;
+SpielerMitBall = getPlayerFrom(Angriff, "OFF");
 Verteidiger = getPlayerFrom(Verteidigung, "LI", "IV", "MD");
-var schranke = Flankenqualitaet + ratioX(SpielerMitBall.kopfball, Verteidiger.kopfball);
+var schranke = flankenQualitaet + ratioX(SpielerMitBall.kopfball, Verteidiger.kopfball);
 var roll = ranRoll();
 
 if ( roll <= schranke) {

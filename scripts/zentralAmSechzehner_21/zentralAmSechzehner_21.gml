@@ -1,4 +1,4 @@
-Verteidiger = getPlayerFrom(Verteidigung, "VER");
+Verteidiger = getPlayerFrom(Verteidigung, "DEF");
 var schranke = ratioX(SpielerMitBall.stellungsspiel, Verteidiger.stellungsspiel);
 var roll = ranRoll();
 if (roll <= schranke){
@@ -14,7 +14,12 @@ if (roll <= schranke){
 }
 else{
 	addText("WirdGestellt");
-	if(Dribbling(SpielerMitBall, Verteidiger)){
+	if (Foul()){
+		abstand = 20;
+		addText("FreistossZentral");
+		return 31; //Freistoss direkt
+	}
+	if(Dribbling()){
 		schranke = ratioX(SpielerMitBall.antizipation, SpielerMitBall.selbstbewusstsein);
 		roll = ranRoll();
 		if (roll <= schranke){

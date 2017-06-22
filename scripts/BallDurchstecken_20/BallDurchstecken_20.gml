@@ -3,7 +3,7 @@ if (GegnerVorher != undefined){
 }
 GegnerVorher = Verteidiger;
 GegnerVorher.busy = true;
-Verteidiger = getPlayerFrom(Verteidigung, "VER");
+Verteidiger = getPlayerFrom(Verteidigung, "DEF");
 var schranke = ratioX(SpielerMitBall.pass, (Verteidiger.antizipation + Verteidiger.stellungsspiel)/2);
 var roll = ranRoll();
 
@@ -15,7 +15,7 @@ if (roll <= schranke){
 	SpielerMitBallVorher.busy = true;
 	SpielerMitBall = getPlayerFrom(Angriff, "OFF");
 	addText("StecktBallDurch");
-	return 43; //Schuss kurze Distanz
+	return 40; //Schuss kurze Distanz
 }
 else {
 	addText("BallAbfangen");

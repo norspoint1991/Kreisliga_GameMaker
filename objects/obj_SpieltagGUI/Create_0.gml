@@ -5,7 +5,7 @@ boxheight = window_get_height();
 draw_set_font(fnt_default);
 font_height = string_height("Test");
 time_font_width = string_width(string_time(0));
-event_font_width = boxwidth - time_font_width - 3*padding;
+event_font_width = boxwidth - time_font_width - 4*padding;
 maxLines = floor((view_hport[0] - padding)/font_height);
 
 zeilenGesamt = 0;
@@ -54,6 +54,7 @@ Verteidiger = undefined;
 GegnerVorher = undefined;
 SpielerMitBallVorher = undefined;
 SpielerMitBall = undefined;
+seite = "rechts";
 //Qualitaeten
 flankenQualitaet = 0;
 passQualitaet = 0;

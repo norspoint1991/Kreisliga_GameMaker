@@ -7,7 +7,7 @@ var positions = ds_list_create();
 var Team = argument[0];
 if (argument_count == 2)
 {
-	if (argument[1] == "VER"){
+	if (argument[1] == "DEF"){
 		ds_list_add(positions, "LI");
 		ds_list_add(positions, "IV");
 		ds_list_add(positions, "MD");
@@ -41,7 +41,7 @@ for(i = 0; i < ds_list_size(positions); i++)
 	for (var k = 0; k < ds_map_size(Team.spielerMap); k++) 
 	{
 		Spieler = Team.spielerMap[? key];
-		if(Spieler.position == positions[|i])
+		if(Spieler.position == positions[|i] && Spieler.busy == false)
 		{
 			ds_list_add(possiblePlayers, Spieler);	
 		}
