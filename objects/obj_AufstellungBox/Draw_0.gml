@@ -1,18 +1,6 @@
 draw_set_halign(fa_left);
 draw_set_valign(fa_top);
 
-
-
-//draw_set_color(c_gray);
-//draw_rectangle(x, y, x + boxwidth, y + boxheight, 0);
-
-//draw_set_color(c_green);
-//draw_rectangle(x, y, x + boxwidth, y + boxheight/20, 0);
-
-//draw_set_color(c_black);
-//draw_rectangle(x, y, x + boxwidth, y + boxheight/20, 1);
-//draw_rectangle(x, y + boxheight/20, boxwidth, y + boxheight, 1);
-
 //Überschriften
 draw_set_font(fnt_handwriting_headline);
 var xVerschiebung = 0;
@@ -37,3 +25,11 @@ for (var k = 0; k < attributeNumber; k++){
 	}
 	xVerschiebung += zeilenBreite[k];
 }
+
+//DEBUG TODO entfernen
+
+draw_text(x + tabellenBreite + 20, y + 20, window_mouse_get_x());
+draw_text(x + tabellenBreite + 20, y + 40, window_mouse_get_y());
+draw_text(x + tabellenBreite + 20, y + 60, string(row_clicked));
+draw_text(x + tabellenBreite + 20, y + 80, string(row_dropped));
+draw_text(x + tabellenBreite + 20, y + 100, string(tabellenBreite));

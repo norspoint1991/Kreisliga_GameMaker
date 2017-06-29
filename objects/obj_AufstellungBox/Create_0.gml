@@ -7,6 +7,9 @@ fnt_handwriting_headline = font_add("Font linda.sciutto.ttf", 18, true, false, 1
 draw_set_font(fnt_handwriting);
 rowheight = string_height("Test") + padding;
 
+row_clicked = undefined;
+row_dropped = undefined;
+
 attributeNumber = 10;
 sortingNumbers = 2;
 
@@ -54,4 +57,5 @@ for (var k = 0; k < attributeNumber; k++){
 	}
 }
 
-ds_grid_sort(playerGrid, 10, true)
+grid_sort_stable(playerGrid, 10, true)
+tabellenBreite = array_sum(zeilenBreite);

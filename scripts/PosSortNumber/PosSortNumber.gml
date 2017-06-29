@@ -12,22 +12,26 @@ switch(testedString)
 		return 2;
 	case "IV":		 
 		return 3;
-	case "LV": case "RV":		 
+	case "LV": 		 
 		return 4;
-	case "DM":		 
+	case "RV":
 		return 5;
-	case "LM": case "RM":		 
+	case "DM":		 
 		return 6;
-	case "ZM":		 
+	case "LM":	 
 		return 7;
-	case "OM":		 
+	case "RM":	
 		return 8;
-	case "ST":		 
+	case "ZM":		 
 		return 9;
-	case "AUSW":		 
+	case "OM":		 
 		return 10;
-	case "RES":		 
+	case "ST":		 
 		return 11;
-	default:
+	case "AUSW":		 
 		return 12;
+	case "RES":		 
+		return 13;
+	default:
+		return 14;
 }
