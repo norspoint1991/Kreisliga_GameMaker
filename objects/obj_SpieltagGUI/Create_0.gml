@@ -33,6 +33,7 @@ spielzeit = 90;
 heimteamTore = 0;
 auswaertsteamTore = 0;
 simulationSpeed = 1; //Frames zwischen zwei Zeilen
+zweiteHalbzeit = false;
 
 eventList = ds_list_create();
 zeitList = ds_list_create();

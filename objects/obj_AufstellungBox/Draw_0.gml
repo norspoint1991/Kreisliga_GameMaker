@@ -2,6 +2,7 @@ draw_set_halign(fa_left);
 draw_set_valign(fa_top);
 
 
+
 //draw_set_color(c_gray);
 //draw_rectangle(x, y, x + boxwidth, y + boxheight, 0);
 
@@ -13,6 +14,7 @@ draw_set_valign(fa_top);
 //draw_rectangle(x, y + boxheight/20, boxwidth, y + boxheight, 1);
 
 //Überschriften
+draw_set_font(fnt_handwriting_headline);
 var xVerschiebung = 0;
 for(var n = 0; n < attributeNumber; n++){
 	draw_rectangle(	x + xVerschiebung,					 y,
@@ -22,6 +24,8 @@ for(var n = 0; n < attributeNumber; n++){
 				spaltenBezeichnungen[n]);
 	xVerschiebung += zeilenBreite[n];
 }
+
+draw_set_font(fnt_handwriting);
 xVerschiebung = 0;
 for (var k = 0; k < attributeNumber; k++){
 	for (var j = 0; j < ds_grid_height(playerGrid); j++){

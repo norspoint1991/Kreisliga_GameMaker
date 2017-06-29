@@ -111,6 +111,14 @@
             }
         },
         {
+            "Key": "0e5e115c-0faf-40f4-af79-e6639ceb1c75",
+            "Value": {
+                "id": "4488cd6d-0fcf-45db-a398-0215c6f47c0e",
+                "resourcePath": "datafiles_yy\\Font linda.sciutto.ttf.yy",
+                "resourceType": "GMIncludedFile"
+            }
+        },
+        {
             "Key": "113c43f8-be28-4494-b810-7cdbd0eb413a",
             "Value": {
                 "id": "7ee13259-25a2-49c9-872a-b450bc34673b",
@@ -564,6 +572,14 @@
                 "id": "8006168a-673d-4737-b26c-8860d8d7dbc5",
                 "resourcePath": "scripts\\mapToTeam\\mapToTeam.yy",
                 "resourceType": "GMScript"
+            }
+        },
+        {
+            "Key": "95e28b3a-48d8-47b1-b648-a97758bb536d",
+            "Value": {
+                "id": "a1d92790-ae98-4715-bd8c-8fd79bafdece",
+                "resourcePath": "datafiles_yy\\LullaBelle.ttf.yy",
+                "resourceType": "GMIncludedFile"
             }
         },
         {
