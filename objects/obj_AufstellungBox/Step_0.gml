@@ -3,12 +3,13 @@ var xVerschiebung = 0;
 if(mouse_check_button_pressed(mb_left)){
 	if(point_in_rectangle(	window_mouse_get_x(), window_mouse_get_y(),
 							x, y + rowheight,
-							x + tabellenBreite, y + (ds_grid_height(playerGrid) + 1)*rowheight)){
+							x + zeilenBreite[0], y + (ds_grid_height(playerGrid) + 1)*rowheight)){
 		for (var j = 0; j < ds_grid_height(playerGrid); j++){
 			if(point_in_rectangle(	window_mouse_get_x(), window_mouse_get_y(),
 									x, y + (j+1)*rowheight,
-									x + tabellenBreite, y + (j+2)*rowheight)){
+									x + zeilenBreite[0], y + (j+2)*rowheight)){
 				row_clicked = j;
+				xPointClicked = x - window_mouse_get_x();
 			}
 		}
 	}
@@ -17,11 +18,11 @@ if(mouse_check_button_pressed(mb_left)){
 if(mouse_check_button_released(mb_left)){
 	if(point_in_rectangle(	window_mouse_get_x(), window_mouse_get_y(),
 							x, y + rowheight,
-							x + tabellenBreite, y + (ds_grid_height(playerGrid) + 1)*rowheight)){
+							x + zeilenBreite[0], y + (ds_grid_height(playerGrid) + 1)*rowheight)){
 		for (var j = 0; j < ds_grid_height(playerGrid); j++){
 			if(point_in_rectangle(	window_mouse_get_x(), window_mouse_get_y(),
 									x, y + (j+1)*rowheight,
-									x + tabellenBreite, y + (j+2)*rowheight)){
+									x + zeilenBreite[0], y + (j+2)*rowheight)){
 				row_dropped = j;
 			}
 		}
@@ -53,5 +54,11 @@ if(row_clicked != undefined && row_dropped != undefined && row_clicked != row_dr
 	playerGrid[# 10, row_dropped] = positionNumStored;
 	row_clicked = undefined;
 	row_dropped = undefined;
+	xPointClicked = undefined;
 	grid_sort_stable(playerGrid, 10, true);
+}
+if(row_clicked != undefined && row_clicked == row_dropped){
+	row_clicked = undefined;
+	row_dropped = undefined;
+	xPointClicked = undefined;
 }

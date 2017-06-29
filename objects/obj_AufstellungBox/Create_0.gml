@@ -9,6 +9,7 @@ rowheight = string_height("Test") + padding;
 
 row_clicked = undefined;
 row_dropped = undefined;
+xPointClicked = undefined;
 
 attributeNumber = 10;
 sortingNumbers = 2;

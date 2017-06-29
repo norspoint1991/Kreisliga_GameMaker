@@ -1,5 +1,6 @@
 draw_set_halign(fa_left);
 draw_set_valign(fa_top);
+draw_set_color(c_black);
 
 //Überschriften
 draw_set_font(fnt_handwriting_headline);
@@ -24,6 +25,22 @@ for (var k = 0; k < attributeNumber; k++){
 					string(playerGrid[# k, j]));
 	}
 	xVerschiebung += zeilenBreite[k];
+}
+
+if(xPointClicked != undefined){
+	draw_set_color(c_blue);
+	draw_rectangle(	window_mouse_get_x() + xPointClicked, 
+					window_mouse_get_y() - rowheight/2,
+					window_mouse_get_x() + xPointClicked + zeilenBreite[0], 
+					window_mouse_get_y() + rowheight/2, false);
+	draw_set_color(c_black);
+	draw_rectangle(	window_mouse_get_x() + xPointClicked, 
+					window_mouse_get_y() - rowheight/2,
+					window_mouse_get_x() + xPointClicked + zeilenBreite[0], 
+					window_mouse_get_y() + rowheight/2, true);		
+	draw_text(	window_mouse_get_x() + xPointClicked + zeilenBreite[0]/2 - string_width(string(playerGrid[# 0, row_clicked]))/2, 
+				window_mouse_get_y() - string_height(string(playerGrid[# 0, row_clicked]))/2, 
+				string(playerGrid[# 0, row_clicked]));
 }
 
 //DEBUG TODO entfernen
