@@ -1,4 +1,4 @@
-if(simulationRunning)
+if(global.simulationRunning)
 {
 	step++;
 	if ((zeilenCounter * simulationSpeed) - step <= 0)
@@ -117,7 +117,7 @@ if(simulationRunning)
 				break;
 			}	
 		}
-		else simulationRunning = false;
+		else global.simulationRunning = false;
 	}
 }
 

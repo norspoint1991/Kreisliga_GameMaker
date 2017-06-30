@@ -39,6 +39,14 @@
             }
         },
         {
+            "Key": "018a14bb-c02b-4003-8bda-66543d449fa9",
+            "Value": {
+                "id": "0de94297-3ec4-47d4-b157-5b74d52fa344",
+                "resourcePath": "scripts\\array_sum\\array_sum.yy",
+                "resourceType": "GMScript"
+            }
+        },
+        {
             "Key": "0495b382-c066-4f4f-8bdd-6ce0ba9a7372",
             "Value": {
                 "id": "77488e50-4c37-43e0-8669-7b3bd2329bb9",
@@ -108,6 +116,14 @@
                 "id": "c3372a16-5b39-4f47-8fe6-2f5802a13a76",
                 "resourcePath": "scripts\\randomVorname\\randomVorname.yy",
                 "resourceType": "GMScript"
+            }
+        },
+        {
+            "Key": "0e5e115c-0faf-40f4-af79-e6639ceb1c75",
+            "Value": {
+                "id": "4488cd6d-0fcf-45db-a398-0215c6f47c0e",
+                "resourcePath": "datafiles_yy\\Font linda.sciutto.ttf.yy",
+                "resourceType": "GMIncludedFile"
             }
         },
         {
@@ -255,6 +271,14 @@
             }
         },
         {
+            "Key": "42cb014c-f31a-4bcb-b362-eec240380928",
+            "Value": {
+                "id": "b952f419-3884-4d0a-8080-cd16f7323caf",
+                "resourcePath": "scripts\\PosSortNumber\\PosSortNumber.yy",
+                "resourceType": "GMScript"
+            }
+        },
+        {
             "Key": "44b29f26-2fd2-4c5f-a6da-5f717ea2e6d7",
             "Value": {
                 "id": "8a7cf881-335b-46c3-a528-195bde62aa72",
@@ -364,6 +388,14 @@
                 "id": "b5624ab7-9641-463b-a905-e4f3dcd32cdf",
                 "resourcePath": "datafiles_yy\\TeamNameFile_ger.ini.yy",
                 "resourceType": "GMIncludedFile"
+            }
+        },
+        {
+            "Key": "6ac5273c-b8cf-4f90-9fe2-3d24e039102e",
+            "Value": {
+                "id": "e6192f2e-3a0c-4ec2-9de5-2a11b88718c0",
+                "resourcePath": "scripts\\grid_sort_stable\\grid_sort_stable.yy",
+                "resourceType": "GMScript"
             }
         },
         {
@@ -556,6 +588,14 @@
                 "id": "8006168a-673d-4737-b26c-8860d8d7dbc5",
                 "resourcePath": "scripts\\mapToTeam\\mapToTeam.yy",
                 "resourceType": "GMScript"
+            }
+        },
+        {
+            "Key": "95e28b3a-48d8-47b1-b648-a97758bb536d",
+            "Value": {
+                "id": "a1d92790-ae98-4715-bd8c-8fd79bafdece",
+                "resourcePath": "datafiles_yy\\LullaBelle.ttf.yy",
+                "resourceType": "GMIncludedFile"
             }
         },
         {
@@ -919,6 +959,14 @@
             }
         },
         {
+            "Key": "f562e796-2a85-4f9b-9774-5850b60d9da6",
+            "Value": {
+                "id": "95c6ddb6-2c58-425f-9a88-9db84e1d14de",
+                "resourcePath": "rooms\\rm_Controller\\rm_Controller.yy",
+                "resourceType": "GMRoom"
+            }
+        },
+        {
             "Key": "f811619d-2389-4786-aa16-9dadd1822dce",
             "Value": {
                 "id": "19c8a75d-1705-4d9b-8ab9-468ad2a32695",
@@ -977,6 +1025,9 @@
         "a5d91bc7-4cd7-4d24-a3e5-ce566d95294f",
         "09409348-27b8-4374-9427-3ea776e5b4b5",
         "a9d7bed5-a671-46ff-89fa-3652ac712ad6",
+        "42cb014c-f31a-4bcb-b362-eec240380928",
+        "018a14bb-c02b-4003-8bda-66543d449fa9",
+        "6ac5273c-b8cf-4f90-9fe2-3d24e039102e",
         "707cdfa6-7a18-42e6-a847-a22233452e6c",
         "b19c48c6-12f3-4730-a073-43d91e095522",
         "60032121-5625-4b9a-8596-7d076575cd2d",

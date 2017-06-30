@@ -1,5 +1,4 @@
-globalvar simulationRunning;
-simulationRunning = false;
+global.simulationRunning = false;
 
 view_camera[0] = camera_create_view(0,
 									(window_get_height())/20,

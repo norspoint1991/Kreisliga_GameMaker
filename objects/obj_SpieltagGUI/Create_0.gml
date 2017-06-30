@@ -33,12 +33,12 @@ spielzeit = 90;
 heimteamTore = 0;
 auswaertsteamTore = 0;
 simulationSpeed = 1; //Frames zwischen zwei Zeilen
+zweiteHalbzeit = false;
 
 eventList = ds_list_create();
 zeitList = ds_list_create();
 
-Heimteam = new_Team("Sc Hille", 0, 19);
-
+Heimteam = new_Team("SC Hille", 0, 19);
 Auswaertsteam = new_Team(0, 0, 19);
 
 //ini file mit allen Texten für die Simulation
