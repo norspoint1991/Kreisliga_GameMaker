@@ -14,7 +14,7 @@ xPointClicked = undefined;
 attributeNumber = 10;
 sortingNumbers = 2;
 
-team = new_Team("SC Hille", 0, 19);
+team = eigenesTeam;
 
 //Grid mit allen Spielern und ihren Attributen
 playerGrid = ds_grid_create(attributeNumber + sortingNumbers, ds_map_size(team.spielerMap));
