@@ -14,7 +14,7 @@ xPointClicked = undefined;
 attributeNumber = 10;
 sortingNumbers = 2;
 
-team = eigenesTeam;
+team = global.eigenesTeam;
 
 //Grid mit allen Spielern und ihren Attributen
 playerGrid = ds_grid_create(attributeNumber + sortingNumbers, ds_map_size(team.spielerMap));

@@ -38,8 +38,18 @@ zweiteHalbzeit = false;
 eventList = ds_list_create();
 zeitList = ds_list_create();
 
-Heimteam = new_Team("SC Hille", 0, 19);
-Auswaertsteam = new_Team(0, 0, 19);
+heimSpiel = true; //setzen, um zu wissen welches Team das eigene ist.
+
+if(heimSpiel){
+	Heimteam = global.eigenesTeam;
+	var key = ds_map_find_next(global.eigeneLiga.teamMap, global.eigenesTeam.teamName);
+	Auswaertsteam = global.eigeneLiga.teamMap[? key];
+}
+else{
+	Auswaertsteam = global.eigenesTeam;
+	var key = ds_map_find_next(global.eigeneLiga.teamMap, global.eigenesTeam.teamName);
+	Heimteam = global.eigeneLiga.teamMap[? key];
+}
 
 //ini file mit allen Texten für die Simulation
 ini_open("Textsimulation_ger.ini");

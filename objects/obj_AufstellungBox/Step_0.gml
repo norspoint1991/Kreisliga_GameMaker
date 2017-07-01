@@ -48,10 +48,14 @@ if(mouse_check_button_released(mb_left)){
 if(row_clicked != undefined && row_dropped != undefined && row_clicked != row_dropped){
 	var positionStored = playerGrid[# 1, row_clicked];
 	var positionNumStored = playerGrid[# 10, row_clicked]
+	var keyClicked = string_replace(playerGrid[# 0, row_clicked], " ", "");
+	var keyDropped = string_replace(playerGrid[# 0, row_dropped], " ", "");
 	playerGrid[# 1, row_clicked] = playerGrid[# 1, row_dropped];
 	playerGrid[# 10, row_clicked] = playerGrid[# 10, row_dropped];
+	team.spielerMap[? keyClicked].position = playerGrid[# 1, row_dropped];
 	playerGrid[# 1, row_dropped] = positionStored;
 	playerGrid[# 10, row_dropped] = positionNumStored;
+	team.spielerMap[? keyDropped].position = positionStored;
 	row_clicked = undefined;
 	row_dropped = undefined;
 	xPointClicked = undefined;

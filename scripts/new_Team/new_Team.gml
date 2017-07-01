@@ -38,7 +38,7 @@ if (argument_count >= 3) {
 	}
 }
 else {
-	while(i < 3 - ds_map_size(team.spielerMap))
+	while(ds_map_size(team.spielerMap) < 19)//while(i < 3 - ds_map_size(team.spielerMap))
 			{
 				//Random Name 
 				var vorname_argument = randomVorname();
@@ -48,7 +48,7 @@ else {
 				if(!ds_map_exists(team.spielerMap, key))
 				{
 					ds_map_add(team.spielerMap, key, new_Spieler(vorname_argument, nachname_argument));
-					i++;
+					//i++;
 				}
 			}
 	}
