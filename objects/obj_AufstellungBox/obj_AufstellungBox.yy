@@ -5,16 +5,6 @@
     "name": "obj_AufstellungBox",
     "eventList": [
         {
-            "id": "8b640ee1-5527-4c68-a7dd-65f9a5c99d10",
-            "modelName": "GMEvent",
-            "mvc": "1.0",
-            "IsDnD": false,
-            "collisionObjectId": "00000000-0000-0000-0000-000000000000",
-            "enumb": 0,
-            "eventtype": 8,
-            "m_owner": "bc69f4ce-1b27-469e-b761-ca4ddc1f0614"
-        },
-        {
             "id": "e9c40284-92bb-414b-8828-acc2a1a78379",
             "modelName": "GMEvent",
             "mvc": "1.0",
@@ -32,6 +22,16 @@
             "collisionObjectId": "00000000-0000-0000-0000-000000000000",
             "enumb": 0,
             "eventtype": 3,
+            "m_owner": "bc69f4ce-1b27-469e-b761-ca4ddc1f0614"
+        },
+        {
+            "id": "e94d0f96-7615-42b3-a2b0-7913efb4de07",
+            "modelName": "GMEvent",
+            "mvc": "1.0",
+            "IsDnD": false,
+            "collisionObjectId": "00000000-0000-0000-0000-000000000000",
+            "enumb": 64,
+            "eventtype": 8,
             "m_owner": "bc69f4ce-1b27-469e-b761-ca4ddc1f0614"
         }
     ],
