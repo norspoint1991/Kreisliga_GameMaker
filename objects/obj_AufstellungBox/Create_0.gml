@@ -11,12 +11,11 @@ row_clicked = undefined;
 row_dropped = undefined;
 xPointClicked = undefined;
 
-attributeNumber = 10;
-sortingNumbers = 2;
-
 team = global.eigenesTeam;
 
 //Grid mit allen Spielern und ihren Attributen
+attributeNumber = 10;
+sortingNumbers = 2;
 playerGrid = ds_grid_create(attributeNumber + sortingNumbers, ds_map_size(team.spielerMap));
 
 var key = ds_map_find_first(team.spielerMap);
