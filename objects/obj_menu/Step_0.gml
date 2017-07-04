@@ -30,12 +30,15 @@ if (push != 0)
 			room_goto(rm_ManagerView);
 			break;
 		case 1:
-			//room_goto(rm_loadView);
+			room_goto(rm_NewGame);
 			break;
 		case 2:
-			//room_goto(rm_optionView);
+			//room_goto(rm_loadView);
 			break;
 		case 3:
+			//room_goto(rm_optionView);
+			break;
+		case 4:
 			game_end();
 			break;
 		default: break;
