@@ -27,7 +27,7 @@ if (push != 0)
 	switch(mpos)
 	{
 		case 0: 
-			room_goto(rm_ManagerView);
+			//room_goto(rm_ManagerView);
 			break;
 		case 1:
 			room_goto(rm_NewGame);

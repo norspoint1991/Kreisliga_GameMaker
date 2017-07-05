@@ -20,12 +20,15 @@ draw_text(	x + boxwidth/2 - (string_width(headline)/2),
 			headline);
 
 draw_set_font(fnt_default);
+draw_set_color(colHeim);
 draw_text(	x + boxwidth + padding, 
 			y + boxheight/40 - string_height(headline)/2, 
 			Heimteam.teamName);
+draw_set_color(colAusw);
 draw_text(	x + boxwidth + 2*padding + string_width(Heimteam.teamName), 
 			y + boxheight/40 - string_height(headline)/2, 
 			Auswaertsteam.teamName);
+draw_set_color(c_black);
 draw_text(	x + boxwidth + padding, 
 			y + boxheight/40 + string_height(headline)/2 + padding, 
 			string(heimteamTore));

@@ -156,7 +156,7 @@ i++
 };
 
 draw_set_alpha(_prealpha)
-draw_set_color(_precol)
+//draw_set_color(_precol)
 
 return _str
 

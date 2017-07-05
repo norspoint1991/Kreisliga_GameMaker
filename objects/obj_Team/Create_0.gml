@@ -1,4 +1,6 @@
 teamName = randomTeamName();
+trikotfarbe = randomFarbe(-1);
+trikotfarbeAusweich = randomFarbe(trikotfarbe);
 
 formation = randomFormation();
 spielerMap = ds_map_create();
