@@ -311,14 +311,6 @@
             }
         },
         {
-            "Key": "4d3d9fd6-f426-41e3-8e59-37398c3d528a",
-            "Value": {
-                "id": "b7b559de-a454-47ef-9fd5-3097b45a83df",
-                "resourcePath": "objects\\object0\\object0.yy",
-                "resourceType": "GMObject"
-            }
-        },
-        {
             "Key": "4e60ba44-f826-40ad-a64b-21d22d7688c7",
             "Value": {
                 "id": "1ccaf7f9-2487-4d35-a9dd-7da7606054c4",
@@ -1117,6 +1109,9 @@
         "018a14bb-c02b-4003-8bda-66543d449fa9",
         "6ac5273c-b8cf-4f90-9fe2-3d24e039102e",
         "a5d425f4-8c35-488a-a770-9233fe8c4e25",
+        "8be4c7da-7459-43e8-83ed-6e02d3d46d2f",
+        "ed0eb6aa-7af0-440c-802d-c6f1e10ef962",
+        "c5198468-9fd4-4f05-97b6-1b086d9ced46",
         "707cdfa6-7a18-42e6-a847-a22233452e6c",
         "b19c48c6-12f3-4730-a073-43d91e095522",
         "60032121-5625-4b9a-8596-7d076575cd2d",
@@ -1170,10 +1165,7 @@
         "4f95266d-4a53-4d67-a11d-c83e71737e05",
         "277b9fe1-e88f-4e40-a005-cc923294b626",
         "f89f6296-b7ec-4aaa-9ff9-8d60b08544af",
-        "f0e31d77-5b6c-47f4-84fc-845890445c22",
-        "8be4c7da-7459-43e8-83ed-6e02d3d46d2f",
-        "ed0eb6aa-7af0-440c-802d-c6f1e10ef962",
-        "c5198468-9fd4-4f05-97b6-1b086d9ced46"
+        "f0e31d77-5b6c-47f4-84fc-845890445c22"
     ],
     "tutorial": ""
 }

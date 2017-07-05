@@ -42,7 +42,9 @@ with(managerAufstellungsBox){
 	}
 }
 
-SpielstartenButton = instance_create_depth(750, 700, 0, obj_ManagerViewButton);
+SpielstartenButton = instance_create_depth(	2*(window_get_width())/3 + 20,
+											9*window_get_height()/10,
+											0, obj_ManagerViewButton);
 
 SpielstartenButton.text = "Spieltag starten"
 SpielstartenButton.action = 0;
