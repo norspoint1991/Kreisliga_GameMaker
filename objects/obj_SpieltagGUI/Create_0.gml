@@ -51,6 +51,29 @@ else{
 	Heimteam = global.eigeneLiga.teamMap[? key];
 }
 
+//Trikotfarbe wählen
+colHeim = Heimteam.trikotfarbe;
+colAusw = Auswaertsteam.trikotfarbe;
+if(abs(	color_get_hue(colHeim) - color_get_hue(colAusw)) < 50 ||
+		abs(color_get_hue(colHeim) - color_get_hue(colAusw)) > 205){
+	colAusw = Auswaertsteam.trikotfarbeAusweich;
+}
+if(abs(	color_get_hue(colHeim) - color_get_hue(colAusw)) < 50 ||
+		abs(color_get_hue(colHeim) - color_get_hue(colAusw)) > 205){
+	colHeim = Heimteam.trikotfarbeAusweich;
+	colAusw = Auswaertsteam.trikotfarbe;
+}
+if(abs(	color_get_hue(colHeim) - color_get_hue(colAusw)) < 50 ||
+		abs(color_get_hue(colHeim) - color_get_hue(colAusw)) > 205){
+	colHeim = Heimteam.trikotfarbeAusweich;
+	colAusw = Auswaertsteam.trikotfarbeAusweich;
+}	
+if(abs(	color_get_hue(colHeim) - color_get_hue(colAusw)) < 50 ||
+		abs(color_get_hue(colHeim) - color_get_hue(colAusw)) > 205){
+	colHeim = Heimteam.trikotfarbe;
+	colAusw = Auswaertsteam.trikotfarbe;
+}
+
 //ini file mit allen Texten für die Simulation
 ini_open("Textsimulation_ger.ini");
 

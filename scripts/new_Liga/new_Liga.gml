@@ -21,7 +21,7 @@ var mapSize = ds_map_size(liga.teamMap);
 if (argument_count >= 3) {
 	if (argument[2] != 0) {
 		while (i <= argument[2] - mapSize ){
-			teamToAdd = new_Team();
+			teamToAdd = new_Team(0, 0, 0, 0);
 			ds_map_add(liga.teamMap, teamToAdd.teamName, teamToAdd);
 			i++;
 		}
@@ -30,7 +30,7 @@ if (argument_count >= 3) {
 else {
 	i = 0;
 	while ( i <=  15){
-		teamToAdd = new_Team();
+		teamToAdd = new_Team(0, 0, 0, 0);
 		if(!ds_map_exists(liga.teamMap, teamToAdd.teamName)){
 			ds_map_add(liga.teamMap, teamToAdd.teamName, teamToAdd);
 		}
