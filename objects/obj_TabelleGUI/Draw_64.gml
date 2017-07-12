@@ -57,12 +57,12 @@ for(var i = 0; i < array_length_1d(headline2); i++){
 						1);
 		if(i == 1){
 			draw_text(	x + xOffset + padding, 
-						y + headline_height + headline2_height + 2*padding + (j+0.5)*row_height, 
+						y + headline_height + headline2_height + 2*padding + (j+0.5)*row_height - string_height(text)/2, 
 						text);
 		}
 		else{
 			draw_text(	x + xOffset + column_width[i]/2 - string_width(text)/2, 
-						y + headline_height + headline2_height + 2*padding + (j+0.5)*row_height, 
+						y + headline_height + headline2_height + 2*padding + (j+0.5)*row_height - string_height(text)/2, 
 						text);
 		}
 		key = ds_map_find_next(ligaMap, key);	
