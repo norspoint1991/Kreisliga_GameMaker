@@ -2,7 +2,7 @@
     "id": "bc69f4ce-1b27-469e-b761-ca4ddc1f0614",
     "modelName": "GMObject",
     "mvc": "1.0",
-    "name": "obj_AufstellungBox",
+    "name": "obj_AufstellungGUI",
     "eventList": [
         {
             "id": "e9c40284-92bb-414b-8828-acc2a1a78379",

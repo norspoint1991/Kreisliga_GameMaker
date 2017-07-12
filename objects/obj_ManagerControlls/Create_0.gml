@@ -21,4 +21,4 @@ nextTaskButton = instance_create_depth(	window_get_width() - sprite_get_width(sp
 nextTaskButton.text = "Spieltag starten"
 nextTaskButton.action = 0;
 
-currentObject = instance_create_depth(0, sprite_get_height(spr_button) + 5, 0, obj_Nachrichten);
+currentObject = instance_create_depth(0, sprite_get_height(spr_button) + 5, 0, obj_NachrichtenGUI);

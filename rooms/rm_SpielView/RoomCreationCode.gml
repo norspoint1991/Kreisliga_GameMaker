@@ -33,7 +33,7 @@ SpielstartenButton.action = 1;
 
 spielAufstellungsBox = instance_create_depth(	2*(window_get_width())/3 + 3,
 												window_get_height()/10, 0, 
-												obj_AufstellungBox);
+												obj_AufstellungGUI);
 
 with(spielAufstellungsBox){
 	padding = 6;

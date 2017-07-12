@@ -234,7 +234,7 @@
             "Key": "3011e690-1d11-4947-b5cf-ed0316a62510",
             "Value": {
                 "id": "84612876-00df-48df-b896-d5d5ca560004",
-                "resourcePath": "objects\\obj_Nachrichten\\obj_Nachrichten.yy",
+                "resourcePath": "objects\\obj_NachrichtenGUI\\obj_NachrichtenGUI.yy",
                 "resourceType": "GMObject"
             }
         },
@@ -751,6 +751,14 @@
             }
         },
         {
+            "Key": "a91c7f73-3305-4428-a8d0-e223a4bc7ec7",
+            "Value": {
+                "id": "442bb3f4-dedb-4683-a08d-0b007b5fd989",
+                "resourcePath": "objects\\obj_TabelleGUI\\obj_TabelleGUI.yy",
+                "resourceType": "GMObject"
+            }
+        },
+        {
             "Key": "a9d7bed5-a671-46ff-89fa-3652ac712ad6",
             "Value": {
                 "id": "b0dbb6a1-6309-4aa6-8d04-a111bd26a616",
@@ -810,7 +818,7 @@
             "Key": "af271b16-7600-422a-bbb6-23d7ecd7edd3",
             "Value": {
                 "id": "a70f79de-d6e7-4c25-920d-f41a0cf53602",
-                "resourcePath": "objects\\obj_Kalender\\obj_Kalender.yy",
+                "resourcePath": "objects\\obj_KalenderGUI\\obj_KalenderGUI.yy",
                 "resourceType": "GMObject"
             }
         },
@@ -882,7 +890,7 @@
             "Key": "bc69f4ce-1b27-469e-b761-ca4ddc1f0614",
             "Value": {
                 "id": "47668b7a-8a6f-45a9-911d-0b9bce0d0618",
-                "resourcePath": "objects\\obj_AufstellungBox\\obj_AufstellungBox.yy",
+                "resourcePath": "objects\\obj_AufstellungGUI\\obj_AufstellungGUI.yy",
                 "resourceType": "GMObject"
             }
         },
