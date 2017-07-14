@@ -135,6 +135,14 @@
             }
         },
         {
+            "Key": "1250666c-a1cc-4fd2-858c-4d800176e101",
+            "Value": {
+                "id": "fb9f5907-6e20-413d-8554-9af587fedecd",
+                "resourcePath": "datafiles_yy\\TeamNameFile_ger.ini.yy",
+                "resourceType": "GMIncludedFile"
+            }
+        },
+        {
             "Key": "14e94688-4987-47eb-8a5a-19c577797b49",
             "Value": {
                 "id": "f7196d72-4cc8-40d5-87cc-41e127b575db",
@@ -420,14 +428,6 @@
                 "id": "15c82d0a-76e6-4d68-ba06-013dfc0eb5a8",
                 "resourcePath": "scripts\\Passqualitaet\\Passqualitaet.yy",
                 "resourceType": "GMScript"
-            }
-        },
-        {
-            "Key": "689d9458-43d6-418c-8d04-a589386c3051",
-            "Value": {
-                "id": "b5624ab7-9641-463b-a905-e4f3dcd32cdf",
-                "resourcePath": "datafiles_yy\\TeamNameFile_ger.ini.yy",
-                "resourceType": "GMIncludedFile"
             }
         },
         {
