@@ -135,6 +135,14 @@
             }
         },
         {
+            "Key": "1250666c-a1cc-4fd2-858c-4d800176e101",
+            "Value": {
+                "id": "fb9f5907-6e20-413d-8554-9af587fedecd",
+                "resourcePath": "datafiles_yy\\TeamNameFile_ger.ini.yy",
+                "resourceType": "GMIncludedFile"
+            }
+        },
+        {
             "Key": "14e94688-4987-47eb-8a5a-19c577797b49",
             "Value": {
                 "id": "f7196d72-4cc8-40d5-87cc-41e127b575db",
@@ -156,6 +164,14 @@
                 "id": "e1bfce9b-4d9e-4189-95bb-78a249f515c0",
                 "resourcePath": "scripts\\Schuss20_42\\Schuss20_42.yy",
                 "resourceType": "GMScript"
+            }
+        },
+        {
+            "Key": "1a9a3fb7-cd8b-4c81-a425-ee4b04a62333",
+            "Value": {
+                "id": "9778acf2-1182-4363-baac-49f217b217ac",
+                "resourcePath": "views\\1a9a3fb7-cd8b-4c81-a425-ee4b04a62333.yy",
+                "resourceType": "GMFolder"
             }
         },
         {
@@ -223,6 +239,14 @@
             }
         },
         {
+            "Key": "3011e690-1d11-4947-b5cf-ed0316a62510",
+            "Value": {
+                "id": "84612876-00df-48df-b896-d5d5ca560004",
+                "resourcePath": "objects\\obj_NachrichtenGUI\\obj_NachrichtenGUI.yy",
+                "resourceType": "GMObject"
+            }
+        },
+        {
             "Key": "3233328c-c58b-42f2-9cf1-798af6a22b79",
             "Value": {
                 "id": "54fd0dae-7f63-4f58-bf23-eedbb97c2b81",
@@ -276,6 +300,14 @@
                 "id": "7f79aee2-718b-43c3-a95e-ec11f72d5007",
                 "resourcePath": "objects\\obj_scrollbar\\obj_scrollbar.yy",
                 "resourceType": "GMObject"
+            }
+        },
+        {
+            "Key": "40734789-8923-4776-9b89-834b4c76ec8b",
+            "Value": {
+                "id": "d56d950c-673e-4b83-9597-7929aa7ff520",
+                "resourcePath": "views\\2d1bd4b5-2893-4647-ba7d-1a06c6cc1bdd-room.yy",
+                "resourceType": "GMFolder"
             }
         },
         {
@@ -396,14 +428,6 @@
                 "id": "15c82d0a-76e6-4d68-ba06-013dfc0eb5a8",
                 "resourcePath": "scripts\\Passqualitaet\\Passqualitaet.yy",
                 "resourceType": "GMScript"
-            }
-        },
-        {
-            "Key": "689d9458-43d6-418c-8d04-a589386c3051",
-            "Value": {
-                "id": "b5624ab7-9641-463b-a905-e4f3dcd32cdf",
-                "resourcePath": "datafiles_yy\\TeamNameFile_ger.ini.yy",
-                "resourceType": "GMIncludedFile"
             }
         },
         {
@@ -663,6 +687,14 @@
             }
         },
         {
+            "Key": "99e6c687-c764-442d-b669-1b7527f269be",
+            "Value": {
+                "id": "157a0a23-af7a-4ed1-9cb4-504634e9d563",
+                "resourcePath": "objects\\obj_buttonParent\\obj_buttonParent.yy",
+                "resourceType": "GMObject"
+            }
+        },
+        {
             "Key": "9ba839d6-c27d-403e-a471-835460edc859",
             "Value": {
                 "id": "6be85fbe-41be-47df-8115-b733c2291bf1",
@@ -703,11 +735,27 @@
             }
         },
         {
+            "Key": "a7909cc9-f151-45b3-b726-7f56fafc7b2f",
+            "Value": {
+                "id": "aa373bac-bf8f-4a9e-a93f-744253b9e807",
+                "resourcePath": "objects\\obj_ManagerLeiste\\obj_ManagerLeiste.yy",
+                "resourceType": "GMObject"
+            }
+        },
+        {
             "Key": "a9188620-a624-4a5a-83ae-a1b53faf038b",
             "Value": {
                 "id": "a271444b-9825-43b2-9b2b-ce42cfa0a9c1",
                 "resourcePath": "options\\linux\\options_linux.yy",
                 "resourceType": "GMLinuxOptions"
+            }
+        },
+        {
+            "Key": "a91c7f73-3305-4428-a8d0-e223a4bc7ec7",
+            "Value": {
+                "id": "442bb3f4-dedb-4683-a08d-0b007b5fd989",
+                "resourcePath": "objects\\obj_TabelleGUI\\obj_TabelleGUI.yy",
+                "resourceType": "GMObject"
             }
         },
         {
@@ -767,11 +815,11 @@
             }
         },
         {
-            "Key": "b0615097-2ddc-4e54-85c7-98deb9786350",
+            "Key": "af271b16-7600-422a-bbb6-23d7ecd7edd3",
             "Value": {
-                "id": "b513afb5-6d84-4010-b02b-dd274eefe8e4",
-                "resourcePath": "rooms\\room0\\room0.yy",
-                "resourceType": "GMRoom"
+                "id": "a70f79de-d6e7-4c25-920d-f41a0cf53602",
+                "resourcePath": "objects\\obj_KalenderGUI\\obj_KalenderGUI.yy",
+                "resourceType": "GMObject"
             }
         },
         {
@@ -807,6 +855,14 @@
             }
         },
         {
+            "Key": "b7c22dca-4750-4da0-8be9-0277421d0655",
+            "Value": {
+                "id": "4cfbe54f-ed1e-4b20-bca0-081362162b9e",
+                "resourcePath": "objects\\obj_ManagerControlls\\obj_ManagerControlls.yy",
+                "resourceType": "GMObject"
+            }
+        },
+        {
             "Key": "b7fce85d-a2ca-42f5-8d81-84e791b1ebb5",
             "Value": {
                 "id": "d840147d-e591-4c29-a001-04637537ae19",
@@ -834,7 +890,7 @@
             "Key": "bc69f4ce-1b27-469e-b761-ca4ddc1f0614",
             "Value": {
                 "id": "47668b7a-8a6f-45a9-911d-0b9bce0d0618",
-                "resourcePath": "objects\\obj_AufstellungBox\\obj_AufstellungBox.yy",
+                "resourcePath": "objects\\obj_AufstellungGUI\\obj_AufstellungGUI.yy",
                 "resourceType": "GMObject"
             }
         },
@@ -858,7 +914,7 @@
             "Key": "c0ee0171-7ddd-47d3-8683-36d248c52405",
             "Value": {
                 "id": "6b7cbb97-3d02-44f0-9b91-f3b1114c7316",
-                "resourcePath": "objects\\obj_ManagerViewButton\\obj_ManagerViewButton.yy",
+                "resourcePath": "objects\\obj_nextTaskButton\\obj_nextTaskButton.yy",
                 "resourceType": "GMObject"
             }
         },

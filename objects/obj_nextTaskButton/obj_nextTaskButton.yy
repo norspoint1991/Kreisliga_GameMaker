@@ -1,28 +1,18 @@
 {
-    "id": "0cd4b03f-5f1f-4aab-9b78-804e0151be1e",
+    "id": "c0ee0171-7ddd-47d3-8683-36d248c52405",
     "modelName": "GMObject",
     "mvc": "1.0",
-    "name": "obj_Spieltagbutton",
+    "name": "obj_nextTaskButton",
     "eventList": [
         {
-            "id": "d36a3cac-a892-4215-bd1c-45ff319dad64",
+            "id": "dfada204-ebaa-4ffa-8a9c-ba55b9cd3f1b",
             "modelName": "GMEvent",
             "mvc": "1.0",
             "IsDnD": false,
             "collisionObjectId": "00000000-0000-0000-0000-000000000000",
             "enumb": 7,
             "eventtype": 6,
-            "m_owner": "0cd4b03f-5f1f-4aab-9b78-804e0151be1e"
-        },
-        {
-            "id": "df07e28a-f6a6-4afb-a86d-478692ef9675",
-            "modelName": "GMEvent",
-            "mvc": "1.0",
-            "IsDnD": false,
-            "collisionObjectId": "00000000-0000-0000-0000-000000000000",
-            "enumb": 0,
-            "eventtype": 3,
-            "m_owner": "0cd4b03f-5f1f-4aab-9b78-804e0151be1e"
+            "m_owner": "c0ee0171-7ddd-47d3-8683-36d248c52405"
         }
     ],
     "maskSpriteId": "00000000-0000-0000-0000-000000000000",

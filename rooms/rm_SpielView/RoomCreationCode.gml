@@ -25,15 +25,15 @@ view_hport[1] = window_get_height();
 
 instance_create_depth(0, 0, 0, obj_SpieltagGUI);
 
-SpielstartenButton = instance_create_depth(	2*(window_get_width())/3 + 20,
-											9*window_get_height()/10, 0, 
-											obj_Spieltagbutton);
+SpielstartenButton = instance_create_depth(	window_get_width() - sprite_get_width(spr_button) - 20,
+											window_get_height() - sprite_get_height(spr_button)/2 - 10,
+											0, obj_Spieltagbutton);
 SpielstartenButton.text = "Spiel starten"
 SpielstartenButton.action = 1;
 
 spielAufstellungsBox = instance_create_depth(	2*(window_get_width())/3 + 3,
 												window_get_height()/10, 0, 
-												obj_AufstellungBox);
+												obj_AufstellungGUI);
 
 with(spielAufstellungsBox){
 	padding = 6;
