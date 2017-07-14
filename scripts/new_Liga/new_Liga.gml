@@ -37,4 +37,9 @@ else {
 		i++;
 	}
 }
+//2D Array für den Spielplan
+//Muster: spielplan[spieltag, teams]
+//die Teams werden einfach nach der reihe abgelegt, 
+//d.h. spielplan[spieltag, 0] vs. spielplan[spieltag, 1], usw.
+liga.spielplan = spielPlanErstellen(liga.teamMap);
 return liga;

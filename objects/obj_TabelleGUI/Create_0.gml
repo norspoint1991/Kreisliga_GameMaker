@@ -33,5 +33,44 @@ column_width[0] = width/18;
 	   
 fnt_handwriting_calender = font_add("Font linda.sciutto.ttf", 12, true, false, 1, 255);
 
-
 headline = global.eigeneLiga.ligaName;
+
+//Sortierung für Tabelle
+var length = ds_map_size(ligaMap);
+var key = ds_map_find_first(ligaMap);
+for(var j = 0; j < length; j++){
+	teamArray[length - 1 - j] = ligaMap[? key];
+	key = ds_map_find_next(ligaMap, key);
+}
+for(var n = 0; n < length; n++){
+	for (var k = 0; k < length - 1 - n; k++){
+		if(teamArray[k].punkte < teamArray[k+1].punkte){
+			var temp = teamArray[k];
+			teamArray[k] = teamArray[k+1];
+			teamArray[k+1] = temp;
+		}
+		else if(teamArray[k].punkte == teamArray[k+1].punkte){
+			if(teamArray[k].spiele > teamArray[k+1].spiele){
+				var temp = teamArray[k];
+				teamArray[k] = teamArray[k+1];
+				teamArray[k+1] = temp;
+			}
+			else if(teamArray[k].spiele == teamArray[k+1].spiele){
+				if((teamArray[k].tore - teamArray[k].gegentore) 
+					< (teamArray[k+1].tore - teamArray[k+1].gegentore)){
+					var temp = teamArray[k];
+					teamArray[k] = teamArray[k+1];
+					teamArray[k+1] = temp;
+				}
+				else if((teamArray[k].tore - teamArray[k].gegentore) 
+						== (teamArray[k+1].tore - teamArray[k+1].gegentore)){
+					if(teamArray[k].tore < teamArray[k+1].tore){
+						var temp = teamArray[k];
+						teamArray[k] = teamArray[k+1];
+						teamArray[k+1] = temp;
+					}
+				}	
+			}
+		}		
+	}
+}

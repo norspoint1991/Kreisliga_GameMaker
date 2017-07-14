@@ -7,6 +7,7 @@ font_height = string_height("Test");
 time_font_width = string_width(string_time(0));
 event_font_width = boxwidth - time_font_width - 4*padding;
 maxLines = floor((view_hport[0] - padding)/font_height);
+textAusgabe = true;
 
 zeilenGesamt = 0;
 zeilenCounter = 1; //Startwert, damit die if-Abfrage in Step auslöst
@@ -38,17 +39,18 @@ zweiteHalbzeit = false;
 eventList = ds_list_create();
 zeitList = ds_list_create();
 
-heimSpiel = true; //setzen, um zu wissen welches Team das eigene ist.
-
-if(heimSpiel){
-	Heimteam = global.eigenesTeam;
-	var key = ds_map_find_next(global.eigeneLiga.teamMap, global.eigenesTeam.teamName);
-	Auswaertsteam = global.eigeneLiga.teamMap[? key];
-}
-else{
-	Auswaertsteam = global.eigenesTeam;
-	var key = ds_map_find_next(global.eigeneLiga.teamMap, global.eigenesTeam.teamName);
-	Heimteam = global.eigeneLiga.teamMap[? key];
+//Partien erstellen
+var spielplanHeute = array_copy_2d_to_1d(global.eigeneLiga.spielplan, 
+										 global.eigeneLiga.spieltag);
+for (var i = 0; i < array_length_1d(spielplanHeute); i += 2){
+	if(	spielplanHeute[i] != global.eigenesTeam 
+		&& spielplanHeute[i+1] != global.eigenesTeam){
+		new_Partie(spielplanHeute[i], spielplanHeute[i+1]);
+	}
+	else{
+		Heimteam = spielplanHeute[i];
+		Auswaertsteam = spielplanHeute[i+1];
+	}
 }
 
 //Trikotfarbe wählen
