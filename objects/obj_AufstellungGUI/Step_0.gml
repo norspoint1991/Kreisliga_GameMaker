@@ -14,7 +14,7 @@ if !initialisiert
 	}
 	grid_sort_stable(playerGrid, posSortingColumn, true);
 	tabellenBreite = array_sum(zeilenBreite);
-	tabellenHeohe = rowheight * (attributeNumber + 1)
+	tabellenHeohe = rowheight * (attributeNumber + 1);
 	initialisiert = true;
 }
 
