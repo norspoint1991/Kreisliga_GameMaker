@@ -1,9 +1,4 @@
-if (SpielerMitBallVorher != undefined){
-	SpielerMitBallVorher.busy = false;
-}
-SpielerMitBallVorher = SpielerMitBall;
-SpielerMitBallVorher.busy = true;
-SpielerMitBall = getPlayerFrom(Angriff, "RM", "LM", "DM", "ZM", "OM", "ST");
+SpielerMitBallVorher = getPlayerFrom(Angriff, "RM", "LM", "DM", "ZM", "OM", "ST");
 var schranke = (SpielerMitBall.geschwindigkeit + SpielerMitBall.pass + SpielerMitBallVorher.geschwindigkeit + SpielerMitBallVorher.pass)/4;
 var roll = ranRoll();
 

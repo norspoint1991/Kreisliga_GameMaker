@@ -6,7 +6,7 @@ if (roll <= Verteidiger.torwart/2){
 }
 else if (roll <= Verteidiger.torwart) {
 	addText("TorwartZurEcke");
-	return 20; //Ecke
+	return 30; //Ecke
 }
 else {
 	addText("TorwartAbpraller");

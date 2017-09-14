@@ -1,15 +1,28 @@
 //Zuweisungen und Busy wieder auf null
 cancelBusy();
-		
+var nextEvent = 0;
+
+
+//TODO evtl. diese Dinge als special Events auslagern (ab 100 aufsteigend)
 if (zeit == 0) {
 	addText("Begruessung");
 }
-if (zeit == 45){
-	addText("zweiteHalbzeit");
+if (zeit >= 45 && zweiteHalbzeit == false){
+	addText("zweiteHalbzeit"); //TODO Halbzeit Bildschirm einfügen
+	global.simulationRunning = false;
+	zweiteHalbzeit = true;
+	zeit++;
+	return 0;
 }
-var nextEvent = 0;
+if (zeit >= spielzeit){
+	addText("SpielVorbei");
+	global.simulationRunning = false;
+	SpielNachbearbeitung();
+	return 0;
+}
+zeit++;
 
-nextEvent = irandom_range(0, 10);
+nextEvent = irandom_range(0, 6);
 if(nextEvent != 0){
 	with(Auswaertsteam) event_user(1); //Initiative Werte neu bestimmen
 	with(Heimteam) event_user(1);
@@ -24,7 +37,6 @@ if(nextEvent != 0){
 		Verteidigung= Heimteam;
 	}
 	addText("imBallbesitz");
-	nextEvent = irandom_range(1, 2); //TODO löschen sobald alle StartEvents beschrieben sind
 }
 else{
 	addText("keinEvent");

@@ -4,11 +4,15 @@ if (SpielerMitBall.position == "LM" || SpielerMitBall.position == "LV"){
 else{
 	Verteidiger = getPlayerFrom(Verteidigung, "LV", "DM", "IV");
 }
+if(Foul()){
+	addText("FreistossAussen");
+	return 32; //Freistoss Flanke
+}
 var schranke = Verteidiger.stellungsspiel;
 var roll = ranRoll();
 if (roll <= schranke) {
 	addText("SpielerAufAussen", "wirdgestellt");
-	if (Dribbling(SpielerMitBall, Verteidiger)){
+	if (Dribbling()){
 		if (GegnerVorher != undefined){
 			GegnerVorher.busy = false;
 		}

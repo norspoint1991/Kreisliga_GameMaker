@@ -1,4 +1,4 @@
-if(simulationRunning)
+if(global.simulationRunning)
 {
 	step++;
 	if ((zeilenCounter * simulationSpeed) - step <= 0)
@@ -8,13 +8,10 @@ if(simulationRunning)
 
 		if (zeit <= spielzeit) 
 		{
-
-			switch  (thisEvent){
-
-		
+			switch (thisEvent){
+	
 			case 0 : // PULLEVENT
 				thisEvent = pullEvent_0();
-				zeit += 1;
 				break;
 			case 1 : //Langer Pass auf Außen
 				thisEvent = AussenbahnPass_1();
@@ -22,15 +19,19 @@ if(simulationRunning)
 			case 2: //Doppelpass über die Mittellinie
 				thisEvent = DoppelpassMittellinie_2();
 				break;
-			//case 3: //Dribbling über die Mittellinie
-				
-			//case 4: //Pass an den Sechzehner
-				
-			//case 5: //Hoher Ball in den Sechzehner
-			
-			//case 6: //Balleroberung durch Pressing
-				
-			//case 7: //Ball halten
+			case 3: //Dribbling über die Mittellinie
+				thisEvent = DribblingMittellinie_3();
+				break;
+			case 4: //Pass an den Sechzehner
+				thisEvent = PassAnSechzehner_4();
+				break;	
+			case 5: //Hoher Ball in den Sechzehner
+				thisEvent = hoherBallSechzehner_5();
+				break;
+			case 6: //Balleroberung durch Pressing
+				thisEvent = BalleroberungPressing_6();
+				break;
+			//case 7:
 			
 			case 11 : // Spieler mit Ball auf außen
 				thisEvent = SpielerAufAussen_11();
@@ -47,8 +48,8 @@ if(simulationRunning)
 			case 15: //Laufduell auf Außen
 				thisEvent = LaufduellaufAussen_15();
 				break;
-			case 16: //Ball verteilen gegnerische Hälfte
-				thisEvent = BallVerteilenGegnHaelfte_16();
+			case 16: //Spieler gegn. Hälfte
+				thisEvent = SpielerGegnHaelfte_16();
 				break;
 			case 17: //Quer legen
 				thisEvent = Querlegen_17();
@@ -65,16 +66,24 @@ if(simulationRunning)
 			case 21: //Spieler mit Ball zentral am Sechzehner
 				thisEvent = zentralAmSechzehner_21();
 				break;
-			//case 22:
-				
+			case 22: //Dribbling gegn. Hälfte
+				thisEvent = DribblingGegnHaelfte_22();
+				break;
+			case 23: //Ball verteilen gegn. Hälfte
+				thisEvent = BallVerteilenGegnHaelfte_23();
+				break;
 			//case 25: //Ball von außen in den Strafraum; Kopfball, Ball rutscht durch zusammenfassen
 			//			//für Ecke und Flanke
 			
 			case 30: //Ecke
 				thisEvent = Ecke_30();
 				break;
-			//case 31: //Freistoss, direkt
-			//case 32: //Freistoss, Flanke
+			case 31: //Freistoss, direkt
+				thisEvent = FreistossDirekt_31();
+				break;
+			case 32: //Freistoss, Flanke
+				thisEvent = FreistossFlanke_32();
+				break;
 			//case 33: //Elfmeter
 			case 40: //Schuss kurze Distanz
 				thisEvent = Schuss5_40();
@@ -89,8 +98,12 @@ if(simulationRunning)
 			case 80: //Konter - Event, dass den Angriff umkehrt
 				thisEvent = Konter_80();
 				break;
-			//case 81: //Konter über Außen
-			//case 82: //Konter durch die Mitte
+			case 81: //Konter über Außen
+				thisEvent = KonterAussen_81();
+				break;
+			case 82: //Konter durch die Mitte
+				thisEvent = KonterMitte_82();
+				break;
 			//case 90: //Verzweifelungsschuss - Event bei kleiner Moral
 			case 99: //Torwart haelt
 				thisEvent = torwartHaelt_99();
@@ -99,12 +112,14 @@ if(simulationRunning)
 				thisEvent = Tor_100();
 				break;
 				
-			default: 
+			default:
 				thisEvent = 0;
 				break;
 			}	
 		}
-		else simulationRunning = false;
+		else {
+			global.simulationRunning = false;
+		}
 	}
 }
 

@@ -12,6 +12,10 @@ else{
 	Verteidiger = getPlayerFrom(Verteidigung, "LV", "LM");
 }
 Verteidiger.busy = true;
+if(Foul()){
+	addText("FreistossAussen");
+	return 32; //Freistoss Flanke
+}
 var schranke = passQualitaet + ratioX(SpielerMitBall.geschwindigkeit + SpielerMitBall.stellungsspiel, Verteidiger.geschwindigkeit + Verteidiger.stellungsspiel)
 var roll = ranRoll();
 

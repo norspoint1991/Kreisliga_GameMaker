@@ -15,7 +15,7 @@ ds_map_add( unparsedSpielerMap, key, mapToPlayer( playerList[? key]));
 key = ds_map_find_next(playerList, key); 
 }
 
-var team = new_Team(teamName, unparsedSpielerMap, 0);
+var team = new_Team(teamName, unparsedSpielerMap, 0, 0);
 
 team.formation = teamMap[? "formation"];
 team.punkte = teamMap[? "punkte"];

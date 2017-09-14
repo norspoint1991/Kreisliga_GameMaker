@@ -5,8 +5,9 @@ boxheight = window_get_height();
 draw_set_font(fnt_default);
 font_height = string_height("Test");
 time_font_width = string_width(string_time(0));
-event_font_width = boxwidth - time_font_width - 3*padding;
+event_font_width = boxwidth - time_font_width - 4*padding;
 maxLines = floor((view_hport[0] - padding)/font_height);
+textAusgabe = true;
 
 zeilenGesamt = 0;
 zeilenCounter = 1; //Startwert, damit die if-Abfrage in Step auslöst
@@ -33,13 +34,47 @@ spielzeit = 90;
 heimteamTore = 0;
 auswaertsteamTore = 0;
 simulationSpeed = 1; //Frames zwischen zwei Zeilen
+zweiteHalbzeit = false;
 
 eventList = ds_list_create();
 zeitList = ds_list_create();
 
-Heimteam = new_Team("Sc Hille", 0, 19);
+//Partien erstellen
+var spielplanHeute = array_copy_2d_to_1d(global.eigeneLiga.spielplan, 
+										 global.eigeneLiga.spieltag);
+for (var i = 0; i < array_length_1d(spielplanHeute); i += 2){
+	if(	spielplanHeute[i] != global.eigenesTeam 
+		&& spielplanHeute[i+1] != global.eigenesTeam){
+		new_Partie(spielplanHeute[i], spielplanHeute[i+1]);
+	}
+	else{
+		Heimteam = spielplanHeute[i];
+		Auswaertsteam = spielplanHeute[i+1];
+	}
+}
 
-Auswaertsteam = new_Team(0, 0, 19);
+//Trikotfarbe wählen
+colHeim = Heimteam.trikotfarbe;
+colAusw = Auswaertsteam.trikotfarbe;
+if(abs(	color_get_hue(colHeim) - color_get_hue(colAusw)) < 50 ||
+		abs(color_get_hue(colHeim) - color_get_hue(colAusw)) > 205){
+	colAusw = Auswaertsteam.trikotfarbeAusweich;
+}
+if(abs(	color_get_hue(colHeim) - color_get_hue(colAusw)) < 50 ||
+		abs(color_get_hue(colHeim) - color_get_hue(colAusw)) > 205){
+	colHeim = Heimteam.trikotfarbeAusweich;
+	colAusw = Auswaertsteam.trikotfarbe;
+}
+if(abs(	color_get_hue(colHeim) - color_get_hue(colAusw)) < 50 ||
+		abs(color_get_hue(colHeim) - color_get_hue(colAusw)) > 205){
+	colHeim = Heimteam.trikotfarbeAusweich;
+	colAusw = Auswaertsteam.trikotfarbeAusweich;
+}	
+if(abs(	color_get_hue(colHeim) - color_get_hue(colAusw)) < 50 ||
+		abs(color_get_hue(colHeim) - color_get_hue(colAusw)) > 205){
+	colHeim = Heimteam.trikotfarbe;
+	colAusw = Auswaertsteam.trikotfarbe;
+}
 
 //ini file mit allen Texten für die Simulation
 ini_open("Textsimulation_ger.ini");
@@ -54,6 +89,7 @@ Verteidiger = undefined;
 GegnerVorher = undefined;
 SpielerMitBallVorher = undefined;
 SpielerMitBall = undefined;
+seite = "rechts";
 //Qualitaeten
 flankenQualitaet = 0;
 passQualitaet = 0;

@@ -27,15 +27,20 @@ if (push != 0)
 	switch(mpos)
 	{
 		case 0: 
-			room_goto(rm_ManagerView);
+			//room_goto(rm_ManagerView);
 			break;
 		case 1:
-			instance_create_depth(window_get_width()/2, 50, 0, obj_new_game_window);
+
+	//		instance_create_depth(window_get_width()/2, 50, 0, obj_new_game_window);
+			room_goto(rm_NewGame);
 			break;
 		case 2:
-			//room_goto(rm_optionView);
+			//room_goto(rm_loadView);
 			break;
 		case 3:
+			//room_goto(rm_optionView);
+			break;
+		case 4:
 			game_end();
 			break;
 		default: break;
