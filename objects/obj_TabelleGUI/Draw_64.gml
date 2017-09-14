@@ -1,4 +1,3 @@
-
 draw_set_halign(fa_left);
 draw_set_valign(fa_top);
 draw_set_color(c_black);
@@ -23,31 +22,31 @@ for(var i = 0; i < array_length_1d(headline2); i++){
 		var text = "";
 		switch(i){
 			case 0:
-				text = string(1);
+				text = string(j+1);
 				break;
 			case 1:
-				text = ligaMap[? key].teamName;
+				text = teamArray[j].teamName;
 				break;
 			case 2:
-				text = string(ligaMap[? key].spiele);
+				text = string(teamArray[j].spiele);
 				break;
 			case 3:
-				text = string(ligaMap[? key].siege);
+				text = string(teamArray[j].siege);
 				break;
 			case 4:
-				text = string(ligaMap[? key].unentschieden);
+				text = string(teamArray[j].unentschieden);
 				break;
 			case 5:
-				text = string(ligaMap[? key].niederlagen);
+				text = string(teamArray[j].niederlagen);
 				break;
 			case 6:
-				text = string(ligaMap[? key].tore) + " : " + string(ligaMap[? key].gegentore);
+				text = string(teamArray[j].tore) + " : " + string(teamArray[j].gegentore);
 				break;
 			case 7:
-				text = string(ligaMap[? key].tore - ligaMap[? key].gegentore);
+				text = string(teamArray[j].tore - teamArray[j].gegentore);
 				break;
 			case 8:
-				text = string(ligaMap[? key].punkte);
+				text = string(teamArray[j].punkte);
 				break;
 		}
 		draw_rectangle(	x + xOffset, 

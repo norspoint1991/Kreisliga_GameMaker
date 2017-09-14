@@ -117,7 +117,9 @@ if(global.simulationRunning)
 				break;
 			}	
 		}
-		else global.simulationRunning = false;
+		else {
+			global.simulationRunning = false;
+		}
 	}
 }
 

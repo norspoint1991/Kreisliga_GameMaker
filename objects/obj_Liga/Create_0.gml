@@ -3,5 +3,6 @@
 
 ligaName = "Eine Kreisliga";
 teamMap =ds_map_create();
+spieltag = 1;
 spielplan = 0; 
 tabelle = 0;

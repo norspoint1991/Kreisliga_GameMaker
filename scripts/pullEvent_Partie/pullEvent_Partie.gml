@@ -2,24 +2,6 @@
 cancelBusy();
 var nextEvent = 0;
 
-
-//TODO evtl. diese Dinge als special Events auslagern (ab 100 aufsteigend)
-if (zeit == 0) {
-	addText("Begruessung");
-}
-if (zeit >= 45 && zweiteHalbzeit == false){
-	addText("zweiteHalbzeit"); //TODO Halbzeit Bildschirm einfügen
-	global.simulationRunning = false;
-	zweiteHalbzeit = true;
-	zeit++;
-	return 0;
-}
-if (zeit >= spielzeit){
-	addText("SpielVorbei");
-	global.simulationRunning = false;
-	SpielNachbearbeitung();
-	return 0;
-}
 zeit++;
 
 nextEvent = irandom_range(0, 6);
