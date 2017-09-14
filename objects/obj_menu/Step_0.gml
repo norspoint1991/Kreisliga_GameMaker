@@ -30,6 +30,8 @@ if (push != 0)
 			//room_goto(rm_ManagerView);
 			break;
 		case 1:
+
+	//		instance_create_depth(window_get_width()/2, 50, 0, obj_new_game_window);
 			room_goto(rm_NewGame);
 			break;
 		case 2:

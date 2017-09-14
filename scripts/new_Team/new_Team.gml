@@ -91,6 +91,7 @@ var i = 0;
 // die Mannschaft voll ist, ansonsten werden 19 Spieler erstellt
 ini_open("NameFile_ger.ini");
 
+
 while(ds_map_size(team.spielerMap) < spielerAnzahl)//while(i < 3 - ds_map_size(team.spielerMap))
 	{
 		//Random Name 
