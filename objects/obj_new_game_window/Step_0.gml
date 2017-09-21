@@ -11,3 +11,9 @@ if string_length(keyboard_string) > 30
    {
    keyboard_string = string_copy(keyboard_string, 1, 30);
    }
+   
+if keyboard_check(vk_enter)
+{
+		new_Team( keyboard_string, 0 ,0 ,0);
+}
+	

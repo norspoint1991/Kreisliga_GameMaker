@@ -83,6 +83,11 @@ else if (argument_count == 4){
 		team.trikotfarbe = argument[3];
 		team.trikotfarbeAusweich = randomFarbe(team.trikotfarbe);
 	}
+	else {
+		team.trikotfarbe = randomFarbe(team.trikotfarbe);
+		team.trikotfarbeAusweich = randomFarbe(team.trikotfarbe);
+	}
+	
 }
 
 var spielerTypen = returnSpielertypen(team.formation);

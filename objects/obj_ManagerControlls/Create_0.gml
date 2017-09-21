@@ -1,11 +1,12 @@
 height = window_get_height();
 width = window_get_width();
 
+viewArray[4] = "Speichern";
 viewArray[3] = "Tabelle";
 viewArray[2] = "Kalender";
 viewArray[1] = "Aufstellung";
 viewArray[0] = "Nachrichten";
-buttonArray[3] = undefined;
+buttonArray[4] = undefined;
 
 var xOffset = 0;
 for (var i = 0; i < array_length_1d(viewArray); i++){	

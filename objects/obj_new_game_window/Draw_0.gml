@@ -6,15 +6,14 @@ draw_set_valign(fa_top);
 draw_set_font(fnt_default);
 draw_set_color(c_black);
 
+if ( spielStartGameState = 0){
 draw_text (x , y , "Wie soll dein Team heißen?");
 
 draw_rectangle (x, y + string_height("T") + 10, x +string_width("M")*30 + 5, y + 2*string_height("T") + 10, true);
 
-
-
 draw_text (x+ 2, y + string_height("T") + 10, keyboard_string);
 
-
-if (step_newGame <= 15) {
-	draw_text( x + 2 + string_width(keyboard_string) , y + string_height("T") + 10, "_");
+//if (step_newGame <= 15 ) {
+	draw_text( x + 2 + string_width(keyboard_string) , y + string_height("T") + 10, "|");
+//}
 }
