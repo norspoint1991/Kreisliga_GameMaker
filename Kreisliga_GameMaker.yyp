@@ -95,6 +95,14 @@
             }
         },
         {
+            "Key": "0c4b0938-a825-4353-84b9-6e2bdbd54d7c",
+            "Value": {
+                "id": "6a76b737-489f-4171-bf3b-2f9f7e86c979",
+                "resourcePath": "objects\\obj_saveGameWeiter\\obj_saveGameWeiter.yy",
+                "resourceType": "GMObject"
+            }
+        },
+        {
             "Key": "0cd4b03f-5f1f-4aab-9b78-804e0151be1e",
             "Value": {
                 "id": "8c58afe7-6357-440e-ab3e-6a1bee243ed8",
@@ -215,6 +223,14 @@
             }
         },
         {
+            "Key": "1d4eff1a-a98d-48ec-8376-6e1f63155b43",
+            "Value": {
+                "id": "f90ae533-ce7b-4756-8590-f431153a9ea9",
+                "resourcePath": "objects\\obj_newSave\\obj_newSave.yy",
+                "resourceType": "GMObject"
+            }
+        },
+        {
             "Key": "1e877dce-2112-4fd7-b535-6c63a162414c",
             "Value": {
                 "id": "40d6b8d9-0a32-42a3-aaa8-34a69f7b34c0",
@@ -228,6 +244,14 @@
                 "id": "d6c0bcc9-54b2-433d-bb2f-ed36a8bbcf58",
                 "resourcePath": "scripts\\setSpielerWerteTo\\setSpielerWerteTo.yy",
                 "resourceType": "GMScript"
+            }
+        },
+        {
+            "Key": "23c72793-9a3c-4019-8a38-8829d3fccf23",
+            "Value": {
+                "id": "ec76d778-16fa-4d97-afe3-cfd47b6e32ad",
+                "resourcePath": "sprites\\sprite1\\sprite1.yy",
+                "resourceType": "GMSprite"
             }
         },
         {
@@ -303,6 +327,14 @@
             }
         },
         {
+            "Key": "34310e6a-47b4-480a-8285-79cb5d08f39f",
+            "Value": {
+                "id": "94321d51-9d17-49ed-8a68-3ddbeac48f22",
+                "resourcePath": "objects\\sys_fileSystem\\sys_fileSystem.yy",
+                "resourceType": "GMObject"
+            }
+        },
+        {
             "Key": "34aebc51-3e0d-44cc-9cb9-7fc0e90f18cb",
             "Value": {
                 "id": "3e39d446-5dd0-4456-825e-2dab36c48104",
@@ -367,6 +399,14 @@
             }
         },
         {
+            "Key": "42eba2f6-0bef-48e3-8af9-d72f401a9ad4",
+            "Value": {
+                "id": "c61900dc-a4f7-4af3-8795-400e8a57112c",
+                "resourcePath": "objects\\ctrl_SaveGame\\ctrl_SaveGame.yy",
+                "resourceType": "GMObject"
+            }
+        },
+        {
             "Key": "44b29f26-2fd2-4c5f-a6da-5f717ea2e6d7",
             "Value": {
                 "id": "8a7cf881-335b-46c3-a528-195bde62aa72",
@@ -428,6 +468,14 @@
                 "id": "89ab2e13-2f7d-4d9c-917d-93a95e5afd14",
                 "resourcePath": "scripts\\randomFuss\\randomFuss.yy",
                 "resourceType": "GMScript"
+            }
+        },
+        {
+            "Key": "53b47f19-1e32-446b-a157-ba70c018dac3",
+            "Value": {
+                "id": "cc03428b-0183-43b3-867a-02100a2906a1",
+                "resourcePath": "objects\\obj_TextBox\\obj_TextBox.yy",
+                "resourceType": "GMObject"
             }
         },
         {
@@ -500,6 +548,14 @@
                 "id": "15c82d0a-76e6-4d68-ba06-013dfc0eb5a8",
                 "resourcePath": "scripts\\Passqualitaet\\Passqualitaet.yy",
                 "resourceType": "GMScript"
+            }
+        },
+        {
+            "Key": "67125f85-55c9-4b06-b917-39ba341ec60a",
+            "Value": {
+                "id": "c077f20a-73a9-451c-89f1-3262c4d95bd8",
+                "resourcePath": "sprites\\sprite2\\sprite2.yy",
+                "resourceType": "GMSprite"
             }
         },
         {
@@ -687,6 +743,14 @@
             }
         },
         {
+            "Key": "888263a9-ed34-4c86-b017-af8daf5e247a",
+            "Value": {
+                "id": "d7ded748-9e28-4789-8d4d-bd7fae8f2fdf",
+                "resourcePath": "views\\888263a9-ed34-4c86-b017-af8daf5e247a.yy",
+                "resourceType": "GMFolder"
+            }
+        },
+        {
             "Key": "8abf57f0-cf52-422f-b07b-c54cf41423f4",
             "Value": {
                 "id": "4ee80098-c132-48a9-b052-46eadf729bbb",
@@ -716,6 +780,14 @@
                 "id": "6de030b0-2d07-42be-9234-41bcb3b433af",
                 "resourcePath": "views\\90659913-f5b7-4189-80f0-97d23df587a3.yy",
                 "resourceType": "GMFolder"
+            }
+        },
+        {
+            "Key": "909a61f2-0e46-4030-b8da-8e5d69bb8cd7",
+            "Value": {
+                "id": "13bb6b21-d7be-4495-880b-eee87cd89f26",
+                "resourcePath": "objects\\obj_newGameWeiter\\obj_newGameWeiter.yy",
+                "resourceType": "GMObject"
             }
         },
         {
@@ -820,6 +892,14 @@
                 "id": "1e66f0a1-6365-4e8c-b650-a9bbec3f0db7",
                 "resourcePath": "scripts\\Ecke_30\\Ecke_30.yy",
                 "resourceType": "GMScript"
+            }
+        },
+        {
+            "Key": "a3831822-2141-4c8c-9343-f6735e911503",
+            "Value": {
+                "id": "628363aa-e9f1-43d2-b082-97d6f1abb3d0",
+                "resourcePath": "objects\\sys_saveFile\\sys_saveFile.yy",
+                "resourceType": "GMObject"
             }
         },
         {
@@ -964,6 +1044,14 @@
                 "id": "6b8e22d8-0149-4b72-8344-84ab2fb43155",
                 "resourcePath": "objects\\obj_Team\\obj_Team.yy",
                 "resourceType": "GMObject"
+            }
+        },
+        {
+            "Key": "b6dd5d9f-b671-4081-bdb2-3c5159acbc5f",
+            "Value": {
+                "id": "acdce919-7d06-4bd8-9cd9-c5daad383c9e",
+                "resourcePath": "rooms\\rm_SaveGame\\rm_SaveGame.yy",
+                "resourceType": "GMRoom"
             }
         },
         {
@@ -1284,6 +1372,14 @@
                 "id": "5a8c42cc-9e04-4417-a990-f7eec7f06f73",
                 "resourcePath": "scripts\\Kopfball_18\\Kopfball_18.yy",
                 "resourceType": "GMScript"
+            }
+        },
+        {
+            "Key": "fe52a228-0dfc-416b-bc76-30e830cd18b0",
+            "Value": {
+                "id": "4c1f3d26-9de5-4095-a339-165d53e044c1",
+                "resourcePath": "notes\\compatibility_report_210917_1138173817.yy",
+                "resourceType": "GMNotes"
             }
         },
         {

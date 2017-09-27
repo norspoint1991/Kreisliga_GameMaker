@@ -1,4 +1,3 @@
-
 var xVerschiebung = 0;
 
 if(mouse_check_button_pressed(mb_left)){

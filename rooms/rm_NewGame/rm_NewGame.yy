@@ -7,7 +7,9 @@
     "inheritCreationOrder": false,
     "inheritLayers": false,
     "instanceCreationOrderIDs": [
-
+        "150052be-3a93-4bad-a0a8-b6927a4bf6c7",
+        "388eaf21-bbb0-4adb-92cc-7aa400e4ace2",
+        "0d73b1ed-58de-452f-9fa4-3d8529f199af"
     ],
     "IsDnD": false,
     "layers": [
@@ -25,7 +27,9 @@
             "inheritSubLayers": false,
             "inheritVisibility": false,
             "instances": [
-
+                {"name": "nameBox","id": "150052be-3a93-4bad-a0a8-b6927a4bf6c7","colour": { "Value": 4294967295 },"creationCodeFile": "InstanceCreationCode_nameBox.gml","creationCodeType": ".gml","ignore": false,"inheritCode": false,"inheritItemSettings": false,"IsDnD": false,"m_originalParentID": "00000000-0000-0000-0000-000000000000","m_serialiseFrozen": false,"modelName": "GMRInstance","name_with_no_file_rename": "nameBox","objId": "53b47f19-1e32-446b-a157-ba70c018dac3","rotation": 0,"scaleX": 1,"scaleY": 1,"mvc": "1.0","x": 32,"y": 32},
+                {"name": "ligaBox","id": "388eaf21-bbb0-4adb-92cc-7aa400e4ace2","colour": { "Value": 4294967295 },"creationCodeFile": "InstanceCreationCode_ligaBox.gml","creationCodeType": ".gml","ignore": false,"inheritCode": false,"inheritItemSettings": false,"IsDnD": false,"m_originalParentID": "00000000-0000-0000-0000-000000000000","m_serialiseFrozen": false,"modelName": "GMRInstance","name_with_no_file_rename": "ligaBox","objId": "53b47f19-1e32-446b-a157-ba70c018dac3","rotation": 29.39569,"scaleX": 1,"scaleY": 1,"mvc": "1.0","x": 32,"y": 128},
+                {"name": "weiterButton","id": "0d73b1ed-58de-452f-9fa4-3d8529f199af","colour": { "Value": 4294967295 },"creationCodeFile": "","creationCodeType": "","ignore": false,"inheritCode": false,"inheritItemSettings": false,"IsDnD": false,"m_originalParentID": "00000000-0000-0000-0000-000000000000","m_serialiseFrozen": false,"modelName": "GMRInstance","name_with_no_file_rename": "weiterButton","objId": "909a61f2-0e46-4030-b8da-8e5d69bb8cd7","rotation": 0,"scaleX": 1,"scaleY": 1,"mvc": "1.0","x": 32,"y": 320}
             ],
             "layers": [
 
@@ -43,7 +47,7 @@
             "id": "36fedfab-b0cd-426f-9c70-8698449591f8",
             "animationFPS": 15,
             "animationSpeedType": "0",
-            "colour": { "Value": 4278190080 },
+            "colour": { "Value": 4278229736 },
             "depth": 100,
             "grid_x": 32,
             "grid_y": 32,
