@@ -3,6 +3,6 @@ switch(action){
 		room_goto(rm_SpielView);
 		break;
 	case 1:
-		//room_goto(rm_Training);
+		room_goto(rm_Training);
 		break;
 }

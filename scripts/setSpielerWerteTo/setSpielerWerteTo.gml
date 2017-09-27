@@ -5,7 +5,6 @@ stellungsspiel = gaussBetween(argument0,argument1, 0, 100);
 ausdauer = gaussBetween(argument0,argument1, 0, 100);
 kopfball = gaussBetween(argument0,argument1, 0, 100);
 //mentale Werte
-moral = gaussBetween(argument0,argument1, 0, 100);
 selbstbewusstsein = gaussBetween(argument0,argument1, 0, 100);
 disziplin = gaussBetween(argument0,argument1, 0, 100);
 aggresivitat = gaussBetween(argument0,argument1, 0, 100);
@@ -18,3 +17,6 @@ freistoss = gaussBetween(argument0,argument1, 0, 100);
 pass = gaussBetween(argument0,argument1, 0, 100);
 dribbling = gaussBetween(argument0,argument1, 0, 100);
 flanken = gaussBetween(argument0,argument1, 0, 100);
+//aktive Werte (default 100)
+moral = 100;
+puste = 100;
