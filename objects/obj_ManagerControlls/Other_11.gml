@@ -5,8 +5,6 @@ if(!object_get_name(currentObject) == "obj_AufstellungGUI"){
 
 	with(currentObject){
 		padding = 8;
-		fnt_handwriting = font_add("Font linda.sciutto.ttf", 14, true, false, 1, 255);
-		fnt_handwriting_headline = font_add("Font linda.sciutto.ttf", 18, true, false, 1, 255);
 		team = global.eigenesTeam;
 	
 		//Spaltenbezeichnungen
@@ -43,5 +41,6 @@ if(!object_get_name(currentObject) == "obj_AufstellungGUI"){
 			playerGrid[# 11, i] = PosSortNumber(team.spielerMap[? key].favPosition);
 			key = ds_map_find_next(team.spielerMap, key);
 		}
+		event_user(0);
 	}	
 }

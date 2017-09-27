@@ -126,7 +126,7 @@ if(global.simulationRunning)
 
 if (zeilenGesamt >= maxLines)
 {
-	Spieltag_scrollbar.gesamtheit = zeilenGesamt;
+	Spieltag_scrollbar.gesamtheit = zeilenGesamt * font_height;
 					
 	//Kamera Position anpassen, damit der Text scrollt
 	if(Spieltag_scrollbar.bar_position == 0){
@@ -134,9 +134,9 @@ if (zeilenGesamt >= maxLines)
 							camera_get_view_x(view_camera[0]),
 							boxheight/20 + (zeilenGesamt - maxLines) * font_height);
 	}
-	if(Spieltag_scrollbar.bar_moved){
-		camera_set_view_pos(view_camera[0], 
-							camera_get_view_x(view_camera[0]),
-							boxheight/20 + (1 - Spieltag_scrollbar.bar_position) * (zeilenGesamt - maxLines) * font_height);
-	}
+	//if(Spieltag_scrollbar.bar_moved){
+	//	camera_set_view_pos(view_camera[0], 
+	//						camera_get_view_x(view_camera[0]),
+	//						boxheight/20 + (1 - Spieltag_scrollbar.bar_position) * (zeilenGesamt - maxLines) * font_height);
+	//}
 }

@@ -3,7 +3,8 @@ width = 16;
 height = 100;
 
 //Abstand vom Rand zur Bar
-spacing = 1;
+spacing = 2;
+padding = 16;
 
 //Die zwei Größen, die für die Bar in relation gesetzt werden sollen
 gesamtheit = 100;
@@ -24,4 +25,5 @@ scrollwindow_y1 = 100;
 scrollwindow_x2 = 100;
 scrollwindow_y2 = 100;
 
-test = 0;
+//init
+initialisiert = false;

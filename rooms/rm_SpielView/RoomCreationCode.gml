@@ -67,4 +67,5 @@ with(spielAufstellungsBox){
 		playerGrid[# 7, i] = PosSortNumber(team.spielerMap[? key].favPosition);
 		key = ds_map_find_next(team.spielerMap, key);
 	}
+	event_user(0);
 }

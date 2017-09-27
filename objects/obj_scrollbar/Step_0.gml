@@ -1,3 +1,11 @@
+if !initialisiert{
+	height = scrollwindow_y2 - scrollwindow_y1;
+	x = scrollwindow_x2 - padding;
+	y = scrollwindow_y1;	
+}
+
+
+
 bar_height = anteil/gesamtheit;
 bar_y1 = y + spacing + 1 + (1 - bar_position) * (height - bar_height * height);
 //bar_y2 = y + (1 - bar_position) * (height - bar_height * height) + (bar_height * height) - (spacing + 1);
@@ -30,6 +38,9 @@ if(bar_height < 1){
 
 if(bar_position != bar_position_prev){
 	bar_position_prev = bar_position;
-	bar_moved = true;
+	//bar_moved = true;
+	camera_set_view_pos(view_camera[cameraPort], 
+						camera_get_view_x(view_camera[cameraPort]),
+						y + (1 - bar_position) * (gesamtheit - anteil));
 }
 else bar_moved = false;

@@ -12,9 +12,9 @@ spaltenBezeichnungen[2] = "Kategorie";
 spaltenBezeichnungen[1] = "Thema";
 spaltenBezeichnungen[0] = "Von";
 
-zeilenBreite[2] = 2*width/6;
-zeilenBreite[1] = width/2;
-zeilenBreite[0] = width/6;
+spaltenBreite[2] = 2*width/6;
+spaltenBreite[1] = width/2;
+spaltenBreite[0] = width/6;
 
 draw_set_font(fnt_handwriting);
 rowheight = string_height("Test") + padding;
