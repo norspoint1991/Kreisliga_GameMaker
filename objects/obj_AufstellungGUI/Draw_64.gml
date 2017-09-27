@@ -8,11 +8,11 @@ if initialisiert {
 	var xVerschiebung = 0;
 	for(var n = 0; n < attributeNumber; n++){
 		draw_rectangle(	x + xVerschiebung,					 y,
-						x + xVerschiebung + zeilenBreite[n], y + rowheight, 1);
-		draw_text(	x + xVerschiebung + zeilenBreite[n]/2 - string_width(spaltenBezeichnungen[n])/2, 
+						x + xVerschiebung + spaltenBreite[n], y + rowheight, 1);
+		draw_text(	x + xVerschiebung + spaltenBreite[n]/2 - string_width(spaltenBezeichnungen[n])/2, 
 					y + rowheight/2 - string_height(spaltenBezeichnungen[n])/2, 
 					spaltenBezeichnungen[n]);
-		xVerschiebung += zeilenBreite[n];
+		xVerschiebung += spaltenBreite[n];
 	}
 
 	draw_set_font(fnt_handwriting);
@@ -20,26 +20,26 @@ if initialisiert {
 	for (var k = 0; k < attributeNumber; k++){
 		for (var j = 0; j < ds_grid_height(playerGrid); j++){
 			draw_rectangle(	x + xVerschiebung,					 y + (j+1)*rowheight,
-							x + xVerschiebung + zeilenBreite[k], y + (j+2)*rowheight, 1);
-			draw_text(	x + xVerschiebung + zeilenBreite[k]/2 - string_width(string(playerGrid[# k, j]))/2, 
+							x + xVerschiebung + spaltenBreite[k], y + (j+2)*rowheight, 1);
+			draw_text(	x + xVerschiebung + spaltenBreite[k]/2 - string_width(string(playerGrid[# k, j]))/2, 
 						y + (j+1)*rowheight + rowheight/2 - string_height(string(playerGrid[# k, j]))/2, 
 						string(playerGrid[# k, j]));
 		}
-		xVerschiebung += zeilenBreite[k];
+		xVerschiebung += spaltenBreite[k];
 	}
 
 	if(xPointClicked != undefined){
 		draw_set_color(c_blue);
 		draw_rectangle(	window_mouse_get_x() + xPointClicked, 
 						window_mouse_get_y() - rowheight/2,
-						window_mouse_get_x() + xPointClicked + zeilenBreite[0], 
+						window_mouse_get_x() + xPointClicked + spaltenBreite[0], 
 						window_mouse_get_y() + rowheight/2, false);
 		draw_set_color(c_black);
 		draw_rectangle(	window_mouse_get_x() + xPointClicked, 
 						window_mouse_get_y() - rowheight/2,
-						window_mouse_get_x() + xPointClicked + zeilenBreite[0], 
+						window_mouse_get_x() + xPointClicked + spaltenBreite[0], 
 						window_mouse_get_y() + rowheight/2, true);		
-		draw_text(	window_mouse_get_x() + xPointClicked + zeilenBreite[0]/2 - string_width(string(playerGrid[# 0, row_clicked]))/2, 
+		draw_text(	window_mouse_get_x() + xPointClicked + spaltenBreite[0]/2 - string_width(string(playerGrid[# 0, row_clicked]))/2, 
 					window_mouse_get_y() - string_height(string(playerGrid[# 0, row_clicked]))/2, 
 					string(playerGrid[# 0, row_clicked]));
 	}

@@ -4,16 +4,16 @@ if !initialisiert
 	rowheight = string_height("Test") + padding;
 	//Breite der einzelnen Spalten bestimmen
 	draw_set_font(fnt_handwriting_headline);
-	for (var n = 0; n < attributeNumber; n++){ zeilenBreite[n] = string_width(spaltenBezeichnungen[n]) + padding;}
+	for (var n = 0; n < attributeNumber; n++){ spaltenBreite[n] = string_width(spaltenBezeichnungen[n]) + padding;}
 
 	draw_set_font(fnt_handwriting);
 	for (var k = 0; k < attributeNumber; k++){
 		for (var j = 0; j < ds_grid_height(playerGrid); j++){
-			zeilenBreite[k] = max(zeilenBreite[k], string_width(string(playerGrid[# k, j])) + padding);
+			spaltenBreite[k] = max(spaltenBreite[k], string_width(string(playerGrid[# k, j])) + padding);
 		}
 	}
 	grid_sort_stable(playerGrid, posSortingColumn, true);
-	tabellenBreite = array_sum(zeilenBreite);
+	tabellenBreite = array_sum(spaltenBreite);
 	tabellenHeohe = rowheight * (attributeNumber + 1)
 	initialisiert = true;
 }
@@ -23,11 +23,11 @@ var xVerschiebung = 0;
 if(mouse_check_button_pressed(mb_left)){
 	if(point_in_rectangle(	window_mouse_get_x(), window_mouse_get_y(),
 							x, y + rowheight,
-							x + zeilenBreite[0], y + (ds_grid_height(playerGrid) + 1)*rowheight)){
+							x + spaltenBreite[0], y + (ds_grid_height(playerGrid) + 1)*rowheight)){
 		for (var j = 0; j < ds_grid_height(playerGrid); j++){
 			if(point_in_rectangle(	window_mouse_get_x(), window_mouse_get_y(),
 									x, y + (j+1)*rowheight,
-									x + zeilenBreite[0], y + (j+2)*rowheight)){
+									x + spaltenBreite[0], y + (j+2)*rowheight)){
 				row_clicked = j;
 				xPointClicked = x - window_mouse_get_x();
 			}
@@ -38,11 +38,11 @@ if(mouse_check_button_pressed(mb_left)){
 if(mouse_check_button_released(mb_left)){
 	if(point_in_rectangle(	window_mouse_get_x(), window_mouse_get_y(),
 							x, y + rowheight,
-							x + zeilenBreite[0], y + (ds_grid_height(playerGrid) + 1)*rowheight)){
+							x + spaltenBreite[0], y + (ds_grid_height(playerGrid) + 1)*rowheight)){
 		for (var j = 0; j < ds_grid_height(playerGrid); j++){
 			if(point_in_rectangle(	window_mouse_get_x(), window_mouse_get_y(),
 									x, y + (j+1)*rowheight,
-									x + zeilenBreite[0], y + (j+2)*rowheight)){
+									x + spaltenBreite[0], y + (j+2)*rowheight)){
 				row_dropped = j;
 			}
 		}
@@ -58,13 +58,13 @@ if(mouse_check_button_released(mb_left)){
 		for (var k = 0; k < attributeNumber; k++){
 			if(point_in_rectangle(	window_mouse_get_x(), window_mouse_get_y(),
 									x + xVerschiebung, y,
-									x + xVerschiebung + zeilenBreite[k], y + rowheight)){
+									x + xVerschiebung + spaltenBreite[k], y + rowheight)){
 				if(spaltenBezeichnungen[k] == "Name") {}
 				else if(spaltenBezeichnungen[k] == "Pos") grid_sort_stable(playerGrid, posSortingColumn, true);
 				else if(spaltenBezeichnungen[k] == "B.Pos") grid_sort_stable(playerGrid, favPosSortingColumn, true);
 				else ds_grid_sort(playerGrid, k, false);
 			}
-			xVerschiebung += zeilenBreite[k];
+			xVerschiebung += spaltenBreite[k];
 		}
 	}
 }

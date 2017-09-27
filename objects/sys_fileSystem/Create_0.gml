@@ -20,9 +20,12 @@ rowHeight = string_height("Test") + 2;
 nameWidth = string_width(" Name ");
 teamWidth = 20 * string_width("M");
 dateWidth = string_width("01.01.2000 09:15:21");
-tabellenHoehe = rowHeight * saveCount + rowHeight * 2;
-tabellenBreite = teamWidth + nameWidth + dateWidth;
-ds_map_destroy(fileList);
+hoehe = rowHeight * saveCount + rowHeight * 2;
+breite = teamWidth + nameWidth + dateWidth;
 
+gui_x = x;
+gui_y = y;
+// string(current_day) + "/" + string (current_month) + "/" + string(current_year) +"  " + string(current_hour) + ":" + string(current_minute) + "." + string(current_second
 
-// string(current_day) + "/" + string (current_month) + "/" + string(current_year) +"  " + string(current_hour) + ":" + string(current_minute) + "." + string(current_second);
+gameToAdd = undefined;
+newGameName = undefined;

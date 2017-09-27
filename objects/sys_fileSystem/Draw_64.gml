@@ -8,10 +8,11 @@
 
 
 
-	draw_rectangle( x, y, x+nameWidth, y+rowHeight, true);
-	draw_text( x + nameWidth/2 -string_width("Name")/2, y+ rowHeight/2 - string_height("Name")/2 , "Name");
-	draw_rectangle( x+ nameWidth, y, x+nameWidth+teamWidth, y+rowHeight, true);
-	draw_text( x+ nameWidth + teamWidth/2 - string_width("TeamName")/2 , y + rowHeight/2 - string_height("TeamName")/2 ,"Teamname");
+	draw_rectangle( gui_x, gui_y, gui_x+nameWidth, gui_y+rowHeight, true);
+	draw_text( gui_x + nameWidth/2 -string_width("Name")/2, gui_y+ rowHeight/2 - string_height("Name")/2 , "Name");
+	draw_rectangle( gui_x+ nameWidth, gui_y, gui_x+nameWidth+teamWidth, gui_y+rowHeight, true);
+	draw_text( gui_x+ nameWidth + teamWidth/2 - string_width("TeamName")/2 , gui_y + rowHeight/2 - string_height("TeamName")/2 ,"Teamname");
 	//Datum
-	draw_rectangle( x+nameWidth+teamWidth, y, x+nameWidth+teamWidth+dateWidth, y+rowHeight, true);	
-	draw_text( x+nameWidth+teamWidth + dateWidth/2 - string_width("Gespeichert am")/2, y  + rowHeight/2 - string_height("Gespeichert am")/2 , "Gespeichert am");
+	draw_rectangle( gui_x+nameWidth+teamWidth, gui_y, gui_x+nameWidth+teamWidth+dateWidth, gui_y+rowHeight, true);	
+	draw_text( gui_x+nameWidth+teamWidth + dateWidth/2 - string_width("Gespeichert am")/2, gui_y  + rowHeight/2 - string_height("Gespeichert am")/2 , "Gespeichert am");
+	

@@ -2,6 +2,7 @@
 //was für eine Datenstruktur dafür verwendet wird
 
 var leagueToSave = argument0;
+var saveName = argument1;
 
 var leagueMap = ds_map_create();
 
@@ -18,4 +19,4 @@ key = ds_map_find_next(leagueToSave.teamMap, key);
 
 ds_map_add_map(leagueMap, "teamMap", parsedTeamMap);
 
-ds_map_secure_save(leagueMap, working_directory +  leagueToSave.ligaName+ ".dat");
+ds_map_secure_save(leagueMap, working_directory +  saveName + ".dat");

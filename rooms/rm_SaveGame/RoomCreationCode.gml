@@ -1,1 +1,2 @@
-fileSys = instance_create_depth(10,10,0, sys_fileSystem);
+
+instance_create_depth(0, 0 ,0, ctrl_SaveGame);
