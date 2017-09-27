@@ -1,1 +1,1 @@
-instance_create_depth(0, 0, 0, obj_TrainingController);
+instance_create_depth(0, 0, 0, ctrl_training);

@@ -1,4 +1,4 @@
-if (zeit < obj_SpieltagGUI.zeit) 
+if (zeit < gui_spieltag.zeit) 
 {
 	switch (thisEvent){
 	

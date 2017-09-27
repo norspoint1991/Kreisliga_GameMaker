@@ -1,1 +1,1 @@
-managerController = instance_create_depth(0, 0, 0, obj_ManagerControlls);
+managerController = instance_create_depth(0, 0, 0, ctrl_mainHUB);
