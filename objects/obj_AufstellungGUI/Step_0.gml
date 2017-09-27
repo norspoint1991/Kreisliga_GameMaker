@@ -1,48 +1,44 @@
-if !initialisiert
-{
-	draw_set_font(fnt_handwriting);
-	rowheight = string_height("Test") + padding;
-	//Breite der einzelnen Spalten bestimmen
-	draw_set_font(fnt_handwriting_headline);
-	for (var n = 0; n < attributeNumber; n++){ spaltenBreite[n] = string_width(spaltenBezeichnungen[n]) + padding;}
-
-	draw_set_font(fnt_handwriting);
-	for (var k = 0; k < attributeNumber; k++){
-		for (var j = 0; j < ds_grid_height(playerGrid); j++){
-			spaltenBreite[k] = max(spaltenBreite[k], string_width(string(playerGrid[# k, j])) + padding);
-		}
-	}
-	grid_sort_stable(playerGrid, posSortingColumn, true);
-	tabellenBreite = array_sum(spaltenBreite);
-	tabellenHeohe = rowheight * (attributeNumber + 1)
-	initialisiert = true;
-}
-
 var xVerschiebung = 0;
 
 if(mouse_check_button_pressed(mb_left)){
-	if(point_in_rectangle(	window_mouse_get_x(), window_mouse_get_y(),
+	if(point_in_rectangle(	mouse_x, mouse_y,
 							x, y + rowheight,
-							x + spaltenBreite[0], y + (ds_grid_height(playerGrid) + 1)*rowheight)){
+							x + breite, y + (ds_grid_height(playerGrid) + 1)*rowheight)){
 		for (var j = 0; j < ds_grid_height(playerGrid); j++){
-			if(point_in_rectangle(	window_mouse_get_x(), window_mouse_get_y(),
+			if(point_in_rectangle(	mouse_x, mouse_y,
 									x, y + (j+1)*rowheight,
-									x + spaltenBreite[0], y + (j+2)*rowheight)){
+									x + breite, y + (j+2)*rowheight)){
 				row_clicked = j;
-				xPointClicked = x - window_mouse_get_x();
+				xPointClicked = x - mouse_x;
 			}
 		}
 	}
 	else row_clicked = undefined;
 }
-if(mouse_check_button_released(mb_left)){
-	if(point_in_rectangle(	window_mouse_get_x(), window_mouse_get_y(),
+
+if(row_clicked != undefined){
+	if(point_in_rectangle(	mouse_x, mouse_y,
 							x, y + rowheight,
-							x + spaltenBreite[0], y + (ds_grid_height(playerGrid) + 1)*rowheight)){
+							x + breite, y + (ds_grid_height(playerGrid) + 1)*rowheight)){
 		for (var j = 0; j < ds_grid_height(playerGrid); j++){
-			if(point_in_rectangle(	window_mouse_get_x(), window_mouse_get_y(),
+			if(point_in_rectangle(	mouse_x, mouse_y,
 									x, y + (j+1)*rowheight,
-									x + spaltenBreite[0], y + (j+2)*rowheight)){
+									x + breite, y + (j+2)*rowheight)){
+				row_highlighted = j;
+			}
+		}
+	}
+	else{ row_highlighted = undefined;}
+}
+
+if(mouse_check_button_released(mb_left)){
+	if(point_in_rectangle(	mouse_x, mouse_y,
+							x, y + rowheight,
+							x + breite, y + (ds_grid_height(playerGrid) + 1)*rowheight)){
+		for (var j = 0; j < ds_grid_height(playerGrid); j++){
+			if(point_in_rectangle(	mouse_x, mouse_y,
+									x, y + (j+1)*rowheight,
+									x + breite, y + (j+2)*rowheight)){
 				row_dropped = j;
 			}
 		}
@@ -52,11 +48,11 @@ if(mouse_check_button_released(mb_left)){
 		row_clicked = undefined;
 		xPointClicked = undefined;
 	}	
-	if(point_in_rectangle(	window_mouse_get_x(), window_mouse_get_y(),
+	if(point_in_rectangle(	mouse_x, mouse_y,
 							x, y,
-							x + tabellenBreite, y + rowheight)){
+							x + breite, y + rowheight)){
 		for (var k = 0; k < attributeNumber; k++){
-			if(point_in_rectangle(	window_mouse_get_x(), window_mouse_get_y(),
+			if(point_in_rectangle(	mouse_x, mouse_y,
 									x + xVerschiebung, y,
 									x + xVerschiebung + spaltenBreite[k], y + rowheight)){
 				if(spaltenBezeichnungen[k] == "Name") {}
@@ -67,6 +63,7 @@ if(mouse_check_button_released(mb_left)){
 			xVerschiebung += spaltenBreite[k];
 		}
 	}
+	row_highlighted = undefined;
 }
 
 if(row_clicked != undefined && row_dropped != undefined && row_clicked != row_dropped){

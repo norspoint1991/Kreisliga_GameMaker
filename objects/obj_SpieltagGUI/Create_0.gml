@@ -13,16 +13,15 @@ zeilenGesamt = 0;
 zeilenCounter = 1; //Startwert, damit die if-Abfrage in Step auslöst
 
 //Scrollbar
-Spieltag_scrollbar = instance_create_depth(boxwidth - padding, boxheight/20 + 1, 0, obj_scrollbar)
-Spieltag_scrollbar.width = padding;
-Spieltag_scrollbar.height = 19*boxheight/20;
-Spieltag_scrollbar.spacing = 2;
+Spieltag_scrollbar = instance_create_depth(0, 0, 0, obj_scrollbar)
+//Spieltag_scrollbar.height = 19*boxheight/20;
 Spieltag_scrollbar.scrollwindow_x1 = x;
-Spieltag_scrollbar.scrollwindow_y1 = y;
+Spieltag_scrollbar.scrollwindow_y1 = y + boxheight/20;
 Spieltag_scrollbar.scrollwindow_x2 = boxwidth;
 Spieltag_scrollbar.scrollwindow_y2 = boxheight;
-Spieltag_scrollbar.anteil = maxLines;
-Spieltag_scrollbar.gesamtheit = maxLines;
+Spieltag_scrollbar.anteil = maxLines * font_height;
+Spieltag_scrollbar.gesamtheit = maxLines * font_height;
+Spieltag_scrollbar.cameraPort = 0;
 
 
 headline = "Ereignisse";
