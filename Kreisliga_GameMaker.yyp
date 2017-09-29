@@ -199,6 +199,14 @@
             }
         },
         {
+            "Key": "1a3063fa-30a3-44a9-a52d-f33b2d48fc01",
+            "Value": {
+                "id": "f9b9fe9b-8adb-4022-a8a3-36f6650ad94b",
+                "resourcePath": "scripts\\mapToSaveFile\\mapToSaveFile.yy",
+                "resourceType": "GMScript"
+            }
+        },
+        {
             "Key": "1a9a3fb7-cd8b-4c81-a425-ee4b04a62333",
             "Value": {
                 "id": "9778acf2-1182-4363-baac-49f217b217ac",
@@ -935,6 +943,14 @@
             }
         },
         {
+            "Key": "ac8a017f-d991-4266-bb53-1cfa90b6434c",
+            "Value": {
+                "id": "a5d44a3a-465d-419c-a23b-1fc3d0c8e7f4",
+                "resourcePath": "scripts\\saveSaveFile\\saveSaveFile.yy",
+                "resourceType": "GMScript"
+            }
+        },
+        {
             "Key": "ad2eb888-d973-4cc6-af38-7d8483d34ce4",
             "Value": {
                 "id": "b3e8ea20-bd39-47b7-b7a6-288aff5fb139",
@@ -1092,6 +1108,14 @@
                 "id": "21d9bdd3-8784-4974-92bf-777016623c85",
                 "resourcePath": "fonts\\fnt_default\\fnt_default.yy",
                 "resourceType": "GMFont"
+            }
+        },
+        {
+            "Key": "c208cfbb-cec8-4016-a798-16f8c38ed0ee",
+            "Value": {
+                "id": "8a24306b-856f-4415-bf69-cdf4c871edb0",
+                "resourcePath": "scripts\\saveFileSys\\saveFileSys.yy",
+                "resourceType": "GMScript"
             }
         },
         {
@@ -1399,9 +1423,12 @@
         "ab82a77e-d51b-48c6-b439-58f4901056ae",
         "8148c222-bd0c-441d-b52e-b1a33f8f3bd3",
         "ef47c634-ad31-423a-b9c5-a7e7f43a7ebe",
-        "935b0e39-1a1f-44b4-bf27-41b551eb3c67",
         "9110b5b0-49b6-4fcd-abe0-14f89d3f0eeb",
+        "935b0e39-1a1f-44b4-bf27-41b551eb3c67",
         "ec92f2b8-fbf6-413f-8b1d-c82d0847300b",
+        "ac8a017f-d991-4266-bb53-1cfa90b6434c",
+        "1a3063fa-30a3-44a9-a52d-f33b2d48fc01",
+        "c208cfbb-cec8-4016-a798-16f8c38ed0ee",
         "dcd5704a-f0c0-4d15-af26-f2b079d371a5",
         "9a8ec54d-2995-46e3-942a-fee504aa9b5c",
         "670c1e60-0755-4091-b2fc-45dcaec9cf94",

@@ -1,9 +1,21 @@
-fileList = ds_map_secure_load("filesystem.dat");
-var key = ds_map_find_first(fileList);
+
+fileSys = ds_map_secure_load("filesystem.dat");
+fileList = ds_map_create();
+var key = ds_map_find_first(fileSys);
+
+for(var i=0; i < ds_map_size(fileSys); i++) {
+ds_map_add( fileList, key, mapToSaveFile( fileSys[? key]));
+
+key = ds_map_find_next(fileSys, key); 
+}
+
+var key2 = ds_map_find_first(fileList);
 filegrid = ds_grid_create(3, ds_map_size(fileList));
 
-var key = ds_map_find_first(fileList);
+var key2 = ds_map_find_first(fileList);
+
 saveCount = ds_map_size(fileList);
+
 for(var i=0; i < ds_map_size(fileList); i++) 
 {
 ds_grid_set( filegrid, 0 , i , fileList[? key].name);

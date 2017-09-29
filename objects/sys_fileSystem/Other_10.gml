@@ -9,7 +9,7 @@ if (gameToAdd != undefined && newGameName != undefined) {
 		ds_grid_set( filegrid, 2 , ds_grid_height(filegrid) -1, gameToAdd.lastLoaded);
 		ds_grid_sort(filegrid, 0, true);
 		saveCount = ds_map_size(fileList);
-		ds_map_secure_save(fileList,"filesystem.dat");
+		saveFileSys(fileList);
 }
 else {
 show_debug_message("tried to save non existing savegame");
