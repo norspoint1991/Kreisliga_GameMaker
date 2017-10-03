@@ -5,7 +5,7 @@ var newSave = instance_create_depth(0,0,0, sys_saveFile);
 
 newSave.name = saveMap[? "name"];
 newSave.team = saveMap[? "team"];
-newSave.lastloaded = saveMap[? "lastloaded"];
+newSave.lastLoaded = saveMap[? "lastLoaded"];
 
 
 return newSave;

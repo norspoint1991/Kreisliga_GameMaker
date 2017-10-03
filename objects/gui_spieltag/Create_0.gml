@@ -42,9 +42,9 @@ zeitList = ds_list_create();
 var spielplanHeute = array_copy_2d_to_1d(global.eigeneLiga.spielplan, 
 										 global.eigeneLiga.spieltag);
 for (var i = 0; i < array_length_1d(spielplanHeute); i += 2){
-	if(	spielplanHeute[i] != global.eigenesTeam 
-		&& spielplanHeute[i+1] != global.eigenesTeam){
-		new_Partie(spielplanHeute[i], spielplanHeute[i+1]);
+	if(	spielplanHeute[i] != global.eigenesTeam.teamName 
+		&& spielplanHeute[i+1] != global.eigenesTeam.teamName){
+		new_Partie(ds_map_find_value(global.eigeneLiga.teamMap, spielplanHeute[i]), ds_map_find_value(global.eigeneLiga.teamMap, spielplanHeute[i+1]));
 	}
 	else{
 		Heimteam = spielplanHeute[i];

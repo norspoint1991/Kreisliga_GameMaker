@@ -30,11 +30,13 @@ if (push != 0)
 			//room_goto(rm_ManagerView);
 			break;
 		case 1:
-
+			global.roomcamefrom = room ;
 			room_goto(rm_NewGame);
+			
 			break;
 		case 2:
-			//room_goto(rm_loadView);
+			global.roomcamefrom = room ;
+			room_goto(rm_loadGame);
 			break;
 		case 3:
 			//room_goto(rm_optionView);

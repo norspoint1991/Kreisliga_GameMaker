@@ -28,5 +28,6 @@ ds_map_add(playerMap, "freistoss", PlayerToSave.freistoss);
 ds_map_add(playerMap, "pass", PlayerToSave.pass);
 ds_map_add(playerMap, "dribbling", PlayerToSave.dribbling);
 ds_map_add(playerMap, "flanken", PlayerToSave.flanken);
+ds_map_add_map(playerMap,"positionValues", PlayerToSave.positionValues);
 
 return playerMap;

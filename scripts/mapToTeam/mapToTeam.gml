@@ -15,7 +15,7 @@ ds_map_add( unparsedSpielerMap, key, mapToPlayer( playerList[? key]));
 key = ds_map_find_next(playerList, key); 
 }
 
-var team = new_Team(teamName, unparsedSpielerMap, 0, 0);
+var team = load_team(teamName, unparsedSpielerMap, 0, 0);
 
 team.formation = teamMap[? "formation"];
 team.punkte = teamMap[? "punkte"];
@@ -25,6 +25,9 @@ team.spiele = teamMap[? "spiele"];
 team.siege = teamMap[? "siege"];
 team.niederlagen = teamMap[? "niederlagen"];
 team.unentschieden = teamMap[? "unentschieden"];
-
+if (teamMap[? "gespieltesTeam"] == 1) {
+	team.gespieltesTeam = teamMap[? "gespieltesTeam"];
+	global.eigenesTeam = team;
+}
 
 return team;

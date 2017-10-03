@@ -13,6 +13,8 @@ siege = 0;
 niederlagen = 0;
 unentschieden = 0;
 
+gespieltesTeam= 0;
+
 
 
 // Der Teil ist hier rauskommentiert und ich habe es in den Konstruktor

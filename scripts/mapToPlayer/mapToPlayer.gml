@@ -27,6 +27,7 @@ newPlayer.freistoss = playerMap[? "freistoss"];
 newPlayer.pass = playerMap[? "pass"];
 newPlayer.dribbling = playerMap[? "dribbling"];
 newPlayer.flanken = playerMap[? "flanken"];
+newPlayer.positionValues =playerMap[? "positionValues"];
 
 
 return newPlayer;

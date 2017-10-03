@@ -11,7 +11,7 @@ ds_map_add(teamMap, "spiele", teamToSave.spiele);
 ds_map_add(teamMap, "siege", teamToSave.siege);
 ds_map_add(teamMap, "niederlagen", teamToSave.niederlagen);
 ds_map_add(teamMap, "unentschieden", teamToSave.unentschieden);
-
+ds_map_add(teamMap, "gespieltesTeam" , teamToSave.gespieltesTeam);
 
 var parsedSpielerMap = ds_map_create();
 var key = ds_map_find_first(teamToSave.spielerMap);
