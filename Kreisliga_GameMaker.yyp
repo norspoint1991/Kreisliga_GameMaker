@@ -63,6 +63,14 @@
             }
         },
         {
+            "Key": "06fc0dd2-086a-4854-9e4d-caf90ebe94be",
+            "Value": {
+                "id": "811b1c96-11fd-4af9-8ed6-885fb3cb8137",
+                "resourcePath": "fonts\\fnt_spaltenBezeichnungen\\fnt_spaltenBezeichnungen.yy",
+                "resourceType": "GMFont"
+            }
+        },
+        {
             "Key": "09409348-27b8-4374-9427-3ea776e5b4b5",
             "Value": {
                 "id": "864f5634-c376-4161-9d11-c65c46702777",
@@ -175,6 +183,14 @@
             }
         },
         {
+            "Key": "15014b64-d6e1-4cb5-bb98-3df53159640e",
+            "Value": {
+                "id": "1cb45d5c-9252-4c3a-acc9-e02547ab2de0",
+                "resourcePath": "objects\\obj_nachricht\\obj_nachricht.yy",
+                "resourceType": "GMObject"
+            }
+        },
+        {
             "Key": "153d28dd-3fe1-4be6-a6ff-e84b20f02b21",
             "Value": {
                 "id": "625eadc2-e224-4499-9d42-a15c966f6b20",
@@ -255,6 +271,14 @@
             }
         },
         {
+            "Key": "292641aa-fe9f-4e71-b975-fe997ae49f34",
+            "Value": {
+                "id": "c1914b74-9f90-40ea-a69c-3923dc1d03f6",
+                "resourcePath": "scripts\\text_split_breite\\text_split_breite.yy",
+                "resourceType": "GMScript"
+            }
+        },
+        {
             "Key": "29458d7b-1526-43ba-811d-e1a5d9d6c6cb",
             "Value": {
                 "id": "81ddad28-769e-474d-a9b9-067c71f7a7f8",
@@ -284,6 +308,14 @@
                 "id": "84612876-00df-48df-b896-d5d5ca560004",
                 "resourcePath": "objects\\gui_nachrichten\\gui_nachrichten.yy",
                 "resourceType": "GMObject"
+            }
+        },
+        {
+            "Key": "3110a72f-db46-4ead-af97-9cebb505619c",
+            "Value": {
+                "id": "0977bfab-d35a-40c9-9a99-7f5dc32c2106",
+                "resourcePath": "scripts\\get_player_name\\get_player_name.yy",
+                "resourceType": "GMScript"
             }
         },
         {
@@ -436,6 +468,14 @@
                 "id": "56d23db4-6e89-48aa-b97f-7fc4d2fb5b72",
                 "resourcePath": "objects\\obj_Liga\\obj_Liga.yy",
                 "resourceType": "GMObject"
+            }
+        },
+        {
+            "Key": "52be1113-7878-47c7-8893-dc45101ca0c3",
+            "Value": {
+                "id": "87333632-6096-4a4d-ad27-13a4010a3da4",
+                "resourcePath": "sprites\\spr_button_small\\spr_button_small.yy",
+                "resourceType": "GMSprite"
             }
         },
         {
@@ -596,6 +636,14 @@
                 "id": "a6f9148a-d9ce-4677-aa68-2e55af324ccc",
                 "resourcePath": "objects\\obj_new_game_window\\obj_new_game_window.yy",
                 "resourceType": "GMObject"
+            }
+        },
+        {
+            "Key": "787380c0-3567-4db5-8785-b91637eb12e2",
+            "Value": {
+                "id": "9cfacb99-085d-4600-9e50-60048212e515",
+                "resourcePath": "scripts\\parseStringNachrichten\\parseStringNachrichten.yy",
+                "resourceType": "GMScript"
             }
         },
         {
@@ -847,6 +895,14 @@
             }
         },
         {
+            "Key": "a21bab66-97fd-4c98-8ee4-5daa74a06eb6",
+            "Value": {
+                "id": "fb43a8b1-a79f-48dd-8f2d-d91cc77ec5de",
+                "resourcePath": "objects\\gui_nachrichtenInhalt\\gui_nachrichtenInhalt.yy",
+                "resourceType": "GMObject"
+            }
+        },
+        {
             "Key": "a2cdd0f2-aaad-482d-8684-bed16cbdf0ba",
             "Value": {
                 "id": "1e66f0a1-6365-4e8c-b650-a9bbec3f0db7",
@@ -884,6 +940,14 @@
                 "id": "aa373bac-bf8f-4a9e-a93f-744253b9e807",
                 "resourcePath": "objects\\btn_managerLeiste\\btn_managerLeiste.yy",
                 "resourceType": "GMObject"
+            }
+        },
+        {
+            "Key": "a81e7275-f4e7-4e5c-bc79-aba40d1a70c4",
+            "Value": {
+                "id": "d0fa9d60-10d7-4411-9899-401b4af693f6",
+                "resourcePath": "scripts\\neueNachricht\\neueNachricht.yy",
+                "resourceType": "GMScript"
             }
         },
         {
@@ -1055,6 +1119,14 @@
             }
         },
         {
+            "Key": "be6f3102-cb95-447b-8bec-4e3c9fbf660c",
+            "Value": {
+                "id": "c714bf28-cf49-4bfd-940e-d0cde78f0172",
+                "resourcePath": "objects\\btn_nachrichtOption\\btn_nachrichtOption.yy",
+                "resourceType": "GMObject"
+            }
+        },
+        {
             "Key": "bff61690-4520-42ae-aebe-c3fdb3d87acc",
             "Value": {
                 "id": "6a8a1f8d-7987-4f1e-9174-5bf62da93ebc",
@@ -1119,6 +1191,14 @@
             }
         },
         {
+            "Key": "c58d7efa-a0ee-4307-800f-88faa2095bea",
+            "Value": {
+                "id": "0f93b126-a231-4235-ba8d-ad233ac396f2",
+                "resourcePath": "datafiles_yy\\Nachrichten_ger.ini.yy",
+                "resourceType": "GMIncludedFile"
+            }
+        },
+        {
             "Key": "c9a34927-eaf2-43e0-b9a5-a6d8f4f5a161",
             "Value": {
                 "id": "b6233dd4-05f6-43c2-8137-ebbe709839f5",
@@ -1151,11 +1231,27 @@
             }
         },
         {
+            "Key": "d2febff6-814d-420a-8098-957029efde00",
+            "Value": {
+                "id": "0bd6f8de-7fb7-48f9-b94b-cb37b5d31a74",
+                "resourcePath": "sprites\\spr_envelope\\spr_envelope.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "d3785223-9c73-4bd4-9138-9c02edd482d8",
             "Value": {
                 "id": "8c8d568c-e7bd-4ab2-b976-183d23e74036",
                 "resourcePath": "scripts\\cancelBusy\\cancelBusy.yy",
                 "resourceType": "GMScript"
+            }
+        },
+        {
+            "Key": "d4b3f76b-4464-40dc-8020-92d7b31b7eb7",
+            "Value": {
+                "id": "a406a49f-6283-40df-811e-79ce0b3a7b49",
+                "resourcePath": "objects\\ctrl_parent\\ctrl_parent.yy",
+                "resourceType": "GMObject"
             }
         },
         {
@@ -1363,6 +1459,8 @@
         "3c93ab9b-3648-4fc1-bb8b-0e3a1dab1dca",
         "ab93696f-b267-4d59-815c-70c9a255b576",
         "1164df51-5e79-4581-93a7-c30c853ca164",
+        "a81e7275-f4e7-4e5c-bc79-aba40d1a70c4",
+        "379610b4-0d96-40f8-9e6b-8e4cdb7cc5b6",
         "34aebc51-3e0d-44cc-9cb9-7fc0e90f18cb",
         "532f3440-0e48-4cd5-b698-deb9b42361f5",
         "1e877dce-2112-4fd7-b535-6c63a162414c",
@@ -1370,10 +1468,12 @@
         "0e462f43-9eb6-493d-8b3e-ed1ca98196d2",
         "84aa75df-6af1-4ce9-9fed-a5cc5277c1f2",
         "2330059a-8a2a-49f6-975a-d879630e6f6d",
+        "3110a72f-db46-4ead-af97-9cebb505619c",
         "f4f74235-e5c8-49ee-8746-ad95940d666f",
         "7fd82cb0-b4f5-4771-8264-e4f75a79f755",
         "e207fc8f-3b41-4fd3-98cd-a16075f7883d",
         "df1d39dc-ecb7-4b89-a7ab-fd9139048fd3",
+        "787380c0-3567-4db5-8785-b91637eb12e2",
         "cdf1c5d6-936f-4c62-9a96-e31b64377bcb",
         "a5d91bc7-4cd7-4d24-a3e5-ce566d95294f",
         "09409348-27b8-4374-9427-3ea776e5b4b5",
@@ -1383,8 +1483,8 @@
         "624b5931-e51b-4b24-9eaf-b6102206ad8c",
         "6ac5273c-b8cf-4f90-9fe2-3d24e039102e",
         "a5d425f4-8c35-488a-a770-9233fe8c4e25",
-        "379610b4-0d96-40f8-9e6b-8e4cdb7cc5b6",
         "fac9e9ed-8359-4f8e-a1d6-0db289fee081",
+        "292641aa-fe9f-4e71-b975-fe997ae49f34",
         "8be4c7da-7459-43e8-83ed-6e02d3d46d2f",
         "ed0eb6aa-7af0-440c-802d-c6f1e10ef962",
         "c5198468-9fd4-4f05-97b6-1b086d9ced46",

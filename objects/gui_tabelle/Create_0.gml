@@ -10,7 +10,8 @@ padding = 8;
 breite = window_get_width();
 hoehe = window_get_height()	- y - sprite_get_height(spr_button) - 15 
 								- (headline_height + 2*padding + headline2_height);
-row_height = hoehe/ds_map_size(ligaMap);
+gui_hoehe = headline_height + headline2_height + 2*padding;
+rowheight = hoehe/ds_map_size(ligaMap);
 
 spaltenBezeichnungen[8] = "Punkte";
 spaltenBezeichnungen[7] = "Tordiff.";

@@ -26,8 +26,13 @@ if (push != 0)
 {
 	switch(mpos)
 	{
-		case 0: 
-			//room_goto(rm_ManagerView);
+		case 0:
+			global.eigenesTeam = new_Team("SC Hille", 0, 19, 0);
+			var tempMap = ds_map_create();
+			ds_map_add ( tempMap, global.eigenesTeam.teamName, global.eigenesTeam);
+			global.eigeneLiga = new_Liga ("ML - Kreisliga B2", tempMap, 15);
+			global.nachrichtenListe = ds_list_create();
+			room_goto(rm_ManagerView);
 			break;
 		case 1:
 

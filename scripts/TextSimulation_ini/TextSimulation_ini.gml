@@ -1,6 +1,5 @@
 ///TextSimulation_ini(searchword)
-// Script um einen Text aus dem file in Argument0 zu extrahieren. Die ID dieses Files 
-// wurde in textFile abgelegt.
+// Script um einen Text aus dem file in Argument0 zu extrahieren.
 
 var i = 0;
 
@@ -18,7 +17,5 @@ while(true)
 	}
 	else break;
 }
-//var test1 = possibleStrings[|0];
-//var number = (irandom(ds_list_size(possibleStrings) - 1))
-//var unparsedString = possibleStrings[|number];
+
 return parseString(possibleStrings[|(irandom(ds_list_size(possibleStrings) - 1))]);

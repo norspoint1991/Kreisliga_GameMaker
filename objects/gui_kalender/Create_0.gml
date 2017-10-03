@@ -7,7 +7,7 @@ padding = 8;
 width = window_get_width();
 height = window_get_height()	- y - sprite_get_height(spr_button) - 15 
 								- (headline_height + 2*padding + weekdays_height);
-row_height = height/6;
+rowheight = height/6;
 column_width = width/7;
 
 weekdays[6] = "So";
