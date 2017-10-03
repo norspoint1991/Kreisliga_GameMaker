@@ -22,11 +22,11 @@ var k = 0;
 i = 0;
 while(k < 6){
 	draw_rectangle(	x + i*column_width, 
-					y + headline_height + weekdays_height + 2*padding + k*row_height,
+					y + headline_height + weekdays_height + 2*padding + k*rowheight,
 					x + (i+1)*column_width, 
-					y + headline_height + weekdays_height + 2*padding + (k+1)*row_height, 1);
+					y + headline_height + weekdays_height + 2*padding + (k+1)*rowheight, 1);
 	//draw_text(	x + i*column_width, 
-	//			y + headline_height + weekdays_height + 2*padding + j*row_height,
+	//			y + headline_height + weekdays_height + 2*padding + j*rowheight,
 	//			kalenderEintraeg[i, j]);
 	if (i == 6) { k++; i = 0;}
 	else { i++;}

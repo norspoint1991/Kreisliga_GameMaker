@@ -1,4 +1,5 @@
-height = window_get_height();
+event_inherited();
+height = window_get_height()*3/4;
 width = window_get_width();
 
 viewArray[4] = "Speichern";
@@ -25,3 +26,4 @@ nextTaskButton.action = 1;
 //nextTaskButton.action = 0;
 
 currentObject = instance_create_depth(0, sprite_get_height(spr_button) + 5, 0, gui_nachrichten);
+newGUI_element(0, sprite_get_height(spr_button) + 5, width/3, height, currentObject);

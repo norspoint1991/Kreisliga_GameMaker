@@ -10,7 +10,8 @@
         "96997ef7-4d47-40ef-999a-308d71306da6",
         "0e462f43-9eb6-493d-8b3e-ed1ca98196d2",
         "84aa75df-6af1-4ce9-9fed-a5cc5277c1f2",
-        "2330059a-8a2a-49f6-975a-d879630e6f6d"
+        "2330059a-8a2a-49f6-975a-d879630e6f6d",
+        "3110a72f-db46-4ead-af97-9cebb505619c"
     ],
     "filterType": "GMScript",
     "folderName": "Spieler",

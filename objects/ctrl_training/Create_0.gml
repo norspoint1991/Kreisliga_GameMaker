@@ -1,24 +1,4 @@
-//draw Parameter
-padding = 16;
-ereignissewidth = window_get_width()/4;
-ereignisseheight = window_get_height()/4;
-aufstellungwidth = 3*window_get_width()/4;
-aufstellungheight = 3*window_get_height()/4;
-timelinewidth = window_get_width()/4;
-timelineheight = 3*window_get_height()/4;
-auswahlmenuwidth = 3*window_get_width()/4;
-auswahlmenuheight = window_get_height()/4;
-draw_set_font(fnt_default);
-font_height = string_height("Test");
-draw_set_font(fnt_headline);
-headline_height = string_height("Test");
-
-//Zahlen zum Spiel
-zeit = 0;
-zeitVorher = -1;
-spielzeit = 90;
-simulationSpeed = 1; //Frames für eine Minute
-
+event_inherited();
 trainingsAufstellungsBox = instance_create_depth(0, 0, 0, gui_aufstellung);
 
 with(trainingsAufstellungsBox){
@@ -57,10 +37,11 @@ with(trainingsAufstellungsBox){
 	}
 	event_user(0);
 }
-tabelleGUI = instance_create_depth(0, 0, 0, gui_tabelle);
+
 newGUI_element(	window_get_width()/2, 0, 
 				window_get_width()/2, window_get_height()/4,
 				trainingsAufstellungsBox);
-newGUI_element(	0, 0, 
-				window_get_width()/2, window_get_height()/2,
-				tabelleGUI); //TODO Scrollbar vorhanden, aber nichts zu sehen
+//tabelleGUI = instance_create_depth(0, 0, 0, gui_tabelle);
+//newGUI_element(	0, 0, 
+//				window_get_width()/2, window_get_height()/2,
+//				tabelleGUI); //TODO Scrollbar vorhanden, aber nichts zu sehen

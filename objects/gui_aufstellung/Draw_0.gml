@@ -3,22 +3,22 @@ if initialisiert {
 	draw_set_valign(fa_top);
 	draw_set_color(c_black);
 
-	draw_set_font(aufs_fnt);
-	xVerschiebung = 0;
+	draw_set_font(fnt_default);
+	var xVerschiebung = 0;
 	for (var k = 0; k < attributeNumber; k++){
 		for (var j = 0; j < ds_grid_height(playerGrid); j++){
 			if(j == row_highlighted){
 				draw_set_color(c_yellow);
 				draw_set_alpha(0.5);
-				draw_rectangle(	x + xVerschiebung,					 y + (j+1)*rowheight,
-								x + xVerschiebung + spaltenBreite[k], y + (j+2)*rowheight, 0);
+				draw_rectangle(	x + xVerschiebung,					 y + j*rowheight + gui_hoehe,
+								x + xVerschiebung + spaltenBreite[k], y + (j+1)*rowheight + gui_hoehe, 0);
 				draw_set_color(c_black);
 				draw_set_alpha(1);
 			}
-			draw_rectangle(	x + xVerschiebung,					 y + (j+1)*rowheight,
-							x + xVerschiebung + spaltenBreite[k], y + (j+2)*rowheight, 1);
+			draw_rectangle(	x + xVerschiebung,					 y + j*rowheight + gui_hoehe,
+							x + xVerschiebung + spaltenBreite[k], y + (j+1)*rowheight + gui_hoehe, 1);
 			draw_text(	x + xVerschiebung + spaltenBreite[k]/2 - string_width(string(playerGrid[# k, j]))/2, 
-						y + (j+1)*rowheight + rowheight/2 - string_height(string(playerGrid[# k, j]))/2, 
+						y + j*rowheight + gui_hoehe + rowheight/2 - string_height(string(playerGrid[# k, j]))/2, 
 						string(playerGrid[# k, j]));
 		}
 		xVerschiebung += spaltenBreite[k];
