@@ -21,8 +21,12 @@ for(var i = 0; i < array_length_1d(teamArray); i++){
 var spielplan = undefined;
 
 for(var k = 0; k < array_length_1d(teamArray) - 1; k += 2){
-	spielplan[1, k] = teamArray[k];
-	spielplan[1, k+1] = teamArray[k+1];
+	spielplan[1, k] = teamArray[k].teamName;
+	spielplan[1, k+1] = teamArray[k+1].teamName;
+	spielplan[2, k] = teamArray[k].teamName;
+	spielplan[2, k+1] = teamArray[k+1].teamName;
+	spielplan[3, k] = teamArray[k].teamName;
+	spielplan[3, k+1] = teamArray[k+1].teamName;
 }
 
 return spielplan

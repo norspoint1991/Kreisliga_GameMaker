@@ -6,4 +6,4 @@ var copiedArray = undefined;
 for(var i = 0; i < length; i++){
 	copiedArray[length - i - 1] = array[index, length - 1 - i];
 }
-return copiedArray
+return copiedArray;

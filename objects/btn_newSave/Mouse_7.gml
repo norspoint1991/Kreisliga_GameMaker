@@ -1,6 +1,15 @@
 /// @description Insert description here
 // You can write your code in this editor
 
+
+
+if  (counter == 2) {
+	with(ctrl_SaveGame.fileSys) {
+	event_user(1); 
+	}
+
+
+}
 if (counter == 1) {
 
 	if ( nameTextBox.input == "") {
@@ -12,9 +21,7 @@ if (counter == 1) {
 		var newSavegame = instance_create_depth(0,0,0, sys_saveFile);
 		newSavegame.name = nameTextBox.input;
 		newSavegame.team = global.eigenesTeam.teamName;
-		newSavegame.lastLoaded = string(date_current_datetime());
-		saveLeague(global.eigeneLiga, nameTextBox.input);
-		
+		newSavegame.lastLoaded = dateToString();
 with(ctrl_SaveGame.fileSys) {
 	gameToAdd = newSavegame;
 	newGameName = btn_newSave.nameTextBox.input;
